@@ -22,26 +22,17 @@ def play_video(url: str) -> str:
     except Exception as e:
         return f"Error: Failed to open the browser. Reason: {str(e)}"
 
-url = "https://www.youtube.com/watch?v=xNsyNwAkqfk"
+url = "https://www.youtube.com/watch?v=qeWRewXB91g&t=1s"
 
 def fraction():
-    """Generates random numerators, denominators, and an operation (add/subtract) for a fraction problem."""
-    operation = random.choice(["add", "subtract"])
-    is_like_denominator = random.choice([True, False])
+    """Generates random numerators, denominators, and an operation (multiply/divide) for a fraction problem."""
+    operation = random.choice(["multiply", "divide"])
 
     den1 = random.randint(2, 10)
-    if is_like_denominator:
-        den2 = den1
-    else:
-        den2 = random.randint(2, 10)
-        while den2 == den1:
-            den2 = random.randint(2, 10)
+    den2 = random.randint(2, 10)
 
     num1 = random.randint(1, den1 - 1)
     num2 = random.randint(1, den2 - 1)
-
-    if operation == "subtract" and (num1 / den1 < num2 / den2):
-        num1, den1, num2, den2 = num2, den2, num1, den1
 
     return num1, den1, num2, den2, operation
 
@@ -54,10 +45,10 @@ def check_answer(num1: int, den1: int, num2: int, den2: int, operation: str, stu
     if student_den == 0:
         return False
     
-    if operation == "add":
-        correct_val = (num1 / den1) + (num2 / den2)
+    if operation == "multiply":
+        correct_val = (num1 / den1) * (num2 / den2)
     else:
-        correct_val = (num1 / den1) - (num2 / den2)
+        correct_val = (num1 / den1) / (num2 / den2)
 
     student_val = student_num / student_den
     
@@ -83,26 +74,45 @@ agent = create_deep_agent(
 )
 
 
-message = f"""What are the rules for adding and subtracting fractions with the same denominator?
-Can you give me everyday examples in Hong Kong?
-Crucially, you MUST execute your play_add_sub_video tool to open this exact link for me right now: {url}
+message = f"""
+Please introduce the rules for multiplying and dividing fractions briefly. 
+End your message by asking the student if they have any questions or if they need an example before starting the quiz.
 """
 
-print("Agent is thinking and preparing to open the video...")
+print("\n Starting the Fraction Multiplication & Division Tutor...")
 
 result = agent.invoke(
     {"messages": [{"role": "user", "content": message}]},
-    config={"configurable": {"thread_id": "add_sub_session_001"}},
+    config={"configurable": {"thread_id": "mult_div_session_001"}},
 )
 
 print("\n=== Math Tutor Output ===")
 print(result["messages"][-1].content)
 
+while True:
+    student_q = get_input("\nAsk a question, or type 'ready' to start the quiz: ")
+
+    if student_q.lower().strip() in ["no", "ready", "start", "none","nope","no questions","i'm ready","quiz","let's start"]:
+        print("\nGreat! Let's move on to the quiz phase.")
+        break
+
+    else:
+        q_prompt = f"The student asks: '{student_q}'. Please answer their question, provide examples if asked, and ask if they are ready for the quiz."
+
+        result = agent.invoke(
+            {"messages": [{"role": "user", "content": q_prompt}]},
+            config={"configurable": {"thread_id": "mult_div_session_001"}},
+        )
+
+        print("\n=== Tutor Response ===")
+        print(result["messages"][-1].content)
+
+
 num1, den1, num2, den2, operation = fraction()
-if operation == "add":
-    operation_symbol = "+"
+if operation == "multiply":
+    operation_symbol = "×"
 else:
-    operation_symbol = "-"
+    operation_symbol = "÷"
 
 print("\n--------------------------------------------------")
 print(f"📝 Please answer this question：")
@@ -110,6 +120,7 @@ print(f"👉 Question: {num1}/{den1} {operation_symbol} {num2}/{den2} = ?")
 print("--------------------------------------------------")
 
 while True:
+    
     try:
         ans_num_str = get_input("\nPlease answer the Numerator: ")
         ans_den_str = get_input("Please answer the Denominator: ")
@@ -142,10 +153,10 @@ while True:
     if is_correct:
         print("\nCongratulations! You solved it!")
         num1, den1, num2, den2, operation = fraction()
-        if operation == "add":
-            operation_symbol = "+"
+        if operation == "multiply":
+            operation_symbol = "×"
         else:
-            operation_symbol = "-"
+            operation_symbol = "÷"
 
         print("\n==================================================")
         print(f"🎉 Fantastic! It automatically generates the next challenge for you.：")
