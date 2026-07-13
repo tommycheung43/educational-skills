@@ -36,15 +36,18 @@ agent = create_deep_agent(
 student_part = input("Enter your score/part (e.g., 35): ")
 student_total = input("Enter the total score (e.g., 40): ")
 
-message = ("What is percentage?",
-           "Can you give me examples?",
-           "Can you provide me with the relevant documentation?",
-           f"Also, if I got {student_part} out of {student_total} marks in my quiz, can you calculate the percentage for me?"
-           )
+message = (
+    f"1. Briefly explain what percentage is with one simple example.\n"
+    f"2. Provide a short documentation snippet.\n"
+    f"3. Calculate the percentage for {student_part} out of {student_total} using your tool.\n"
+    f"CRITICAL REQUIREMENT: Keep your entire response extremely concise, direct, and under 120 words to save tokens."
+)
 
 result = agent.invoke(
     {"messages": [{"role": "user", "content": message}]},
-    config={"configurable": {"thread_id": "1"}},
+    config={"configurable": {"thread_id": "1"},
+            "recursion_limit": 15
+    },
 )
 
 
