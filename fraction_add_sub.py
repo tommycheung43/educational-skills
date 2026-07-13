@@ -16,8 +16,7 @@ def play_add_sub_video(url: str) -> str:
     if not url.startswith("http"):
         return "Error: Invalid URL format."
     
-    try:
-        
+    try:       
         webbrowser.open(url)
         return f"Success: Opened the web browser and started playing the video at {url}."
     except Exception as e:
@@ -117,7 +116,7 @@ while True:
         ans_num = int(ans_num_str)
         ans_den = int(ans_den_str)
     except ValueError:
-        print("❌ Input error! Please ensure you enter integer values.")
+        print("Input error! Please ensure you enter integer values.")
         continue
 
     is_correct = check_answer(num1, den1, num2, den2, operation, ans_num, ans_den)
