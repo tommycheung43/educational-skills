@@ -92,7 +92,7 @@ print(result["messages"][-1].content)
 while True:
     student_q = get_input("\nAsk a question, or type 'ready' to start the quiz: ")
 
-    if student_q.lower().strip() in ["no", "ready", "start", "none","nope","no questions","i'm ready","quiz","let's start"]:
+    if student_q.lower().strip() in ["yes","no question", "ready", "start", "none","nope","no questions","i'm ready","quiz","let's start"]:
         print("\nGreat! Let's move on to the quiz phase.")
         break
 
