@@ -70,18 +70,22 @@ agent = create_deep_agent(
 numberA = input("Enter the numerator (e.g., 35): ")
 numberB = input("Enter the denominator (e.g., 40): ")
 
-message = (f"""What is fraction?
-            What are numerators and denominators?
-            Can you give me examples?
-            Can you provide me with the relevant documentation?
-            Please calculate the fraction for {numberA} and {numberB}.
-            Crucially, you MUST use your view_image tool to display 'cake.png' to me right now.
-            """
-           )
+message = (
+    f"1. What is fraction?"
+    f"2. What are numerators and denominators?"
+    f"3. Can you give me examples?"
+    f"4. Can you provide me with the relevant documentation?"
+    f"5. Please calculate the fraction for {numberA} and {numberB}."
+    f"6. Crucially, you MUST use your view_image tool to display 'cake.png' to me right now."
+    f"CRITICAL REQUIREMENT: Keep your entire response extremely concise, direct, and under 120 words to save tokens."
+)
 
 result = agent.invoke(
     {"messages": [{"role": "user", "content": message}]},
-    config={"configurable": {"thread_id": "1"}},
+    config={
+        "configurable": {"thread_id": "1"},
+        "recursion_limit": 15
+    },
 )
 
 

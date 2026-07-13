@@ -74,10 +74,11 @@ agent = create_deep_agent(
 )
 
 
-message = f"""
-Please introduce the rules for multiplying and dividing fractions briefly. 
-End your message by asking the student if they have any questions or if they need an example before starting the quiz.
-"""
+message = (
+    f"1. Please introduce the rules for multiplying and dividing fractions briefly. \n"
+    f"2. End your message by asking the student if they have any questions or if they need an example before starting the quiz.\n"
+    f"3. CRITICAL REQUIREMENT: Keep your entire response extremely concise, direct, and under 120 words to save tokens."
+)
 
 print("\n Starting the Fraction Multiplication & Division Tutor...")
 
@@ -144,7 +145,10 @@ while True:
 
     result = agent.invoke(
         {"messages": [{"role": "user", "content": feedback_prompt}]},
-        config={"configurable": {"thread_id": "quiz_session_001"}},
+        config={
+            "configurable": {"thread_id": "quiz_session_001"},
+            "recursion_limit": 15
+        },
     )
 
     print("\n=== Tutor Feedback ===")
@@ -152,16 +156,29 @@ while True:
 
     if is_correct:
         print("\nCongratulations! You solved it!")
-        num1, den1, num2, den2, operation = fraction()
-        if operation == "multiply":
-            operation_symbol = "×"
-        else:
-            operation_symbol = "÷"
 
         print("\n==================================================")
-        print(f"🎉 Fantastic! It automatically generates the next challenge for you.：")
-        print(f"👉 What: {num1}/{den1} {operation_symbol} {num2}/{den2} = ?")
+        print("What would you like to do next?")
+        print("1. Keep practicing another question")
+        print("2. Move to another topic ")
         print("==================================================")
+        user_choice = get_input("Please enter option (1 or 2): ")
+
+        if user_choice.strip() == "2":
+            print("\nReturning to AI Math Tutor main menu...")
+            break
+        else:
+            print("\n==================================================")
+            print(f"🎉 Fantastic! It automatically generates the next challenge for you.：")
+            
+            num1, den1, num2, den2, operation = fraction()
+            if operation == "multiply":
+                operation_symbol = "×"
+            else:
+                operation_symbol = "÷"
+
+            print(f"👉 What: {num1}/{den1} {operation_symbol} {num2}/{den2} = ?")
+            print("==================================================")
 
     else:
         print("\nThe answer is not quite right. Don't give up, please recalculate the original problem and enter your answer again!")

@@ -3,6 +3,8 @@ from deepagents import create_deep_agent
 from deepagents.backends.filesystem import FilesystemBackend
 from langgraph.checkpoint.memory import MemorySaver
 import math
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 def ratio(numberA: float, numberB: float) -> str:
@@ -79,16 +81,20 @@ agent = create_deep_agent(
 numberA = input("Enter the first number (e.g., 35): ")
 numberB = input("Enter the second number (e.g., 40): ")
 
-message = ("What is ratio?" 
-           "What is proportion?" 
-           "Can you give me examples?" 
-           "Can you provide me with the relevant documentation?" 
-           f"Also, if I got {numberA} out of {numberB} marks in my quiz, can you calculate the ratio for me?"
-           )
+message = (
+    f"1. Briefly explain what ratio and proportion are with examples.\n"
+    f"2. Generate the visual helper chart using your tool for {numberA} and {numberB}.\n"
+    f"3. Calculate the simplified ratio for {numberA} and {numberB} using your tool.\n"
+    f"CRITICAL REQUIREMENT: Do NOT look for external web tools. Rely ONLY on your skill files. "
+    f"Keep the total response under 150 words to save tokens." 
+    )
 
 result = agent.invoke(
     {"messages": [{"role": "user", "content": message}]},
-    config={"configurable": {"thread_id": "1"}},
+    config={
+        "configurable": {"thread_id": "1"},
+        "recursion_limit": 15
+    },
 )
 
 

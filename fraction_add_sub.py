@@ -83,16 +83,22 @@ agent = create_deep_agent(
 )
 
 
-message = f"""What are the rules for adding and subtracting fractions with the same denominator?
-Can you give me everyday examples in Hong Kong?
-Crucially, you MUST execute your play_add_sub_video tool to open this exact link for me right now: {url}
-"""
+message = (
+    f"1. What are the rules for adding and subtracting fractions with the same denominator?\n"
+    f"2. Can you give me everyday examples in Hong Kong?\n"
+    f"3. Crucially, you MUST execute your play_add_sub_video tool to open this exact link for me right now: {url}\n"
+    f"CRITICAL REQUIREMENT: Do NOT look for external web tools. Rely ONLY on your skill files. "
+    f"CRITICAL REQUIREMENT: Keep your entire response extremely concise, direct, and under 120 words to save tokens." 
+    )
 
 print("Agent is thinking and preparing to open the video...")
 
 result = agent.invoke(
     {"messages": [{"role": "user", "content": message}]},
-    config={"configurable": {"thread_id": "add_sub_session_001"}},
+    config={
+        "configurable": {"thread_id": "add_sub_session_001"},
+        "recursion_limit": 15
+    },
 )
 
 print("\n=== Math Tutor Output ===")
@@ -150,7 +156,7 @@ while True:
         user_choice = get_input("Please enter option (1 or 2): ")
 
         if user_choice.strip() == "2":
-            print("\nReturning to Hong Kong AI Math Tutor main menu...")
+            print("\nReturning to AI Math Tutor main menu...")
             break
         else:
             print("\n==================================================")
