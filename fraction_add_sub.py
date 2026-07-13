@@ -140,7 +140,17 @@ while True:
     print(result["messages"][-1].content)
 
     if is_correct:
-        print("\nCongratulations! You've successfully passed this quiz!")
-        break
+        print("\nCongratulations! You solved it!")
+        num1, den1, num2, den2, operation = fraction()
+        if operation == "add":
+            operation_symbol = "+"
+        else:
+            operation_symbol = "-"
+
+        print("\n==================================================")
+        print(f"🎉 Fantastic! It automatically generates the next challenge for you.：")
+        print(f"👉 What: {num1}/{den1} {operation_symbol} {num2}/{den2} = ?")
+        print("==================================================")
+
     else:
         print("\nThe answer is not quite right. Don't give up, please recalculate the original problem and enter your answer again!")
