@@ -31,44 +31,6 @@ def fraction(numerator: float, denominator: float) -> str:
         decimal_result = numerator / denominator
         return f"The fraction of {numerator}/{denominator} is equivalent to the decimal value {decimal_result:.4f}."
 
-# def generate_fraction_chart(numerator: float, denominator: float) -> str:
-#     """
-#     Generates and saves an educational pie chart or visual diagram (JPG) representing the fraction.
-    
-#     """
-    
-#     if denominator <= 0 or numerator < 0 or not numerator.is_integer() or not denominator.is_integer():
-        
-#         fig, ax = plt.subplots(figsize=(5, 5))
-#         ax.text(0.5, 0.5, f"Visualizing: {numerator} / {denominator}", ha='center', va='center', fontsize=14)
-#         ax.axis('off')
-    
-#     else:
-#         num = int(numerator)
-#         den = int(denominator)
-
-#         if num <= den:
-#             fig, ax = plt.subplots(figsize=(5, 5))
-#             sizes = [num, den - num] if den > num else [num]
-#             colors = ['#3498db', '#ecf0f1'] if den > num else ['#3498db']
-#             labels = ['Selected Parts', 'Remaining'] if den > num else ['Whole']
-
-#             ax.pie(sizes, labels=labels, autopct=lambda p: '{:.0f} parts'.format(p * den / 100) if p > 0 else '',
-#                    colors=colors, startangle=90, wedgeprops={'edgecolor': 'black'})
-#             ax.set_title(f"Visualizing Fraction: {num}/{den}")
-            
-#         else:
-           
-#             fig, ax = plt.subplots(figsize=(6, 4))
-#             ax.bar(['Numerator (Parts)', 'Denominator (Whole)'], [num, den], color=['#3498db', '#e74c3c'], width=0.4)
-#             ax.set_ylabel('Values')
-#             ax.set_title(f"Improper Fraction Visual: {num}/{den}")
-
-#     output_filename = "fraction_visual.jpg"
-#     plt.savefig(output_filename, dpi=150, bbox_inches='tight')
-#     plt.close()
-#     return f"Success: Visual diagram generated and saved to file path: '{output_filename}'."
-
 def view_image(image_name: str) -> str:
     """Opens and displays an image file (like 'cake.png' or 'fraction_visual.jpg') directly on the student's screen.
     

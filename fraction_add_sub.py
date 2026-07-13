@@ -105,8 +105,8 @@ else:
     operation_symbol = "-"
 
 print("\n--------------------------------------------------")
-print(f"📝 Please answer this question：")
-print(f"👉 Question: {num1}/{den1} {operation_symbol} {num2}/{den2} = ?")
+print(f" Please answer this question：")
+print(f" Question: {num1}/{den1} {operation_symbol} {num2}/{den2} = ?")
 print("--------------------------------------------------")
 
 while True:
@@ -141,16 +141,28 @@ while True:
 
     if is_correct:
         print("\nCongratulations! You solved it!")
-        num1, den1, num2, den2, operation = fraction()
-        if operation == "add":
-            operation_symbol = "+"
-        else:
-            operation_symbol = "-"
-
+        
         print("\n==================================================")
-        print(f"🎉 Fantastic! It automatically generates the next challenge for you.：")
-        print(f"👉 What: {num1}/{den1} {operation_symbol} {num2}/{den2} = ?")
+        print("What would you like to do next?")
+        print("1. Keep practicing another question")
+        print("2. Move to another topic ")
         print("==================================================")
+        user_choice = get_input("Please enter option (1 or 2): ")
 
+        if user_choice.strip() == "2":
+            print("\nReturning to Hong Kong AI Math Tutor main menu...")
+            break
+        else:
+            print("\n==================================================")
+            print(f"🎉 Fantastic! It automatically generates the next challenge for you.：")
+            num1, den1, num2, den2, operation = fraction()
+            if operation == "add":
+                operation_symbol = "+"
+            else:
+                operation_symbol = "-"
+            
+            print(f"👉 What: {num1}/{den1} {operation_symbol} {num2}/{den2} = ?")
+            print("==================================================")
+        
     else:
         print("\nThe answer is not quite right. Don't give up, please recalculate the original problem and enter your answer again!")

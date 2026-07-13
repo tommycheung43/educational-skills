@@ -21,7 +21,7 @@ root_dir = "."
 backend = FilesystemBackend(root_dir=root_dir, virtual_mode=True)
 
 agent = create_deep_agent(
-    model="ollama:devstral-2:123b-cloud",
+    model="ollama:gemma4:cloud",
     backend=backend,
     tools=[percentage],
     skills=[str(Path(root_dir) / "skills")],
