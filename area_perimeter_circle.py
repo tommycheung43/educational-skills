@@ -42,7 +42,7 @@ def check_answer(radius: int, operation: str, student_result: float) -> bool:
     else:
         correct_result = 2 * math.pi * radius
 
-    return math.isclose(correct_result, student_result, rel_tol=1e-5)
+    return math.isclose(correct_result, student_result, abs_tol=0.1)
 
 
 checkpointer = MemorySaver()
@@ -113,7 +113,7 @@ else:
 print("\n--------------------------------------------------")
 print(f" Please answer this question:")
 print(f" A circle has a radius of {radius}cm.")
-print(f" What is the {operation_display} of this circle?")
+print(f" What is the {operation_display} of this circle? (answer rounded to 2 decimal places)")
 print("--------------------------------------------------")
 
 while True:
@@ -122,7 +122,7 @@ while True:
         ans_str = get_input(f"\nPlease answer the {operation_display}: ")
         ans_val = float(ans_str)
     except ValueError:
-        print("Input error! Please ensure you enter integer values.")
+        print("Input error! Please ensure you enter numeric values.")
         continue
 
     is_correct = check_answer(radius, operation, ans_val)
@@ -171,7 +171,7 @@ while True:
             else:
                 operation_display = "Perimeter"
 
-            print(f" What: A circle with radius={radius}. Find the {operation_display}.")
+            print(f" What: A circle with radius={radius}. Find the {operation_display}.(answer rounded to 2 decimal places)")
             print("==================================================")
 
     else:
