@@ -23,7 +23,7 @@ root_dir = "."
 backend = FilesystemBackend(root_dir=root_dir, virtual_mode=True)
 
 agent = create_deep_agent(
-    model="ollama:devstral-2:123b-cloud",
+    model="ollama:gemma4:cloud",
     backend=backend,
     tools=[run_script],
     skills=[str(Path(root_dir) / "skills")],
@@ -43,8 +43,10 @@ def main():
     print("  - Basic Fractions (fraction.py)")
     print("  - Adding & Subtracting Fractions (fraction_add_sub.py)")
     print("  - Multiplying & Dividing Fractions (fraction_muli_div.py)")
+    print("  - Area and Perimeter of Rectangles and Squares (area_perimeter_rectangle.py)")
+    print("  - Area and Perimeter of Circles (area_perimeter_circle.py)")
     
-    
+     
     while True:
         user_input = input("\n👉 What topic would you like to learn today? (or 'quit'): ")
         
