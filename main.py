@@ -45,6 +45,7 @@ def main():
     print("  - Multiplying & Dividing Fractions (fraction_muli_div.py)")
     print("  - Area and Perimeter of Rectangles and Squares (area_perimeter_rectangle.py)")
     print("  - Area and Perimeter of Circles (area_perimeter_circle.py)")
+    print("  - Area and Perimeter of Parallelograms (area_perimeter_parallelogram.py)")
     
      
     while True:
