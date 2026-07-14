@@ -22,26 +22,25 @@ def play_video(url: str) -> str:
     except Exception as e:
         return f"Error: Failed to open the browser. Reason: {str(e)}"
 
-url = "https://www.youtube.com/watch?v=rSVMrPu0__U"
+url = "https://www.youtube.com/watch?v=O-cawByg2aA"
 
-def rectangle_square():
-    """Generates random length and width for a rectangle or square area or perimeter problem."""
-    length = random.randint(2, 20)
-    width = random.randint(2, 20)
+def circle():
+    """Generates random radius for a circle area or perimeter problem."""
+    radius = random.randint(2, 20)
     operation = random.choice(["area", "perimeter"])
 
-    return length, width,operation
+    return radius, operation
 
 def get_input(message: str) -> str:
     """Handles getting textual or numerical input from the student via the terminal."""
     return input(message)
 
-def check_answer(length: int, width: int, operation: str, student_result: float) -> bool:
+def check_answer(radius: int, operation: str, student_result: float) -> bool:
     """Checks if the student's input matches the mathematically correct answer."""
     if operation == "area":
-        correct_result = length * width
+        correct_result = math.pi * (radius**2)
     else:
-        correct_result = 2 * (length + width)
+        correct_result = 2 * math.pi * radius
 
     return math.isclose(correct_result, student_result, rel_tol=1e-5)
 
@@ -65,17 +64,17 @@ agent = create_deep_agent(
 
 
 message = (
-    f"1. Please introduce the rules for calculating the area and perimeter of rectangles and squares. \n"
+    f"1. Please introduce the rules for calculating the area and perimeter of circles. \n"
     f"2. End your message by asking the student if they have any questions or if they need an example before starting the quiz.\n"
     f"3. CRITICAL REQUIREMENT: Keep your entire response extremely concise, direct, and under 120 words to save tokens."
 )
 
-print("\n Starting the Rectangle & Square Area & Perimeter Tutor...")
+print("\n Starting the Circle Area & Perimeter Tutor...")
 
 result = agent.invoke(
     {"messages": [{"role": "user", "content": message}]},
     config={
-        "configurable": {"thread_id": "rect_square_session_001"},
+        "configurable": {"thread_id": "circle_session_001"},
         "recursion_limit": 15
     },
 )
@@ -95,14 +94,14 @@ while True:
 
         result = agent.invoke(
             {"messages": [{"role": "user", "content": q_prompt}]},
-            config={"configurable": {"thread_id": "rect_square_session_001"}},
+            config={"configurable": {"thread_id": "circle_session_001"}},
         )
 
         print("\n=== Tutor Response ===")
         print(result["messages"][-1].content)
 
 
-length, width, operation = rectangle_square()
+radius, operation = circle()
 if operation == "area":
     operation_display = "Area"
 else:
@@ -110,23 +109,23 @@ else:
 
 print("\n--------------------------------------------------")
 print(f" Please answer this question:")
-print(f" A shape has a length of {length}cm and a width of {width}cm.")
-print(f" What is the {operation_display} of this shape?")
+print(f" A circle has a radius of {radius}cm.")
+print(f" What is the {operation_display} of this circle?")
 print("--------------------------------------------------")
 
 while True:
     
     try:
         ans_str = get_input(f"\nPlease answer the {operation_display}: ")
-        ans_val = int(ans_str)
+        ans_val = float(ans_str)
     except ValueError:
         print("Input error! Please ensure you enter integer values.")
         continue
 
-    is_correct = check_answer(length, width, operation, ans_val)
+    is_correct = check_answer(radius, operation, ans_val)
 
     feedback_prompt = f"""
-    The quiz problem: A shape with length={length}, width={width}. Find the {operation_display}.
+    The quiz problem: A circle with radius={radius}. Find the {operation_display}.
     The student answered: {ans_val}
     System Verification Result: {"CORRECT" if is_correct else "WRONG"}.
     
@@ -163,13 +162,13 @@ while True:
             print("\n==================================================")
             print(f" Fantastic! It automatically generates the next challenge for you.：")
             
-            length, width, operation = rectangle_square()
+            radius, operation = circle()
             if operation == "area":
                 operation_display = "Area"
             else:
                 operation_display = "Perimeter"
 
-            print(f" What: A shape with length={length}, width={width}. Find the {operation_display}.")
+            print(f" What: A circle with radius={radius}. Find the {operation_display}.")
             print("==================================================")
 
     else:
