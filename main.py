@@ -47,7 +47,9 @@ def main():
     print("  - Area and Perimeter of Circles (area_perimeter_circle.py)")
     print("  - Area and Perimeter of Parallelograms (area_perimeter_parallelogram.py)")
     print("  - Area and Perimeter of Triangles (area_perimeter_triangle.py)")
-     
+    print("  - Area and Perimeter of Trapezoids (area_perimeter_trapezoid.py)")
+    
+
     while True:
         user_input = input("\n👉 What topic would you like to learn today? (or 'quit'): ")
         
