@@ -84,7 +84,10 @@ print("\n Starting the Fraction Multiplication & Division Tutor...")
 
 result = agent.invoke(
     {"messages": [{"role": "user", "content": message}]},
-    config={"configurable": {"thread_id": "mult_div_session_001"}},
+    config={
+        "configurable": {"thread_id": "mult_div_session_001"},
+        "recursion_limit": 15
+    },
 )
 
 print("\n=== Math Tutor Output ===")
@@ -102,7 +105,10 @@ while True:
 
         result = agent.invoke(
             {"messages": [{"role": "user", "content": q_prompt}]},
-            config={"configurable": {"thread_id": "mult_div_session_001"}},
+            config={
+                "configurable": {"thread_id": "mult_div_session_001"},
+                "recursion_limit": 15
+            },
         )
 
         print("\n=== Tutor Response ===")

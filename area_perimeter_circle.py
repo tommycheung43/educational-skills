@@ -94,7 +94,10 @@ while True:
 
         result = agent.invoke(
             {"messages": [{"role": "user", "content": q_prompt}]},
-            config={"configurable": {"thread_id": "circle_session_001"}},
+            config={
+                "configurable": {"thread_id": "circle_session_001"},
+                "recursion_limit": 15
+            },
         )
 
         print("\n=== Tutor Response ===")
