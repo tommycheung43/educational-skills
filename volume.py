@@ -35,7 +35,7 @@ def shape() -> str:
     ]
 
     # shape = random.choice(shapes)
-    shape = "rectangular_prism"  # For testing purposes, you can set a specific shape here.
+    shape = "trapezoidal_prism"  # For testing purposes, you can set a specific shape here.
     return shape
 
 def volume(shape: str):
@@ -81,9 +81,10 @@ def volume(shape: str):
         base1, base2, height_2d, side1, side2, trap_type, _ = trapezoid()
         params = {
                     "base1": base1, "base2": base2, 
-                    "height_2d": height_2d, "side1": side1, 
-                    "side2": side2, "height_3d": height_3d, 
-                    "type": trap_type
+                    "height_2d": height_2d, 
+                    "side1": side1, "side2": side2, 
+                    "height_3d": height_3d
+                    
                 }
     
     elif shape in ["triangular_prism", "triangular_pyramid"]:
@@ -125,6 +126,14 @@ def volume_answer(shape: str, params: dict, student_result: float):
         base_area = rectangle_square_answer(params["length"], params["width"], "area", 0)[0]
         correct_vol = base_area * params["height_3d"]
 
+    elif shape == "trapezoidal_prism":
+        from area_perimeter_trapezoid import trapezoid_answer
+        base_area = trapezoid_answer(params["base1"], params["base2"], 
+                                     params["height_2d"], params["side1"], 
+                                     params["side2"],"area", params["height_3d"] 
+                                    )[0]
+        correct_vol = base_area * params["height_3d"]
+
     is_correct = math.isclose(correct_vol, student_result, abs_tol=0.1)
     return is_correct
 
@@ -144,7 +153,7 @@ def question(shape: str, params: dict) -> str:
         return f"A parallelogram prism has a base length of {params['base']}cm and base height of {params['height_2d']}cm, with a 3D height of {params['height_3d']}cm."
     
     elif shape == "trapezoidal_prism":
-        return f"A {params['type']} trapezoidal prism has bases of {params['base1']}cm and {params['base2']}cm, a 2D height of {params['height_2d']}cm, and a 3D height of {params['height_3d']}cm."
+        return f"A trapezoidal prism has bases of {params['base1']}cm and {params['base2']}cm, a 2D height of {params['height_2d']}cm, and a 3D height of {params['height_3d']}cm."
     
     elif shape == "triangular_prism":
         type_str = "right-angled" if params['is_right'] else "non-right-angled"
