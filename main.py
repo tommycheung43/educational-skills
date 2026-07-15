@@ -1,3 +1,4 @@
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -12,6 +13,9 @@ def run_script(script_name: str) -> str:
         return f"Error: {script_name} not found."
     
     try:
+        env = os.environ.copy()
+        env["LAUNCHED_FROM_MAIN"] = "True"
+        
         subprocess.run(["uv", "run", str(script_path)], check=True)
         return f"Successfully executed {script_name}."
     except Exception as e:
@@ -48,6 +52,7 @@ def main():
     print("  - Area and Perimeter of Parallelograms (area_perimeter_parallelogram.py)")
     print("  - Area and Perimeter of Triangles (area_perimeter_triangle.py)")
     print("  - Area and Perimeter of Trapezoids (area_perimeter_trapezoid.py)")
+    print("  - Volume of different shapes (volume.py)")
     
 
     while True:
