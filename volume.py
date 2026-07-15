@@ -35,7 +35,7 @@ def shape() -> str:
     ]
 
     # shape = random.choice(shapes)
-    shape = "cylinder"
+    shape = "parallelogram_prism"
     return shape
 
 def volume(shape: str):
@@ -51,6 +51,13 @@ def volume(shape: str):
         radius, _ = circle()
         params = {
                     "radius": radius, "height_3d": height_3d
+                }
+    
+    elif shape == "sphere":
+        from area_perimeter_circle import circle
+        radius, _ = circle()
+        params = {
+                    "radius": radius
                 }
 
     elif shape == "parallelogram_prism":
@@ -105,6 +112,11 @@ def volume_answer(shape: str, params: dict, student_result: float):
         base_area = circle_answer(params["radius"], "area", 0)[0]
         correct_vol = base_area * params["height_3d"]
 
+    elif shape == "parallelogram_prism":
+        from area_perimeter_parallelogram import parallelogram_answer
+        base_area = parallelogram_answer(params["base"], params["height_2d"], params["slant_side"], "area", 0)[0]
+        correct_vol = base_area * params["height_3d"]
+
     is_correct = math.isclose(correct_vol, student_result, abs_tol=0.1)
     return is_correct
 
@@ -117,17 +129,17 @@ def question(shape: str, params: dict) -> str:
     elif shape == "cylinder":
         return f"A cylinder has a base radius of {params['radius']}cm and a height of {params['height_3d']}cm."
     
-    elif shape == "parallelogram prism":
+    elif shape == "parallelogram_prism":
         return f"A parallelogram prism has a base length of {params['base']}cm and base height of {params['height_2d']}cm, with a 3D height of {params['height_3d']}cm."
     
-    elif shape == "trapezoidal prism":
+    elif shape == "trapezoidal_prism":
         return f"A {params['type']} trapezoidal prism has bases of {params['base1']}cm and {params['base2']}cm, a 2D height of {params['height_2d']}cm, and a 3D height of {params['height_3d']}cm."
     
-    elif shape == "triangular prism":
+    elif shape == "triangular_prism":
         type_str = "right-angled" if params['is_right'] else "non-right-angled"
         return f"A {type_str} triangular prism has a base length of {params['base']}cm, a 2D height of {params['height_2d']}cm, and a 3D height of {params['height_3d']}cm."
     
-    elif shape == "triangular pyramid":
+    elif shape == "triangular_pyramid":
         return f"A triangular pyramid has a triangle base (length {params['base']}cm, 2D height {params['height_2d']}cm) and a 3D height of {params['height_3d']}cm."
     
     elif shape == "sphere":

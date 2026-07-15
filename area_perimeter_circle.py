@@ -6,7 +6,7 @@ import webbrowser
 import random
 import math
 
-from main import run_script
+
 
 def play_video(url: str) -> str:
     """Opens the student's default web browser to play a tutorial video.
@@ -166,6 +166,7 @@ if __name__ == "__main__":
             user_choice = get_input("Please enter option (1 or 2): ")
 
             if user_choice.strip() == "2":
+                from main import run_script
                 import os
                 print("\nReturning to AI Math Tutor main menu...")
                 if os.environ.get("LAUNCHED_FROM_MAIN") != "True":
