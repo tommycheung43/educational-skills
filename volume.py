@@ -35,7 +35,7 @@ def shape() -> str:
     ]
 
     # shape = random.choice(shapes)
-    shape = "trapezoidal_prism"  # For testing purposes, you can set a specific shape here.
+    shape = "triangular_prism"  # For testing purposes, you can set a specific shape here.
     return shape
 
 def volume(shape: str):
@@ -130,8 +130,15 @@ def volume_answer(shape: str, params: dict, student_result: float):
         from area_perimeter_trapezoid import trapezoid_answer
         base_area = trapezoid_answer(params["base1"], params["base2"], 
                                      params["height_2d"], params["side1"], 
-                                     params["side2"],"area", params["height_3d"] 
+                                     params["side2"],"area", 0 
                                     )[0]
+        correct_vol = base_area * params["height_3d"]
+
+    elif shape == "triangular_prism":
+        from area_perimeter_triangle import triangle_answer
+        base_area = triangle_answer(params["base"], params["height_2d"], 
+                                    params["hypotenuse"], params["is_right"], 
+                                    "area", 0)[0] 
         correct_vol = base_area * params["height_3d"]
 
     is_correct = math.isclose(correct_vol, student_result, abs_tol=0.1)
@@ -162,7 +169,11 @@ def question(shape: str, params: dict) -> str:
     elif shape == "triangular_pyramid":
         return f"A triangular pyramid has a triangle base (length {params['base']}cm, 2D height {params['height_2d']}cm) and a 3D height of {params['height_3d']}cm."
     
-    
+    elif shape == "triangular_prism":
+        from area_perimeter_triangle import triangle_answer
+        base_area = triangle_answer(params["base"], params["height_2d"], params["hypotenuse"], params["is_right"], "area", 0)[0]
+        correct_vol = base_area * params["height_3d"]
+
     return ""
 
 
