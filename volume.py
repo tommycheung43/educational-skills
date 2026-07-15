@@ -35,7 +35,7 @@ def shape() -> str:
     ]
 
     # shape = random.choice(shapes)
-    shape = "parallelogram_prism"
+    shape = "rectangular_prism"  # For testing purposes, you can set a specific shape here.
     return shape
 
 def volume(shape: str):
@@ -112,9 +112,17 @@ def volume_answer(shape: str, params: dict, student_result: float):
         base_area = circle_answer(params["radius"], "area", 0)[0]
         correct_vol = base_area * params["height_3d"]
 
+    elif shape == "sphere":
+        correct_vol = (4 / 3) * math.pi * (params["radius"] ** 3)
+
     elif shape == "parallelogram_prism":
         from area_perimeter_parallelogram import parallelogram_answer
         base_area = parallelogram_answer(params["base"], params["height_2d"], params["slant_side"], "area", 0)[0]
+        correct_vol = base_area * params["height_3d"]
+
+    elif shape == "rectangular_prism":
+        from area_perimeter_rectangle import rectangle_square_answer
+        base_area = rectangle_square_answer(params["length"], params["width"], "area", 0)[0]
         correct_vol = base_area * params["height_3d"]
 
     is_correct = math.isclose(correct_vol, student_result, abs_tol=0.1)
@@ -123,12 +131,15 @@ def volume_answer(shape: str, params: dict, student_result: float):
 
 def question(shape: str, params: dict) -> str:
     """Helper to format the math problem string dynamically."""
-    if shape == "rectangular prism":
+    if shape == "rectangular_prism":
         return f"A rectangular prism has a base of {params['length']}cm by {params['width']}cm, and a height of {params['height_3d']}cm."
     
     elif shape == "cylinder":
         return f"A cylinder has a base radius of {params['radius']}cm and a height of {params['height_3d']}cm."
     
+    elif shape == "sphere":
+        return f"A sphere has a radius of {params['radius']}cm."
+
     elif shape == "parallelogram_prism":
         return f"A parallelogram prism has a base length of {params['base']}cm and base height of {params['height_2d']}cm, with a 3D height of {params['height_3d']}cm."
     
@@ -142,8 +153,6 @@ def question(shape: str, params: dict) -> str:
     elif shape == "triangular_pyramid":
         return f"A triangular pyramid has a triangle base (length {params['base']}cm, 2D height {params['height_2d']}cm) and a 3D height of {params['height_3d']}cm."
     
-    elif shape == "sphere":
-        return f"A sphere has a radius of {params['radius']}cm."
     
     return ""
 
