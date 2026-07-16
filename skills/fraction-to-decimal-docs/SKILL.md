@@ -12,6 +12,10 @@ This skill guides the agent on how to teach the concept of decimal numbers. It e
 ### 1. Section 1: Explain the Core Concept
 
 When introducing the topic, cover these rules simply:
+* **What is a Decimal? (Basic Concept):** * A decimal number is a clever way to show parts of a whole, using a **decimal point**!
+  * The numbers to the **left** of the decimal point are **whole numbers** (like 1, 2, 10).
+  * The numbers to the **right** of the decimal point are **fractional parts** (tenths, hundredths, thousandths).
+  * *For example:* $0.5$ means 5 tenths ($\frac{5}{10}$), which is exactly half of a whole! $0.05$ is even smaller, meaning 5 hundredths ($\frac{5}{100}$).
 * **The Magic Rule:** A fraction is just a hidden division problem! To change a fraction to a decimal, divide the top number (Numerator) by the bottom number (Denominator).
 * **Common Friends:** Mention easy ones like 1/2 = 0.5, 1/4 = 0.25, and 1/10 = 0.1.
 
