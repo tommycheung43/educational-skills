@@ -1,3 +1,4 @@
+from ast import If
 from pathlib import Path
 from deepagents import create_deep_agent
 from deepagents.backends.filesystem import FilesystemBackend
@@ -23,38 +24,39 @@ def play_video(url: str) -> str:
     except Exception as e:
         return f"Error: Failed to open the browser. Reason: {str(e)}"
 
-url = "https://www.youtube.com/watch?v=guBVW5PiHLs"
+url = "https://www.youtube.com/watch?v=PnwLv6khwk8"
 
-def fraction_to_decimal():
+def decimal_add_sub():
     """
-    Generates a fraction suitable for primary students to convert to a decimal.
-    We pick denominators that result in clean, non-repeating decimals mostly.
+    Generates two random decimals with 1 or 2 decimal places,
+    and randomly chooses between addition (+) and subtraction (-).
     """
-    denominator = random.randint(2, 20)
+    num1 = round(random.uniform(5.0, 50.0), random.choice([1, 2]))
+    num2 = round(random.uniform(1.0, 20.0), random.choice([1, 2]))
+    operation = random.choice(["+", "-"])
     
-    # Ensure numerator is smaller than denominator so it's < 1
-    numerator = random.randint(1, denominator - 1)
+    if operation == "-" and num1 < num2:
+        num1, num2 = num2, num1
     
-    return numerator, denominator
+    return num1, num2, operation
 
 
 def get_input(message: str) -> str:
     """Handles getting textual or numerical input from the student via the terminal."""
     return input(message)
 
-def fraction_to_decimal_answer(numerator: int, denominator: int, student_result: float):
+def decimal_add_sub_answer(num1: float, num2: float, operation: str, student_result: float):
     """
     Checks if the student's input matches the mathematically correct answer.
-    Accepts:
-    1. The exact decimal representation (with 0.001 tolerance).
-    2. Standard school rounding to 2 decimal places (half-up, e.g., 1/3 -> 0.33, 2/3 -> 0.67, 1/8 -> 0.13).
-    3. Banker's rounding to 2 decimal places (Python default, e.g., 1/8 -> 0.12).
     """
     
-    fraction_to_decimal_correct_answer = numerator / denominator
+    if operation == "+":
+        decimal_add_sub_correct_answer = num1 + num2
+    else:
+        decimal_add_sub_correct_answer = num1 - num2
 
-    is_correct = math.isclose(fraction_to_decimal_correct_answer, student_result, abs_tol=0.01)
-    return is_correct, fraction_to_decimal_correct_answer
+    is_correct = math.isclose(decimal_add_sub_correct_answer, student_result, abs_tol=0.01)
+    return is_correct, decimal_add_sub_correct_answer
 
 if __name__ == "__main__":
     checkpointer = MemorySaver()
@@ -75,17 +77,18 @@ if __name__ == "__main__":
     )
 
     message = (
-        f"1. Please introduce the concept of converting Fractions to Decimals following the fraction-to-decimal-docs skill. \n"
-        f"2. End your message by asking the student if they have any questions, if they need an example, or if they are ready to start.\n"
-        f"3. CRITICAL REQUIREMENT: Keep your entire response extremely concise, direct, and under 120 words to save tokens."
+        f"1. Introduce the concept of Decimal Addition and Subtraction using the decimal-add-sub-docs skill.\n"
+        f"2. Emphasize aligning decimal points and using zero placeholders.\n"
+        f"3. Ask the student if they want an example, have questions, or are ready to start the quiz.\n"
+        f"4. CRITICAL REQUIREMENT: Keep your response extremely concise (under 120 words)."
     )
 
-    print("\n Starting the Fraction to Decimal Tutor...")
+    print("\n Starting the Decimal Addition and Subtraction Tutor...")
 
     result = agent.invoke(
         {"messages": [{"role": "user", "content": message}]},
         config={
-            "configurable": {"thread_id": "fraction_decimal_session_001"},
+            "configurable": {"thread_id": "decimal_add_sub_session_001"},
             "recursion_limit": 15
         },
     )
@@ -94,19 +97,22 @@ if __name__ == "__main__":
     print(result["messages"][-1].content)
 
     while True:
-        student_q = get_input("\nAsk a question, request a review of basic fractions, or type 'ready' to start:")
+        student_q = get_input("\nAsk a question, request a review of basic decimals, or type 'ready' to start:")
 
         if student_q.lower().strip() in ["yes","no question", "ready", "start", "none","nope","no questions","i'm ready","quiz","let's start"]:
             print("\nGreat! Let's move on to the quiz phase.")
             break
 
         else:
-            q_prompt = f"The student asks: '{student_q}'. Answer their question based on fraction-to-decimal-docs. If they need to review basic fractions, USE the run_script tool to launch 'fraction.py'. Ask if they are ready for the quiz."
+            q_prompt = (f"The student asks: '{student_q}'. Answer their question based on decimal-add-sub-docs."
+                        f"If they need to review basic decimals, USE the `run_script` tool to launch 'fraction_to_decimal.py'."
+                        f"Ask if they are ready for the quiz."
+            )
 
             result = agent.invoke(
                 {"messages": [{"role": "user", "content": q_prompt}]},
                 config={
-                    "configurable": {"thread_id": "fraction_decimal_session_001"},
+                    "configurable": {"thread_id": "decimal_add_sub_session_001"},
                     "recursion_limit": 15
                 },
             )
@@ -114,34 +120,33 @@ if __name__ == "__main__":
             print("\n=== Tutor Response ===")
             print(result["messages"][-1].content)
 
-    numerator, denominator = fraction_to_decimal()
+    num1, num2, operation = decimal_add_sub()
 
     print("\n--------------------------------------------------")
     print(f" Please answer this question:")
-    print(f" Convert this fraction into a decimal: {numerator}/{denominator}")
-    print(" (If the decimal is a repeating or long decimal, you may round it to 2 decimal places!)")
+    print(f" {num1} {operation} {num2} = ?")
     print("--------------------------------------------------")
 
     while True:
         
         try:
-            ans_str = get_input(f"\nPlease answer the decimal value: ")
+            ans_str = get_input(f"\nPlease answer: ")
             ans_val = float(ans_str)
         except ValueError:
             print("Input error! Please ensure you enter a valid number.")
             continue
 
-        is_correct,fraction_to_decimal_correct_answer = fraction_to_decimal_answer(numerator, denominator, ans_val)
+        is_correct, decimal_add_sub_correct_answer = decimal_add_sub_answer(num1, num2, operation, ans_val)
 
         feedback_prompt = f"""
-        The quiz problem: Convert {numerator}/{denominator} to a decimal.
+        The quiz problem: {num1} {operation} {num2}
         The student answered: {ans_val}
         System Verification Result: {"CORRECT" if is_correct else "WRONG"}.
         
         Please respond directly to the student:
         - If CORRECT: Congratulate them with Hong Kong style energy and confirm they solved it.
         - If WRONG: Gently tell them it's incorrect, 
-            guide them on the formula (Numerator ÷ Denominator) WITHOUT giving away the exact correct decimal answer, 
+            Remind them to align decimal points and try again WITHOUT giving away the correct answer, 
             and firmly state they must try again now.
         """
 
@@ -176,9 +181,8 @@ if __name__ == "__main__":
             else:
                 print("\n==================================================")
                 print(f" Fantastic! It automatically generates the next challenge for you.:")
-                numerator, denominator = fraction_to_decimal()
-                print(f" Convert this fraction into a decimal: {numerator}/{denominator}")
-                print(" (If the decimal is a repeating or long decimal, you may round it to 2 decimal places!)")
+                num1, num2, operation = decimal_add_sub()
+                print(f" {num1} {operation} {num2} = ?")
                 print("==================================================")
 
         else:

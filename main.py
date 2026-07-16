@@ -54,7 +54,7 @@ def main():
     print("  - Area and Perimeter of Trapezoids (area_perimeter_trapezoid.py)")
     print("  - Volume of different shapes (volume.py)")
     print("  - Decimals (fraction_to_decimal.py)")
-    
+    print("  - Decimals Adding & Subtracting (decimal_add_sub.py)")
     
 
     while True:
