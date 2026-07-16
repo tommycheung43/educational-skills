@@ -55,7 +55,8 @@ def main():
     print("  - Volume of different shapes (volume.py)")
     print("  - Decimals (fraction_to_decimal.py)")
     print("  - Decimals Adding & Subtracting (decimal_add_sub.py)")
-    
+    print("  - Decimals Multiplication & Division (decimal_mult_div.py)")
+
 
     while True:
         user_input = input("\n👉 What topic would you like to learn today? (or 'quit'): ")

@@ -132,30 +132,58 @@ if __name__ == "__main__":
     print(f" Please answer this question:")
     print(f" {num1} {operation} {num2} = ?")
     print(" (If the decimal is long, you may round it to 2 decimal places!)")
+    print(" (If you are stuck, you can type 'explain' or 'example'!)")
     print("--------------------------------------------------")
 
     while True:
         
+        ans_str = get_input(f"\nPlease answer:(or ask a question / request an example) ").strip()
+
+        if ans_str.lower() in ["quit", "exit"]:
+            print("Exiting quiz...")
+            break
+        is_numeric = False
+
         try:
-            ans_str = get_input(f"\nPlease answer: ")
             ans_val = float(ans_str)
+            is_numeric = True
+
         except ValueError:
-            print("Input error! Please ensure you enter a valid number.")
-            continue
+            is_numeric = False
 
-        is_correct, decimal_mult_div_correct_answer = decimal_mult_div_answer(num1, num2, operation, ans_val)
+        if is_numeric:
+            is_correct, decimal_mult_div_correct_answer = decimal_mult_div_answer(num1, num2, operation, ans_val)
 
-        feedback_prompt = f"""
-        The quiz problem: {num1} {operation} {num2}
-        The student answered: {ans_val}
-        System Verification Result: {"CORRECT" if is_correct else "WRONG"}.
-        
-        Please respond directly to the student:
-        - If CORRECT: Congratulate them with Hong Kong style energy and confirm they solved it.
-        - If WRONG: Gently tell them it's incorrect, 
-            Remind them on the rule (counting places for multiplication or shifting for division) and try again WITHOUT giving away the correct answer, 
-            and firmly state they must try again now.
-        """
+            feedback_prompt = f"""
+            The quiz problem: {num1} {operation} {num2}
+            The student answered: {ans_val}
+            System Verification Result: {"CORRECT" if is_correct else "WRONG"}.
+            
+            Please respond directly to the student:
+            - If CORRECT: Congratulate them with Hong Kong style energy and confirm they solved it.
+            - If WRONG: Gently tell them it's incorrect, 
+                Remind them on the rule (counting places for multiplication or shifting for division) and try again WITHOUT giving away the correct answer, 
+                and firmly state they must try again now.
+            """
+        else:
+            # Student typed text (Could be: explanation request, example request, typo, or off-topic)
+            is_correct = False
+            feedback_prompt = f"""
+            The quiz problem is: Calculate {num1} {operation} {num2}
+            The student did not enter a numeric answer. Instead, they wrote: "{ans_str}"
+            
+            Please evaluate the student's input according to decimal-mult-div-docs:
+            1. Did the student ask for an explanation (e.g., "explain", "how to do this", "help")?
+            2. Did the student ask for an example (e.g., "give me an example", "show me a different one")?
+            3. Did the student ask for an video (e.g., "give me an video", "show me a vide example")?
+            3. Did the student enter a wrong input format, typo, or off-topic statement?
+            
+            Based on this evaluation, please respond directly to the student:
+            - If EXPLANATION: Gently explain the mathematical steps to solve {num1} {operation} {num2} but DO NOT give away the final answer! Keep the challenge active.
+            - If EXAMPLE: Provide a brand-new, step-by-step localized Hong Kong example of a similar calculation and solve it fully. Then encourage them to try the active quiz problem ({num1} {operation} {num2}) using that same method.
+            - If EXAMPLE: Provide a video using the `play_video` tool.
+            - If WRONG/INVALID/Off-topic: Politely guide them back, explaining that they should either enter a numerical answer or ask a math question if they are stuck.
+            """
 
         result = agent.invoke(
             {"messages": [{"role": "user", "content": feedback_prompt}]},
@@ -168,7 +196,7 @@ if __name__ == "__main__":
         print("\n=== Tutor Feedback ===")
         print(result["messages"][-1].content)
 
-        if is_correct:
+        if is_numeric and is_correct:
             print("\nCongratulations! You solved it!")
 
             print("\n==================================================")
@@ -192,5 +220,5 @@ if __name__ == "__main__":
                 print(f" {num1} {operation} {num2} = ?")
                 print("==================================================")
 
-        else:
+        elif is_numeric and not is_correct:
             print("\nThe answer is not quite right. Don't give up, please recalculate the original problem and enter your answer again!")
