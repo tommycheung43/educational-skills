@@ -1,9 +1,9 @@
 ---
-name: fraction-muli-div-docs
+name: fraction-mult-div-docs
 description: Use this skill to explain multiplying and dividing fractions, answer student questions, and provide Hong Kong localized examples when requested.
 ---
 
-# fraction-muli-div-docs
+# fraction-mult-div-docs
 
 ## Overview
 This skill guides the agent on how to teach fraction multiplication and division. It emphasizes a conversational approach where the agent introduces concepts briefly and then lets the student guide the learning through questions.
