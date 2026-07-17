@@ -59,6 +59,7 @@ def main():
     print("  - Basic Equation Concept (elementary_algebra.py)")
     print("  - Simple Equation (simple_equation.py)")
     print("  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)")
+    print("  - Negative Numbers (negative_number_arithmetic.py)")
 
     while True:
         user_input = input("\n👉 What topic would you like to learn today? (or 'quit'): ")
