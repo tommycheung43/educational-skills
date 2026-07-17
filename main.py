@@ -56,6 +56,8 @@ def main():
     print("  - Decimals (fraction_to_decimal.py)")
     print("  - Decimals Adding & Subtracting (decimal_add_sub.py)")
     print("  - Decimals Multiplication & Division (decimal_mult_div.py)")
+    print("  - Basic Equation Concept (elementary_algebra.py)")
+    print("  - Simple Equation (simple_equation.py)")
 
 
     while True:

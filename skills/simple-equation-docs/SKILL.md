@@ -1,46 +1,42 @@
 ---
-name: elementary-algebra-docs
-description: Use this skill to explain the basic concepts of elementary algebra, solve one-step equations, answer student questions, and provide Hong Kong localized examples when requested.
+name: simple-equation-docs
+description: Use this skill to explain the basic concepts of solving two-step simple equations, answer student questions, and provide Hong Kong localized examples when requested.
 ---
 
-# elementary-algebra-docs
+# simple-equations-docs
 
 ## Overview
-This skill guides the agent on elementary algebra (solving one-step equations with variables) to primary students. It explains the concept of variables, balancing equations using inverse operations,and provide Hong Kong localized examples for primary students.
+This skill guides the agent on teaching two-step simple equations to primary/early secondary students. It builds on elementary algebra by introducing the concept of undoing operations in the reverse order of BEDMAS/BODMAS (undoing addition/subtraction first, then multiplication/division).
 
 ## Instructions
 
 ### 1. Section 1: Explain the Core Concept
 
 When introducing the topic, cover these rules simply:
-* **The Mystery Box (Variables):** Explain that letters like x or y are just "mystery boxes" hiding a secret number. Our job is to find out what number is inside!
-* **The Balancing Scale (Equations):** An equation is like a weighing scale. The equal sign (=) means both sides weigh exactly the same. Whatever you do to one side, you MUST do to the other side!
-* **Inverse Operations (Doing the Opposite):** To find the mystery number, we use the opposite magic:
-  * If the equation has Addition (+), we Subtract (-).
-  * If it has Subtraction (-), we Add (+).
-  * If it has Multiplication (x), we Divide (/).
-  * If it has Division (/), we Multiply (x).
+* **The Onion Strategy:** Solving a two-step equation is like peeling an onion. You have to remove the outside layers first before getting to the center (the variable).
+* **Constant (常數 - The Outer Layer):** Explain that the **constant** is the standalone number that doesn't change (like the $+ 5$ in $3x + 5 = 20$). Because it is on the very outside of our variable, we must peel (undo) it first!
+* **Coefficient (係數 - The Inner Layer):** Explain that the **coefficient** is the number multiplied by or divided by the variable (like the $3$ in $3x$). It is glued tightly to our "mystery box" (variable) and must be peeled (undo) last.
+* **Step 1 (Undo Addition/Subtraction):** First, look for any numbers being added to or subtracted from the variable term. Use inverse operations to move them to the other side.
+* **Step 2 (Undo Multiplication/Division):** Next, isolate the "mystery box" completely by undoing any multiplication or division attached to the variable.
 
-### 2. Section 2: Basic Decimal Review (CRITICAL REQUIREMENT)
-If the student struggles with arithmetic operations (adding, subtracting, multiplying, or dividing), or explicitly asks to review 
+
+### 2. Section 2: Basic Algebra Review (CRITICAL REQUIREMENT)
+If the student struggles with arithmetic operations, or explicitly asks to review 
 * You MUST inform them that you will temporarily switch to a specialized review session to build their foundation.
-* For basic decimal representation review, use the `run_script` tool to launch: `fraction_to_decimal.py`.
-* For adding and subtracting decimals review, use the `run_script` tool to launch: `decimal_add_sub.py`.
-* For Multiplication and Division decimals review, use the `run_script` tool to launch: `decimal_mult_div.py`.
-* For Multiplication and Division Fraction review, use the `run_script` tool to launch: `fraction_mult_div`.
+* Use the `run_script` tool: `elementary_algebra.py`,`fraction_add_sub.py` or `fraction_mult_div.py` depending on the operation they struggle with.
+
 
 ### 3. Section 3: Interactive Q&A and Examples
 If the student asks a question or requests an example before the quiz:
-* **Octopus Card (Addition/Subtraction):** "Imagine you had some money $x$ in your Octopus card. You added $20, and now you have $50. We write: x + 20 = 50. To find x, we do the opposite: 50 - 20 = 30. So, x = 30!"
-* **Buying Stationery (Multiplication/Division):** "You bought 4 identical pens, and the total cost is $48. Let the cost of one pen be y. We write: 4y = 48. To find y, we do the opposite: 48 / 4 = 12. So, each pen costs $12!"
+* **Buying Bubble Tea (Multiplication & Addition):** "Imagine you bought 3 identical cups of bubble tea and a $5 plastic bag. The total is $65. Let a cup of bubble tea be y. We write: 3y + 5 = 65. First, take away the bag's cost: 65 - 5 = 60. Now we know 3 cups cost $60. Divide by 3: 60 / 3 = 20. Each cup is $20!"
+* **Sharing Dim Sum (Division & Subtraction):** Provide a similar step-by-step example using division and subtraction in a Hong Kong context.
 
 Always ask if they have more questions or if they are ready to begin the quiz.
 
 ### 4. Section 4: Video Tutorial Display (Provided on Request)
 CRITICAL INSTRUCTION: If the student explicitly asks for a video, tutorial, or visual clip, you MUST execute the `play_video` tool using one of these exact URLs:
 
-- **For Basic algebra, equation concept:** https://www.youtube.com/watch?v=NybHckSEQBI
-- **For Basic solving algebra, equation:** https://www.youtube.com/watch?v=l3XzepN03KQ&t=352s
+- **For 2-Steps Equations, concept:** https://www.youtube.com/watch?v=LDIiYKYvvdA&t=4s
 
 Do NOT make up, guess, or hallucinate any other video IDs or URLs. After executing the tool with the correct link, explicitly tell the student in your response: "I have opened an excellent YouTube video tutorial by Math Antics in your browser to help you learn more!"
 
