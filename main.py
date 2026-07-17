@@ -58,7 +58,7 @@ def main():
     print("  - Decimals Multiplication & Division (decimal_mult_div.py)")
     print("  - Basic Equation Concept (elementary_algebra.py)")
     print("  - Simple Equation (simple_equation.py)")
-
+    print("  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)")
 
     while True:
         user_input = input("\n👉 What topic would you like to learn today? (or 'quit'): ")
