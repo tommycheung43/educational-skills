@@ -31,7 +31,7 @@ def speed():
     Randomly selects which variable the student needs to find.
     
     Returns:
-        tuple: (speed_question, speed_correct_answer_float)
+        dict: Contains question_type, distance, speed, time, and correct_answer
     """
     question_type = random.choice(["speed", "distance", "time"])
     speed = random.randint(10, 200)
@@ -39,27 +39,55 @@ def speed():
     distance = speed * time
     
     if question_type == "speed":
-        speed_question = f"A car travels a distance of {distance} km in {time} hours. What is its average speed (in km/h)?"
-        speed_correct_answer_float = float(speed)
+        speed_correct_answer = float(speed)
     elif question_type == "distance":
-        speed_question = f"A train travels at a speed of {speed} km/h for {time} hours. What is the total distance traveled (in km)?"
-        speed_correct_answer_float = float(distance)
+        speed_correct_answer = float(distance)
     else:
-        speed_question = f"A bus needs to travel {distance} km. If its speed is {speed} km/h, how many hours will it take?"
-        speed_correct_answer_float = float(time)
+        speed_correct_answer = float(time)
 
-    return speed_question, speed_correct_answer_float
+    return {
+        "question_type": question_type,
+        "distance": distance,
+        "speed": speed,
+        "time": time,
+        "speed_correct_answer": speed_correct_answer
+    }
+
+def speed_question_text(agent, speed_dict: dict):
+    """Uses the AI Agent to generate localized word problems based on given numeric parameters."""
+    prompt = f"""
+    Based on speed-docs, please generate a creative and localized Hong Kong word problem using these EXACT numerical values:
+    - Target to solve for: {speed_dict['question_type'].upper()}
+    - Distance: {speed_dict['distance']} km
+    - Speed: {speed_dict['speed']} km/h
+    - Time: {speed_dict['time']} hours
+    
+    Requirements:
+    1. Use Hong Kong contexts (e.g., MTR, Star Ferry, Red Minibus, walking in Mong Kok, Tram).
+    2. Clearly ask the student to calculate the target ({speed_dict['question_type']}).
+    3. Keep it under 2 sentences and directly state the problem to the student.
+    """
+
+    result = agent.invoke(
+        {"messages": [{"role": "user", "content": prompt}]},
+        config={
+            "configurable": {"thread_id": "speed_quiz_gen_001"},
+            "recursion_limit": 15
+        },
+    )
+
+    return result["messages"][-1].content
 
 
 def get_input(message: str) -> str:
     """Handles getting textual or numerical input from the student via the terminal."""
     return input(message)
 
-def speed_check_answer(speed_correct_answer_float: float, student_result: float):
+def speed_check_answer(speed_correct_answer: float, student_result: float):
     """
     Checks if the student's input matches the mathematically correct answer.
     """
-    is_correct = math.isclose(speed_correct_answer_float, student_result, abs_tol=0.01)
+    is_correct = math.isclose(speed_correct_answer, student_result, abs_tol=0.01)
     return is_correct
 
 if __name__ == "__main__":
@@ -126,7 +154,9 @@ if __name__ == "__main__":
             print("\n=== Tutor Response ===")
             print(result["messages"][-1].content)
 
-    speed_question, speed_correct_answer_float = speed()
+    speed_dict = speed()
+    speed_question = speed_question_text(agent, speed_dict)
+    speed_correct_answer = speed_dict["speed_correct_answer"]
 
     print("\n--------------------------------------------------")
     print(f" Please answer this question:")
@@ -152,7 +182,7 @@ if __name__ == "__main__":
             is_numeric = False
 
         if is_numeric:
-            is_correct = speed_check_answer(speed_correct_answer_float, ans_val)
+            is_correct = speed_check_answer(speed_correct_answer, ans_val)
 
             feedback_prompt = f"""
             The quiz problem: Solve {speed_question}
@@ -177,7 +207,7 @@ if __name__ == "__main__":
             2. Did the student ask for an example (e.g., "give me an example", "show me a different one")?
             3. Did the student ask for an video (e.g., "give me an video", "show me a vide example")?
             4. Did the student enter a wrong input format, typo, or off-topic statement?
-            5. Did the student ask to review another topic? If so, use `run_script` to launch that topic's file, and welcome them back to this Speed question once finished.
+            5. Did the student ask to review another topic? If so, use `run_script` to launch the appropriate python file from this list:{menu_mapping}, and welcome them back to this Speed question once finished.
 
             Based on this evaluation, please respond directly to the student:
             - If EXPLANATION: Gently explain the mathematical steps to solve {speed_question} but DO NOT give away the final answer! Keep the challenge active.
@@ -218,7 +248,9 @@ if __name__ == "__main__":
             else:
                 print("\n==================================================")
                 print(f" Fantastic! It automatically generates the next challenge for you.:")
-                speed_question, speed_correct_answer_float = speed()
+                speed_dict = speed()
+                speed_question = speed_question_text(agent, speed_dict)
+                speed_correct_answer = speed_dict["speed_correct_answer"]
                 print(f" {speed_question} ")
                 print("==================================================")
 
