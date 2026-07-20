@@ -100,7 +100,7 @@ def statistics_check_answer(question_type: str,data: list, student_result: float
         quantiles = stats.quantiles(data, n=4)
         statistics_correct_answer = quantiles[2] - quantiles[0]
     else:
-        return False
+        return False, 0
 
     is_correct = math.isclose(statistics_correct_answer, student_result, abs_tol=0.01)
     return is_correct,statistics_correct_answer
@@ -161,7 +161,7 @@ if __name__ == "__main__":
             result = agent.invoke(
                 {"messages": [{"role": "user", "content": q_prompt}]},
                 config={
-                    "configurable": {"thread_id": "speed_session_001"},
+                    "configurable": {"thread_id": "stats_session_001"},
                     "recursion_limit": 15
                 },
             )
@@ -221,19 +221,19 @@ if __name__ == "__main__":
             The quiz problem is: Solve {stats_question}
             The student did not enter a numeric answer. Instead, they wrote: "{ans_str}"
             
-            Please evaluate the student's input according to speed-docs:
+            Please evaluate the student's input according to statistics-docs:
             1. Did the student ask for an explanation (e.g., "explain", "how to do this", "help")?
             2. Did the student ask for an example (e.g., "give me an example", "show me a different one")?
             3. Did the student ask for an video (e.g., "give me an video", "show me a vide example")?
             4. Did the student enter a wrong input format, typo, or off-topic statement?
-            5. Did the student ask to review another topic? If so, use `run_script` to launch the appropriate python file from this list:{menu_mapping}, and welcome them back to this Speed question once finished.
+            5. Did the student ask to review another topic? If so, use `run_script` to launch the appropriate python file from this list:{menu_mapping}, and welcome them back to this statistics question once finished.
 
             Based on this evaluation, please respond directly to the student:
             - If EXPLANATION: Gently explain the mathematical steps to solve {stats_question} but DO NOT give away the final answer! Keep the challenge active.
             - If EXAMPLE: Provide a brand-new, step-by-step localized Hong Kong example of a similar calculation and solve it fully. Then encourage them to try the active quiz problem using that same method.
             - If VIDEO: Provide a video using the `play_video` tool.
             - If WRONG/INVALID/Off-topic: Politely guide them back, explaining that they should either enter a numerical answer or ask a math question if they are stuck.
-            - If REVIEW ANOTHER TOPIC: Call the `run_script` tool to launch that topic's file (e.g., `decimal_mult_div.py`). After returning, welcome them back and ask them to solve the current Speed question: {stats_question}.
+            - If REVIEW ANOTHER TOPIC: Call the `run_script` tool to launch that topic's file (e.g., `decimal_mult_div.py`). After returning, welcome them back and ask them to solve the current statistics question: {stats_question}.
             """
 
         result = agent.invoke(

@@ -17,7 +17,18 @@ When introducing the topic, cover these rules simply:
 * **Median:** The middle number when arranged in order. (e.g., The middle height of students in PE class).
 * **Mode:** The most popular number that appears the most often. (e.g., The most popular Dim Sum dish ordered).
 * **Range:** The difference between the highest and lowest numbers.
-* **Challenge Concepts (Variance, Standard Deviation, IQR):** Explain these intuitively as "How spread out the numbers are". For example, are everyone's test scores very close to each other, or very different? 
+
+#### Advanced Spread Concepts (Variance, Standard Deviation, IQR):
+* **Variance:** Measures how far set of numbers are spread out from their average (mean).
+  - Description: The average of the squared differences from the Mean.
+  - Formula: Variance = Sum of (Each Number - Mean)^2 / (Total Count - 1)
+* **Standard Deviation:** Shows how much variation exists from the average.
+  - Description: The square root of the Variance. It brings the unit back to original data units.
+  - Formula: Standard Deviation = Square Root of Variance
+* **Interquartile Range (IQR):** Measures the spread of the middle 50 percent of the dataset.
+  - Description: The distance between the 75th percentile (Q3) and 25th percentile (Q1).
+  - Formula: IQR = Q3 - Q1
+    (where Q1 is Median of lower half, Q3 is Median of upper half)
 
 
 ### 2. Section 2: Basic Math Review (CRITICAL REQUIREMENT)
