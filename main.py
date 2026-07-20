@@ -16,7 +16,7 @@ def run_script(script_name: str) -> str:
         env = os.environ.copy()
         env["LAUNCHED_FROM_MAIN"] = "True"
         
-        subprocess.run(["uv", "run", str(script_path)], check=True)
+        subprocess.run(["uv", "run", str(script_path)],env=env, check=True)
         return f"Successfully executed {script_name}."
     except Exception as e:
         return f"Error running {script_name}: {str(e)}"
@@ -39,28 +39,33 @@ agent = create_deep_agent(
     checkpointer=checkpointer,
 )
 
+menu_mapping = """
+  - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Simple Equation (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+"""
+
 def main():
+   
     print("Welcome to the Hong Kong AI Math Tutor!")
     print("I can help you with:")
-    print("  - Percentages (percentage.py)")
-    print("  - Ratios & Proportions (ratio.py)")
-    print("  - Basic Fractions (fraction.py)")
-    print("  - Adding & Subtracting Fractions (fraction_add_sub.py)")
-    print("  - Multiplying & Dividing Fractions (fraction_muli_div.py)")
-    print("  - Area and Perimeter of Rectangles and Squares (area_perimeter_rectangle.py)")
-    print("  - Area and Perimeter of Circles (area_perimeter_circle.py)")
-    print("  - Area and Perimeter of Parallelograms (area_perimeter_parallelogram.py)")
-    print("  - Area and Perimeter of Triangles (area_perimeter_triangle.py)")
-    print("  - Area and Perimeter of Trapezoids (area_perimeter_trapezoid.py)")
-    print("  - Volume of different shapes (volume.py)")
-    print("  - Decimals (fraction_to_decimal.py)")
-    print("  - Decimals Adding & Subtracting (decimal_add_sub.py)")
-    print("  - Decimals Multiplication & Division (decimal_mult_div.py)")
-    print("  - Basic Equation Concept (elementary_algebra.py)")
-    print("  - Simple Equation (simple_equation.py)")
-    print("  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)")
-    print("  - Negative Numbers (negative_number_arithmetic.py)")
-    print("  - Speed (speed.py)")
+    print(menu_mapping.strip())
 
     while True:
         user_input = input("\n What topic would you like to learn today? (or 'quit'): ")
@@ -69,9 +74,15 @@ def main():
             print("Class dismissed! See you next time.")
             break
             
-        # The agent decides which file to run
+        prompt_content = (
+            f"Here is the list of available topics and their corresponding Python files:\n"
+            f"{menu_mapping}\n\n"
+            f"The student wants to learn: '{user_input}'. "
+            f"Please identify the correct file from the list above and use the run_script tool to start it."
+        )
+
         response = agent.invoke(
-            {"messages": [{"role": "user", "content": f"The student wants to learn: {user_input}. Please identify the correct file and use the run_script tool to start it."}]},
+            {"messages": [{"role": "user", "content": prompt_content}]},
             config={"configurable": {"thread_id": "master_session_001"}},
         )
         print(response["messages"][-1].content)

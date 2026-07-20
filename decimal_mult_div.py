@@ -175,8 +175,8 @@ if __name__ == "__main__":
             Please evaluate the student's input according to decimal-mult-div-docs:
             1. Did the student ask for an explanation (e.g., "explain", "how to do this", "help")?
             2. Did the student ask for an example (e.g., "give me an example", "show me a different one")?
-            3. Did the student ask for an video (e.g., "give me an video", "show me a vide example")?
-            3. Did the student enter a wrong input format, typo, or off-topic statement?
+            3. Did the student ask for a video (e.g., "give me an video", "show me a vide example")?
+            4. Did the student enter a wrong input format, typo, or off-topic statement?
             
             Based on this evaluation, please respond directly to the student:
             - If EXPLANATION: Gently explain the mathematical steps to solve {num1} {operation} {num2} but DO NOT give away the final answer! Keep the challenge active.
@@ -202,13 +202,13 @@ if __name__ == "__main__":
             print("\n==================================================")
             print("What would you like to do next?")
             print("1. Keep practicing another question")
-            print("2. Move to another topic ")
+            print("2. Move to another/previous topic ")
             print("==================================================")
             user_choice = get_input("Please enter option (1 or 2): ")
 
             if user_choice.strip() == "2":
                 import os
-                print("\nReturning to AI Math Tutor main menu...")
+                print("\nCompleting review session and returning to previous session...")
 
                 if os.environ.get("LAUNCHED_FROM_MAIN") != "True":
                     run_script("main.py")

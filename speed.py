@@ -7,6 +7,7 @@ import random
 import math
 
 from main import run_script
+from main import menu_mapping
 
 def play_video(url: str) -> str:
     """Opens the student's default web browser to play a tutorial video.
@@ -108,7 +109,9 @@ if __name__ == "__main__":
 
         else:
             q_prompt = (f"The student asks: '{student_q}'. Answer their question based on speed-docs. "
-                        f"If they need to review basic calculation review, USE the `run_script` tool to launch launch the appropriate file."
+                        f"If they need to review ANY math topic, USE the `run_script` tool to launch the appropriate python file from this list:\n"
+                        f"{menu_mapping}\n"
+                        f"AFTER the review tool executes, welcome them back to Speed & Distance and ask if they are ready for the quiz."
                         f"Ask if they are ready for the quiz."
             )
 
@@ -159,7 +162,7 @@ if __name__ == "__main__":
             Please respond directly to the student:
             - If CORRECT: Congratulate them with Hong Kong style energy and confirm they solved it.
             - If WRONG: Gently tell them it's incorrect, 
-                Remind them on the rule Inverse Operations to isolate the variable and try again WITHOUT giving away the correct answer, 
+                Remind them on the formulas and try again WITHOUT giving away the correct answer, 
                 and firmly state they must try again now.
             """
         else:
@@ -169,17 +172,19 @@ if __name__ == "__main__":
             The quiz problem is: Solve {speed_question}
             The student did not enter a numeric answer. Instead, they wrote: "{ans_str}"
             
-            Please evaluate the student's input according to negative-number-arithmetic-docs:
+            Please evaluate the student's input according to speed-docs:
             1. Did the student ask for an explanation (e.g., "explain", "how to do this", "help")?
             2. Did the student ask for an example (e.g., "give me an example", "show me a different one")?
             3. Did the student ask for an video (e.g., "give me an video", "show me a vide example")?
             4. Did the student enter a wrong input format, typo, or off-topic statement?
-            
+            5. Did the student ask to review another topic? If so, use `run_script` to launch that topic's file, and welcome them back to this Speed question once finished.
+
             Based on this evaluation, please respond directly to the student:
             - If EXPLANATION: Gently explain the mathematical steps to solve {speed_question} but DO NOT give away the final answer! Keep the challenge active.
             - If EXAMPLE: Provide a brand-new, step-by-step localized Hong Kong example of a similar calculation and solve it fully. Then encourage them to try the active quiz problem using that same method.
             - If VIDEO: Provide a video using the `play_video` tool.
             - If WRONG/INVALID/Off-topic: Politely guide them back, explaining that they should either enter a numerical answer or ask a math question if they are stuck.
+            - If REVIEW ANOTHER TOPIC: Call the `run_script` tool to launch that topic's file (e.g., `decimal_mult_div.py`). After returning, welcome them back and ask them to solve the current Speed question: {speed_question}.
             """
 
         result = agent.invoke(
