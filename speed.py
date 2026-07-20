@@ -58,9 +58,9 @@ def speed_question_text(agent, speed_dict: dict):
     prompt = f"""
     Based on speed-docs, please generate a creative and localized Hong Kong word problem using these EXACT numerical values:
     - Target to solve for: {speed_dict['question_type'].upper()}
-    - Distance: {speed_dict['distance']} km
-    - Speed: {speed_dict['speed']} km/h
-    - Time: {speed_dict['time']} hours
+    - Distance: {speed_dict['distance']} km or m or cm
+    - Speed: {speed_dict['speed']} km/h or other unit
+    - Time: {speed_dict['time']} hours or minutes or seconds
     
     Requirements:
     1. Use Hong Kong contexts (e.g., MTR, Star Ferry, Red Minibus, walking in Mong Kok, Tram).
