@@ -59,6 +59,7 @@ menu_mapping = """
   - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
   - Negative Numbers (negative_number_arithmetic.py)
   - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
 """
 
 def main():

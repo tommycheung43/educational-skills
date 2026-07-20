@@ -1,23 +1,23 @@
 ---
-name: speed-docs
-description: Use this skill to explain the concept of Speed, Distance, and Time, answer student questions, and provide Hong Kong localized examples when requested.
+name: statistics-docs
+description: Use this skill to explain the concept of Mean, Median, Mode, Range, Variance, Standard Deviation, and IQR, answer student questions, and provide Hong Kong localized examples when requested.
 ---
 
-# speed-docs
+# statistics-docs
 
 ## Overview
-This skill guides the agent on teaching the foundational concept of relationship between Speed, Distance, and Time. It helps students understand the formula and how to apply it in everyday Hong Kong scenarios.
+This skill guides the agent on teaching fundamental and advanced statistical concepts. It helps students understand how to analyze data and how to apply it in everyday Hong Kong scenarios.
 
 ## Instructions
 
 ### 1. Section 1: Explain the Core Concept
 
 When introducing the topic, cover these rules simply:
-* **The Magic Triangle (DST):** Introduce the Distance-Speed-Time triangle. Distance is at the top, Speed and Time are at the bottom.
-* **Finding Speed:** Speed = Distance ÷ Time. (e.g., How fast is the MTR moving?)
-* **Finding Distance:** Distance = Speed × Time. (e.g., How far can a minibus travel?)
-* **Finding Time:** Time = Distance ÷ Speed. (e.g., How long does it take to walk to school?)
-* **Units:** Remind them to pay attention to units (e.g., km/h, m/s).
+* **Mean:** The fair share. Add all numbers and divide by how many there are. (e.g., Average Octopus card balance).
+* **Median:** The middle number when arranged in order. (e.g., The middle height of students in PE class).
+* **Mode:** The most popular number that appears the most often. (e.g., The most popular Dim Sum dish ordered).
+* **Range:** The difference between the highest and lowest numbers.
+* **Challenge Concepts (Variance, Standard Deviation, IQR):** Explain these intuitively as "How spread out the numbers are". For example, are everyone's test scores very close to each other, or very different? 
 
 
 ### 2. Section 2: Basic Math Review (CRITICAL REQUIREMENT)
@@ -30,17 +30,18 @@ If the student struggles with arithmetic operations, or explicitly asks to revie
 
 ### 3. Section 3: Interactive Q&A and Examples
 If the student asks a question or requests an example before the quiz:
-* **Red Minibus (Hong Kong Context):** "Imagine you are taking a Red Minibus from Mong Kok to Tai Po. The distance is about 24 kilometers. The minibus travels at a speed of 48 km/h. How long will it take?
-  * Formula: Time = Distance ÷ Speed
-  * Calculation: 24 ÷ 48 = 0.5 hours.
-  * Conclusion: It takes half an hour (30 minutes) to reach Tai Po!"
+* **Hong Kong Context (e.g., MTR Wait Times):** "Imagine you waited for the MTR over 5 days. The wait times in minutes were: 2, 4, 4, 6, 9. 
+  * Mode: 4 minutes (appears twice).
+  * Median: 4 minutes (the middle).
+  * Mean: (2+4+4+6+9) ÷ 5 = 5 minutes."
 
 Always ask if they have more questions or if they are ready to begin the quiz.
 
 ### 4. Section 4: Video Tutorial Display (Provided on Request)
 CRITICAL INSTRUCTION: If the student explicitly asks for a video, tutorial, or visual clip, you MUST execute the `play_video` tool using one of these exact URLs:
 
-- **For Speed Basics:** https://www.youtube.com/watch?v=7fz-4BUDyqg
+- **For Mode, Median, Mean, Range:**: https://www.youtube.com/watch?v=mk8tOD0t8M0
+- **For Range, Variance and Standard Deviation:**: https://www.youtube.com/watch?v=E4HAYd0QnRc
 
 Do NOT make up, guess, or hallucinate any other video IDs or URLs. After executing the tool with the correct link, explicitly tell the student in your response: "I have opened an excellent YouTube video tutorial by Math Antics in your browser to help you learn more!"
 
