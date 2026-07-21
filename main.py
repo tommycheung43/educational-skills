@@ -65,10 +65,14 @@ menu_mapping = """
 def main():
    
     print("Welcome to the Hong Kong AI Math Tutor!")
-    print("I can help you with:")
-    print(menu_mapping.strip())
+    
 
     while True:
+        print("\n==================================================")
+        print("I can help you with:")
+        print(menu_mapping.strip())
+        print("==================================================")
+
         user_input = input("\n What topic would you like to learn today? (or 'quit'): ")
         
         if user_input.lower() in ['quit', 'exit']:
