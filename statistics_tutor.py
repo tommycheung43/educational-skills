@@ -37,8 +37,8 @@ def statistics():
         "mean", "median", "mode", "range", 
         "variance", "standard deviation", "interquartile range"
     ]
-    question_type = "standard deviation"
-    #question_type = random.choice(topics)
+    
+    question_type = random.choice(topics)
 
     n = random.randint(7, 20)
     base_data = [random.randint(10, 50) for _ in range(n - 1)]
