@@ -6,9 +6,12 @@ import webbrowser
 import random
 import math
 import statistics as stats
+import numpy as np
+import os
 
 from main import run_script
 from main import menu_mapping
+from stats_graph_generator import safe_generate_graph
 
 def play_video(url: str) -> str:
     """Opens the student's default web browser to play a tutorial video.
@@ -34,9 +37,10 @@ def statistics():
         "mean", "median", "mode", "range", 
         "variance", "standard deviation", "interquartile range"
     ]
+
     question_type = random.choice(topics)
 
-    n = random.randint(5, 7)
+    n = random.randint(7, 20)
     base_data = [random.randint(10, 50) for _ in range(n - 1)]
     mode_value = random.choice(base_data)
 
@@ -97,8 +101,9 @@ def statistics_check_answer(question_type: str,data: list, student_result: float
     elif question_type == "standard deviation":
         statistics_correct_answer = stats.stdev(data)
     elif question_type == "interquartile range":
-        quantiles = stats.quantiles(data, n=4)
-        statistics_correct_answer = quantiles[2] - quantiles[0]
+        q3 = np.percentile(data,75)
+        q1 = np.percentile(data, 25)
+        statistics_correct_answer = q3 - q1
     else:
         return False, 0
 
@@ -113,7 +118,7 @@ if __name__ == "__main__":
     agent = create_deep_agent(
         model="ollama:gemma4:cloud",  
         backend=backend,
-        tools=[play_video,run_script],
+        tools=[play_video,run_script,safe_generate_graph],
         skills=[str(Path(root_dir) / "skills")],
         interrupt_on={
             "write_file": True,
@@ -250,6 +255,31 @@ if __name__ == "__main__":
         if is_numeric and is_correct:
             print("\nCongratulations! You solved it!")
 
+            print("\nWould you like to see a visual graph for this dataset to understand it better?")
+            graph_ans = get_input("Your answer (e.g., 'yes' or 'no'): ")
+                        
+            graph_prompt = f"""
+            The student was asked if they want to see a graph for the dataset: {stats_dict['data']}.
+            The student's reply is: "{graph_ans}".
+                        
+            Based on statistics-graph-docs:
+            1. Evaluate if the student means "YES" or "NO".
+            2. If YES: Call the `generate_graph` tool with data {stats_dict['data']} and a suitable title. 
+            Then say: "I have generated the graph for you! Please close the graph window to continue."
+            3. If NO: Politely say "No problem, let's move on!"
+            """
+
+            graph_result = agent.invoke(
+                {"messages": [{"role": "user", "content": graph_prompt}]},
+                config={
+                    "configurable": {"thread_id": "stats_graph_001"},
+                    "recursion_limit": 15
+                },
+            )
+
+            print("\n=== Tutor Response ===")
+            print(graph_result["messages"][-1].content)
+
             print("\n==================================================")
             print("What would you like to do next?")
             print("1. Keep practicing another question")
@@ -258,7 +288,7 @@ if __name__ == "__main__":
             user_choice = get_input("Please enter option (1 or 2): ")
 
             if user_choice.strip() == "2":
-                import os
+                
                 print("\nReturning to AI Math Tutor main menu...")
 
                 if os.environ.get("LAUNCHED_FROM_MAIN") != "True":
