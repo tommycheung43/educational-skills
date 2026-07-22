@@ -37,8 +37,8 @@ def statistics():
         "mean", "median", "mode", "range", 
         "variance", "standard deviation", "interquartile range"
     ]
-
-    question_type = random.choice(topics)
+    question_type = "standard deviation"
+    #question_type = random.choice(topics)
 
     n = random.randint(7, 20)
     base_data = [random.randint(10, 50) for _ in range(n - 1)]
@@ -260,11 +260,15 @@ if __name__ == "__main__":
                         
             graph_prompt = f"""
             The student was asked if they want to see a graph for the dataset: {stats_dict['data']}.
+            The current question type is: {stats_dict['question_type']}.
             The student's reply is: "{graph_ans}".
                         
             Based on statistics-graph-docs:
             1. Evaluate if the student means "YES" or "NO".
-            2. If YES: Call the `generate_graph` tool with data {stats_dict['data']} and a suitable title. 
+            2. If YES: 
+                - Call the `safe_generate_graph` tool with data {stats_dict['data']} and a suitable title.
+                - If question type is "standard deviation" or "variance", pass graph_type="sd".
+                - Otherwise, pass graph_type="box".
             Then say: "I have generated the graph for you! Please close the graph window to continue."
             3. If NO: Politely say "No problem, let's move on!"
             """
