@@ -46,7 +46,7 @@ def generate_graph(data: list, title: str = "Dataset Visualization") -> str:
 
         ax.text(
                 (q1 + q3) / 2, 0.62, 
-                f"Interquartile Range (IQR) = Q3 - Q1 = iqr", 
+                f"Interquartile Range (IQR) = Q3 - Q1 = {iqr:g}", 
                 horizontalalignment='center', 
                 color='purple', fontsize=11, fontweight='bold',
                 bbox=dict(boxstyle="round,pad=0.4", fc="#F0E6FF", ec="purple", lw=1.5)
@@ -66,19 +66,19 @@ def generate_graph(data: list, title: str = "Dataset Visualization") -> str:
 
 def generate_sd_graph(data: list, title: str = "Standard Deviation Bell Curve") -> str:
     """
-        Generates and displays a Standard Deviation Bell Curve matching empirical 
-            rule distribution proportions (34.1%, 13.6%, 2.1%, 0.1%).
+    Generates and displays a Standard Deviation Bell Curve matching empirical 
+    rule distribution proportions (34.1%, 13.6%, 2.1%, 0.1%).
             
-            Args:
-                data: The list of numbers from the dataset.
-                title: A title for the graph.
+    Args:
+        data: The list of numbers from the dataset.
+        title: A title for the graph.
     """
     import matplotlib.pyplot as plt
 
     try:
         fig, ax = plt.subplots(figsize=(10, 5.5))
         mean_val = float(stats.mean(data))
-        sd_val = float(stats.stdev(data))
+        sd_val = float(stats.pstdev(data))
 
         x = np.linspace(mean_val - 3.5 * sd_val, mean_val + 3.5 * sd_val, 1000)
         y = (1 / (sd_val * np.sqrt(2 * np.pi))) * np.exp(-0.5 * ((x - mean_val) / sd_val) ** 2)

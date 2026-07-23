@@ -37,8 +37,9 @@ def statistics():
         "mean", "median", "mode", "range", 
         "variance", "standard deviation", "interquartile range"
     ]
-    
-    question_type = random.choice(topics)
+
+    question_type = "standard deviation"
+    #question_type = random.choice(topics)
 
     n = random.randint(7, 20)
     base_data = [random.randint(10, 50) for _ in range(n - 1)]
@@ -97,9 +98,9 @@ def statistics_check_answer(question_type: str,data: list, student_result: float
     elif question_type == "range":
         statistics_correct_answer = max(data) - min(data)
     elif question_type == "variance":
-        statistics_correct_answer = stats.variance(data)
+        statistics_correct_answer = stats.pvariance(data)
     elif question_type == "standard deviation":
-        statistics_correct_answer = stats.stdev(data)
+        statistics_correct_answer = stats.pstdev(data)
     elif question_type == "interquartile range":
         q3 = np.percentile(data,75)
         q1 = np.percentile(data, 25)

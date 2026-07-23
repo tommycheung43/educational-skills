@@ -21,7 +21,7 @@ When introducing the topic, cover these rules simply:
 #### Advanced Spread Concepts (Variance, Standard Deviation, IQR):
 * **Variance:** Measures how far set of numbers are spread out from their average (mean).
   - Description: The average of the squared differences from the Mean.
-  - Formula: Variance = Sum of (Each Number - Mean)^2 / (Total Count - 1)
+  - Formula: Variance = Sum of (Each Number - Mean)^2 / (Total Count)
 * **Standard Deviation:** Shows how much variation exists from the average.
   - Description: The square root of the Variance. It brings the unit back to original data units.
   - Formula: Standard Deviation = Square Root of Variance
