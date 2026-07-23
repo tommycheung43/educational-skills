@@ -1,0 +1,18 @@
+[2026-07-23 17:52:42] [PYTHAGOREAN] TUTOR: The Pythagorean theorem applies to right-angled triangles. It states that the square of the longest side (the hypotenuse) is equal to the sum of the squares of the other two sides.
+
+**Formula:** $a^2 + b^2 = c^2$
+(where $c$ is the longest side)
+
+To find the longest side, calculate the square root of $(a^2 + b^2)$.
+
+Do you have any questions, need an example, or are you ready to start?
+[2026-07-23 17:53:09] [PYTHAGOREAN] STUDENT: example
+[2026-07-23 17:53:11] [PYTHAGOREAN] TUTOR: Imagine you are walking from Mong Kok MTR. You walk 3 blocks East and 4 blocks North to reach a restaurant. If you could fly straight there, how far is it?
+
+*   $a = 3$, $b = 4$
+*   $3^2 + 4^2 = 9 + 16 = 25$
+*   The square root of $25$ is $5$.
+
+So, the straight distance is 5 blocks!
+
+Do you have any other questions, or are you ready for the quiz?

@@ -15,6 +15,8 @@ def run_script(script_name: str) -> str:
     try:
         env = os.environ.copy()
         env["LAUNCHED_FROM_MAIN"] = "True"
+
+        env["CURRENT_SKILL_NAME"] = script_path.stem.upper()
         
         subprocess.run(["uv", "run", str(script_path)],env=env, check=True)
         return f"Successfully executed {script_name}."

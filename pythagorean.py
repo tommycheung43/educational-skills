@@ -5,7 +5,7 @@ from langgraph.checkpoint.memory import MemorySaver
 import webbrowser
 import random
 import math
-import statistics as stats
+import pythagorean as stats
 import numpy as np
 import os
 
@@ -13,6 +13,9 @@ from main import run_script
 from main import menu_mapping
 from stats_graph_generator import safe_generate_graph
 from datetime import datetime
+
+import logger_utils
+from logger_utils import setup_agent_logging, write_log
 
 def play_video(url: str) -> str:
     """Opens the student's default web browser to play a tutorial video.
@@ -91,7 +94,7 @@ if __name__ == "__main__":
     agent = create_deep_agent(
         model="ollama:gemma4:cloud",  
         backend=backend,
-        tools=[play_video,run_script],
+        tools=[play_video,run_script, write_log],
         skills=[str(Path(root_dir) / "skills")],
         interrupt_on={
             "write_file": True,
@@ -100,6 +103,8 @@ if __name__ == "__main__":
         },
         checkpointer=checkpointer,
     )
+
+    setup_agent_logging(agent)
 
     message = (
         f"1. Please introduce the concept of Pythagorean theorem following the pythagorean-docs skill.\n"
@@ -122,17 +127,17 @@ if __name__ == "__main__":
     print(tutor_intro)
 
     while True:
-        student_q = get_input("\nAsk a question, request a basic review, or type 'ready' to start:")
+        student_q = input("\nAsk a question, request a basic review, or type 'ready' to start:")
 
         if student_q.lower().strip() in ["yes","no question", "ready", "start", "none","nope","no questions","i'm ready","quiz","let's start"]:
             print("\nGreat! Let's move on to the quiz phase.")
             break
 
         else:
-            q_prompt = (f"The student asks: '{student_q}'. Answer their question based on statistics-docs. "
+            q_prompt = (f"The student asks: '{student_q}'. Answer their question based on pythagorean-docs. "
                         f"If they need to review ANY math topic, USE the `run_script` tool to launch the appropriate python file from this list:\n"
                         f"{menu_mapping}\n"
-                        f"AFTER the review tool executes, welcome them back to Statistics and ask if they are ready for the quiz."
+                        f"AFTER the review tool executes, welcome them back to pythagorean and ask if they are ready for the quiz."
                         f"Ask if they are ready for the quiz."
             )
 
@@ -160,7 +165,7 @@ if __name__ == "__main__":
 
 
     while True:
-        ans_str = get_input(f"\nWhat is the answer? (or ask a question / request an example) ").strip()
+        ans_str = input(f"\nWhat is the answer? (or ask a question / request an example) ").strip()
 
         if ans_str.lower() in ["quit", "exit"]:
             print("Exiting quiz...")
@@ -205,14 +210,14 @@ if __name__ == "__main__":
             2. Did the student ask for an example (e.g., "give me an example", "show me a different one")?
             3. Did the student ask for an video (e.g., "give me an video", "show me a vide example")?
             4. Did the student enter a wrong input format, typo, or off-topic statement?
-            5. Did the student ask to review another topic? If so, use `run_script` to launch the appropriate python file from this list:{menu_mapping}, and welcome them back to this statistics question once finished.
+            5. Did the student ask to review another topic? If so, use `run_script` to launch the appropriate python file from this list:{menu_mapping}, and welcome them back to this pythagorean question once finished.
 
             Based on this evaluation, please respond directly to the student:
             - If EXPLANATION: Gently explain the mathematical steps to solve {pythagorean_question} but DO NOT give away the final answer! Keep the challenge active.
             - If EXAMPLE: Provide a brand-new, step-by-step localized Hong Kong example of a similar calculation and solve it fully. Then encourage them to try the active quiz problem using that same method.
             - If VIDEO: Provide a video using the `play_video` tool.
             - If WRONG/INVALID/Off-topic: Politely guide them back, explaining that they should either enter a numerical answer or ask a math question if they are stuck.
-            - If REVIEW ANOTHER TOPIC: Call the `run_script` tool to launch that topic's file (e.g., `decimal_mult_div.py`). After returning, welcome them back and ask them to solve the current statistics question: {pythagorean_question}.
+            - If REVIEW ANOTHER TOPIC: Call the `run_script` tool to launch that topic's file (e.g., `decimal_mult_div.py`). After returning, welcome them back and ask them to solve the current pythagorean question: {pythagorean_question}.
             """
 
         result = agent.invoke(
