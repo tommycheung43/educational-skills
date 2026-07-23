@@ -60,6 +60,7 @@ menu_mapping = """
   - Negative Numbers (negative_number_arithmetic.py)
   - Speed (speed.py)
   - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
 """
 
 def main():
