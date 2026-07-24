@@ -6,7 +6,8 @@ import webbrowser
 import random
 import math
 
-
+import logger_utils
+from logger_utils import setup_agent_logging, write_log
 
 def play_video(url: str) -> str:
     """Opens the student's default web browser to play a tutorial video.
@@ -32,9 +33,9 @@ def circle():
 
     return radius, operation
 
-def get_input(message: str) -> str:
-    """Handles getting textual or numerical input from the student via the terminal."""
-    return input(message)
+# def get_input(message: str) -> str:
+#     """Handles getting textual or numerical input from the student via the terminal."""
+#     return input(message)
 
 def circle_answer(radius: int, operation: str, student_result: float):
     """Checks if the student's input matches the mathematically correct answer."""
@@ -59,7 +60,7 @@ if __name__ == "__main__":
     agent = create_deep_agent(
         model="ollama:gemma4:cloud",  
         backend=backend,
-        tools=[play_video],
+        tools=[play_video,write_log],
         skills=[str(Path(root_dir) / "skills")],
         interrupt_on={
             "write_file": True,
@@ -90,7 +91,7 @@ if __name__ == "__main__":
     print(result["messages"][-1].content)
 
     while True:
-        student_q = get_input("\nAsk a question, or type 'ready' to start the quiz: ")
+        student_q = input("\nAsk a question, or type 'ready' to start the quiz: ")
 
         if student_q.lower().strip() in ["yes","no question", "ready", "start", "none","nope","no questions","i'm ready","quiz","let's start"]:
             print("\nGreat! Let's move on to the quiz phase.")
@@ -126,7 +127,7 @@ if __name__ == "__main__":
     while True:
         
         try:
-            ans_str = get_input(f"\nPlease answer the {operation_display}: ")
+            ans_str = input(f"\nPlease answer the {operation_display}: ")
             ans_val = float(ans_str)
         except ValueError:
             print("Input error! Please ensure you enter numeric values.")
@@ -163,7 +164,7 @@ if __name__ == "__main__":
             print("1. Keep practicing another question")
             print("2. Move to another topic ")
             print("==================================================")
-            user_choice = get_input("Please enter option (1 or 2): ")
+            user_choice = input("Please enter option (1 or 2): ")
 
             if user_choice.strip() == "2":
                 from main import run_script
