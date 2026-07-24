@@ -1334,3 +1334,83 @@ Do you have any other questions, or are you ready for the quiz?
   - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
 [2026-07-24 15:51:14] [MAIN] STUDENT: quit
 [2026-07-24 15:51:14] [MAIN] AGENT: Class dismissed! See you next time.
+[2026-07-24 15:53:36] [MAIN] AGENT: Welcome to the Hong Kong AI Math Tutor!
+[2026-07-24 15:53:36] [MAIN] AGENT: I can help you with:
+[2026-07-24 15:53:36] [MAIN] AGENT: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Equation Simple Solving (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-24 15:56:54] [MAIN] STUDENT: volume
+[2026-07-24 15:56:58] [VOLUME] AGENT: Starting the Volume Tutor...
+[2026-07-24 15:57:25] [VOLUME] AGENT: Volume measures the amount of 3D space an object occupies.
+
+**Core Concept:**
+For most 3D shapes (like prisms and cylinders), the formula is:
+**Volume = Base Area × Height**
+
+You must calculate the Base Area (the 2D shape at the bottom) first.
+
+**Exceptions:**
+* **Triangular Pyramid:** Volume = 1/3 × Base Area × Height
+* **Sphere:** Volume = 4/3 × π × r³
+
+Do you have any questions, need an example, or are you ready to start?
+[2026-07-24 15:58:00] [VOLUME] STUDENT: video
+[2026-07-24 15:58:05] [VOLUME] AGENT: I have opened an excellent YouTube video tutorial by Math Antics in your browser to help you learn more!
+
+Are you ready for the quiz?
+[2026-07-24 15:59:29] [VOLUME] STUDENT: yes
+[2026-07-24 15:59:29] [VOLUME] AGENT: Great! Let's move on to the quiz phase.
+[2026-07-24 15:59:29] [VOLUME] AGENT: Please answer this question:
+[2026-07-24 15:59:29] [VOLUME] AGENT: A triangular pyramid has a triangle base (length 15cm, 2D height 12cm) and a 3D height of 10cm.
+[2026-07-24 15:59:29] [VOLUME] AGENT: What is the Volume of this shape? (If decimals, round to 2 decimal places)
+[2026-07-24 16:03:23] [VOLUME] STUDENT: 300
+[2026-07-24 16:03:26] [VOLUME] AGENT: Awesome job! 🌟 You nailed it! You've correctly calculated the volume of the triangular pyramid. Keep up that amazing energy! 加油! 💪🔥
+[2026-07-24 16:03:26] [VOLUME] AGENT: Congratulations! You solved it!
+[2026-07-24 16:03:26] [VOLUME] AGENT: What would you like to do next?
+[2026-07-24 16:03:26] [VOLUME] AGENT: 1. Keep practicing another question
+[2026-07-24 16:03:26] [VOLUME] AGENT: 2. Move to another topic
+[2026-07-24 16:03:50] [VOLUME] STUDENT: 2
+[2026-07-24 16:03:50] [VOLUME] AGENT: Returning to AI Math Tutor main menu...
+[2026-07-24 16:03:52] [MAIN] AGENT: The volume tutor has been started.
+[2026-07-24 16:03:52] [MAIN] AGENT: I can help you with:
+[2026-07-24 16:03:52] [MAIN] AGENT: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Equation Simple Solving (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-24 16:03:53] [MAIN] STUDENT: quit
+[2026-07-24 16:03:53] [MAIN] AGENT: Class dismissed! See you next time.
