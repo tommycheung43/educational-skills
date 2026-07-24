@@ -91,3 +91,99 @@ Do you have any questions, would you like to see an example, or are you ready to
   - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
 [2026-07-24 11:18:55] [MAIN] STUDENT: quit
 [2026-07-24 11:18:55] [MAIN] SYSTEM: Class dismissed! See you next time.
+[2026-07-24 11:26:19] [MAIN] SYSTEM: Welcome to the Hong Kong AI Math Tutor!
+[2026-07-24 11:26:19] [MAIN] SYSTEM: I can help you with:
+[2026-07-24 11:26:19] [MAIN] SYSTEM: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Simple Equation (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-24 11:26:21] [MAIN] STUDENT: speed
+[2026-07-24 11:26:25] [SPEED] SYSTEM: Starting the Speed & Distance Tutor...
+[2026-07-24 11:26:27] [SPEED] TUTOR: Speed is how fast an object moves over a certain distance. The relationship between Speed, Distance, and Time is easily visualized using the **Magic Triangle (DST)**: Distance is at the top, with Speed and Time at the bottom.
+
+Depending on what you need to find:
+* **Speed** = Distance ÷ Time
+* **Distance** = Speed × Time
+* **Time** = Distance ÷ Speed
+
+Remember to always check your units (e.g., km/h or m/s).
+
+Do you have any questions, need an example, or are you ready to start?
+[2026-07-24 11:26:34] [SPEED] STUDENT: example
+[2026-07-24 11:26:37] [SPEED] TUTOR: Imagine you are taking a Red Minibus from Mong Kok to Tai Po. The distance is about 24 kilometers, and the minibus travels at a speed of 48 km/h. To find the time, we use the formula:
+
+**Time = Distance ÷ Speed**
+**Calculation:** 24 ÷ 48 = 0.5 hours
+
+So, it takes half an hour (30 minutes) to reach Tai Po!
+
+Are you ready for the quiz?
+[2026-07-24 11:27:15] [SPEED] STUDENT: video
+[2026-07-24 11:27:18] [SPEED] TUTOR: I have opened an excellent YouTube video tutorial by Math Antics in your browser to help you learn more!
+
+Are you ready for the quiz?
+[2026-07-24 11:27:37] [SPEED] STUDENT: yes
+[2026-07-24 11:27:37] [SPEED] SYSTEM: Great! Let's move on to the quiz phase.
+[2026-07-24 11:27:40] [SPEED] TUTOR: A red minibus travels from Mong Kok towards the New Territories at a constant speed of 28 km/h for 10 hours. What is the total distance the minibus has traveled?
+[2026-07-24 11:27:40] [SPEED] SYSTEM: Please answer this question:
+[2026-07-24 11:27:40] [SPEED] SYSTEM: (If the decimal is long, you may round it to 2 decimal places!)
+[2026-07-24 11:27:40] [SPEED] SYSTEM: (If you are stuck, you can type 'explain' or 'example' or 'video'!)
+[2026-07-24 11:28:04] [SPEED] STUDENT: 280
+[2026-07-24 11:28:06] [SPEED] TUTOR: Correct! 🌟 You nailed it! That's the spirit! You've solved the problem perfectly—the minibus traveled 280 km. Keep up this awesome energy! 加油! 🚀
+[2026-07-24 11:28:06] [SPEED] SYSTEM: Congratulations! You solved it!
+[2026-07-24 11:28:06] [SPEED] SYSTEM: What would you like to do next?
+[2026-07-24 11:28:06] [SPEED] SYSTEM: 1. Keep practicing another question
+[2026-07-24 11:28:06] [SPEED] SYSTEM: 2. Move to another topic
+[2026-07-24 11:28:09] [SPEED] STUDENT: 1
+[2026-07-24 11:28:09] [SPEED] SYSTEM: Fantastic! It automatically generates the next challenge for you.:
+[2026-07-24 11:28:10] [SPEED] TUTOR: A taxi drives from Central to a remote destination at a constant speed of 39 km/h for 6 hours. What is the total distance the taxi has traveled?
+[2026-07-24 11:28:35] [SPEED] STUDENT: 234
+[2026-07-24 11:28:38] [SPEED] TUTOR: Correct! 🌟 Absolutely spot on! You've got this! The taxi traveled 234 km—perfectly solved! Keep that momentum going! 加油! 🚀
+[2026-07-24 11:28:38] [SPEED] SYSTEM: Congratulations! You solved it!
+[2026-07-24 11:28:38] [SPEED] SYSTEM: What would you like to do next?
+[2026-07-24 11:28:38] [SPEED] SYSTEM: 1. Keep practicing another question
+[2026-07-24 11:28:38] [SPEED] SYSTEM: 2. Move to another topic
+[2026-07-24 11:28:41] [SPEED] STUDENT: 2
+[2026-07-24 11:28:41] [SPEED] SYSTEM: Returning to AI Math Tutor main menu...
+[2026-07-24 11:28:43] [MAIN] SYSTEM: The script `speed.py` has been successfully started.
+[2026-07-24 11:28:43] [MAIN] SYSTEM: I can help you with:
+[2026-07-24 11:28:43] [MAIN] SYSTEM: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Simple Equation (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-24 11:28:44] [MAIN] STUDENT: quit
+[2026-07-24 11:28:44] [MAIN] SYSTEM: Class dismissed! See you next time.
