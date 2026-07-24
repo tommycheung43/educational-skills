@@ -1223,3 +1223,114 @@ Are you ready for the quiz?
   - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
 [2026-07-24 15:44:18] [MAIN] STUDENT: quit
 [2026-07-24 15:44:18] [MAIN] AGENT: Class dismissed! See you next time.
+[2026-07-24 15:47:09] [MAIN] AGENT: Welcome to the Hong Kong AI Math Tutor!
+[2026-07-24 15:47:09] [MAIN] AGENT: I can help you with:
+[2026-07-24 15:47:09] [MAIN] AGENT: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Equation Simple Solving (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-24 15:49:50] [MAIN] STUDENT: quit
+[2026-07-24 15:49:50] [MAIN] AGENT: Class dismissed! See you next time.
+[2026-07-24 15:50:01] [MAIN] AGENT: Welcome to the Hong Kong AI Math Tutor!
+[2026-07-24 15:50:01] [MAIN] AGENT: I can help you with:
+[2026-07-24 15:50:01] [MAIN] AGENT: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Equation Simple Solving (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-24 15:50:06] [MAIN] STUDENT: rectangle
+[2026-07-24 15:50:10] [AREA_PERIMETER_RECTANGLE] AGENT: Starting the Rectangle & Square Area & Perimeter Tutor...
+[2026-07-24 15:50:15] [AREA_PERIMETER_RECTANGLE] AGENT: **Rectangles**
+*   **Area**: The flat space inside. Formula: $\text{Length} \times \text{Width}$
+*   **Perimeter**: The total distance around the edge. Formula: $2 \times (\text{Length} + \text{Width})$
+
+**Squares** (where all sides are equal)
+*   **Area**: $\text{Side} \times \text{Side}$ (or $\text{Side}^2$)
+*   **Perimeter**: $4 \times \text{Side}$
+
+Do you have any questions, or would you like an example before starting the quiz?
+[2026-07-24 15:50:24] [AREA_PERIMETER_RECTANGLE] STUDENT: example
+[2026-07-24 15:50:27] [AREA_PERIMETER_RECTANGLE] AGENT: **Area Example (School Desk):**
+Imagine a rectangular desk with a length of 60 cm and a width of 40 cm.
+$\text{Area} = 60 \times 40 = 2,400\text{ cm}^2$. This is the flat space for your books!
+
+**Perimeter Example (Football Pitch):**
+Imagine jogging around a pitch at Southorn Playground in Wan Chai. If it is 90m long and 45m wide:
+$\text{Perimeter} = 2 \times (90 + 45) = 270\text{ meters}$. That is the total distance of one lap!
+
+Do you have any more questions, or are you ready for the quiz?
+[2026-07-24 15:50:42] [AREA_PERIMETER_RECTANGLE] STUDENT: video
+[2026-07-24 15:50:44] [AREA_PERIMETER_RECTANGLE] AGENT: I have opened an excellent YouTube video tutorial by Math Antics in your browser to help you learn more!
+
+Do you have any other questions, or are you ready for the quiz?
+[2026-07-24 15:50:51] [AREA_PERIMETER_RECTANGLE] STUDENT: yes
+[2026-07-24 15:50:51] [AREA_PERIMETER_RECTANGLE] AGENT: Great! Let's move on to the quiz phase.
+[2026-07-24 15:50:51] [AREA_PERIMETER_RECTANGLE] AGENT: Please answer this question:
+[2026-07-24 15:50:51] [AREA_PERIMETER_RECTANGLE] AGENT: A shape has a length of 14cm and a width of 8cm.
+[2026-07-24 15:50:51] [AREA_PERIMETER_RECTANGLE] AGENT: What is the Area of this shape?
+[2026-07-24 15:51:04] [AREA_PERIMETER_RECTANGLE] STUDENT: 112
+[2026-07-24 15:51:05] [AREA_PERIMETER_RECTANGLE] AGENT: Correct! 🌟 You nailed it! 112 is absolutely right! Keep up that amazing energy! 加油! 🚀
+[2026-07-24 15:51:05] [AREA_PERIMETER_RECTANGLE] AGENT: Congratulations! You solved it!
+[2026-07-24 15:51:05] [AREA_PERIMETER_RECTANGLE] AGENT: What would you like to do next?
+[2026-07-24 15:51:05] [AREA_PERIMETER_RECTANGLE] AGENT: 1. Keep practicing another question
+[2026-07-24 15:51:05] [AREA_PERIMETER_RECTANGLE] AGENT: 2. Move to another topic
+[2026-07-24 15:51:10] [AREA_PERIMETER_RECTANGLE] STUDENT: 2
+[2026-07-24 15:51:10] [AREA_PERIMETER_RECTANGLE] AGENT: Returning to AI Math Tutor main menu...
+[2026-07-24 15:51:13] [MAIN] AGENT: The script `area_perimeter_rectangle.py` has been started to help you learn about rectangles.
+[2026-07-24 15:51:13] [MAIN] AGENT: I can help you with:
+[2026-07-24 15:51:13] [MAIN] AGENT: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Equation Simple Solving (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-24 15:51:14] [MAIN] STUDENT: quit
+[2026-07-24 15:51:14] [MAIN] AGENT: Class dismissed! See you next time.
