@@ -1,3 +1,8 @@
+from pathlib import Path
+from deepagents import create_deep_agent
+from deepagents.backends.filesystem import FilesystemBackend
+from langgraph.checkpoint.memory import MemorySaver
+
 import statistics as stats
 
 import numpy as np
@@ -5,6 +10,7 @@ import multiprocessing
 
 import logger_utils
 from logger_utils import setup_agent_logging, write_log
+
 
 def generate_graph(data: list, title: str = "Dataset Visualization") -> str:
     """
@@ -174,3 +180,24 @@ def safe_generate_graph(data: list, title: str = "Dataset Visualization", graph_
         return "Success: The graph window was opened and closed cleanly."
     except Exception as e:
         return f"Error executing graph process: {e}"
+
+
+
+checkpointer = MemorySaver()
+root_dir = "."
+backend = FilesystemBackend(root_dir=root_dir, virtual_mode=True)
+
+agent = create_deep_agent(
+    model="ollama:gemma4:cloud",  
+    backend=backend,
+    tools=[generate_graph,generate_sd_graph,safe_generate_graph ,write_log],
+    skills=[str(Path(root_dir) / "skills")],
+    interrupt_on={
+        "write_file": True,
+        "read_file": False,
+        "edit_file": True,
+    },
+    checkpointer=checkpointer,
+)
+
+setup_agent_logging(agent)
