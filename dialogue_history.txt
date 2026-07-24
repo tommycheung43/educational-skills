@@ -682,3 +682,103 @@ Do you have any more questions, or are you ready for the quiz?
   - Speed (speed.py)
   - Statistics (statistics_tutor.py)
   - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-24 14:47:16] [MAIN] STUDENT: simple
+[2026-07-24 14:47:20] [SIMPLE_EQUATION] SYSTEM: Starting the Simple Equation Tutor...
+[2026-07-24 14:47:31] [SIMPLE_EQUATION] SYSTEM: A simple equation involves finding the value of a variable (like $x$) by undoing operations in reverse.
+
+Think of it as **peeling an onion**: you remove the outer layers first to get to the center.
+1. **Peel the Constant:** Undo addition or subtraction first.
+2. **Peel the Coefficient:** Undo multiplication or division last.
+
+By using inverse operations, you isolate the variable and solve the equation.
+
+Do you have any questions, need an example, or are you ready to start?
+[2026-07-24 14:48:19] [MAIN] SYSTEM: Welcome to the Hong Kong AI Math Tutor!
+[2026-07-24 14:48:19] [MAIN] SYSTEM: I can help you with:
+[2026-07-24 14:48:19] [MAIN] SYSTEM: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Equation Simple Solving (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-24 14:48:25] [MAIN] STUDENT: equation
+[2026-07-24 14:48:29] [ELEMENTARY_ALGEBRA] SYSTEM: Starting the Elementary Algebra Tutor...
+[2026-07-24 14:48:38] [ELEMENTARY_ALGEBRA] SYSTEM: Elementary Algebra is all about finding secret numbers! Think of variables (like $x$ or $y$) as **"Mystery Boxes"** hiding a value. 
+
+To find what's inside, we treat the equation like a balancing scale: whatever you do to one side, you must do to the other. We solve these by using **Inverse Operations** (doing the opposite):
+*   Addition $\leftrightarrow$ Subtraction
+*   Multiplication $\leftrightarrow$ Division
+
+For example, if you have $x + 5 = 10$, you subtract 5 from both sides to find $x = 5$.
+
+Do you have any questions, would you like to see an example, or are you ready to start?
+[2026-07-24 14:48:58] [ELEMENTARY_ALGEBRA] STUDENT: example
+[2026-07-24 14:49:01] [ELEMENTARY_ALGEBRA] SYSTEM: Imagine you have some money $x$ in your Octopus card. You added $20, and now you have $50. We write this as:
+
+$x + 20 = 50$
+
+To find the mystery number $x$, we use the inverse operation (the opposite of addition is subtraction):
+
+$50 - 20 = 30$
+
+So, $x = 30$! You had $30 in your card originally.
+
+Would you like another example, or are you ready to start the quiz?
+[2026-07-24 14:51:21] [ELEMENTARY_ALGEBRA] STUDENT: video
+[2026-07-24 14:51:31] [ELEMENTARY_ALGEBRA] SYSTEM: I have opened an excellent YouTube video tutorial by Math Antics in your browser to help you learn more!
+
+Are you ready for the quiz now, or do you have any other questions?
+[2026-07-24 14:51:48] [ELEMENTARY_ALGEBRA] STUDENT: yes
+[2026-07-24 14:51:48] [ELEMENTARY_ALGEBRA] SYSTEM: Great! Let's move on to the quiz phase.
+[2026-07-24 14:51:48] [ELEMENTARY_ALGEBRA] SYSTEM: Please answer this question:
+[2026-07-24 14:51:48] [ELEMENTARY_ALGEBRA] SYSTEM: y + 19 = 21
+[2026-07-24 14:51:48] [ELEMENTARY_ALGEBRA] SYSTEM: (If the decimal is long, you may round it to 2 decimal places!)
+[2026-07-24 14:51:48] [ELEMENTARY_ALGEBRA] SYSTEM: (If you are stuck, you can type 'explain' or 'example' or 'video'!)
+[2026-07-24 14:52:12] [ELEMENTARY_ALGEBRA] STUDENT: 2
+[2026-07-24 14:52:15] [ELEMENTARY_ALGEBRA] SYSTEM: Correct! 🌟 You nailed it! 💯 Super steady work—you've solved it perfectly! Keep up that amazing energy! 加油! 🚀
+[2026-07-24 14:52:15] [ELEMENTARY_ALGEBRA] SYSTEM: Congratulations! You solved it!
+[2026-07-24 14:52:15] [ELEMENTARY_ALGEBRA] SYSTEM: What would you like to do next?
+[2026-07-24 14:52:15] [ELEMENTARY_ALGEBRA] SYSTEM: 1. Keep practicing another question
+[2026-07-24 14:52:15] [ELEMENTARY_ALGEBRA] SYSTEM: 2. Move to another topic
+[2026-07-24 14:53:28] [ELEMENTARY_ALGEBRA] STUDENT: 2
+[2026-07-24 14:53:28] [ELEMENTARY_ALGEBRA] SYSTEM: Returning to AI Math Tutor main menu...
+[2026-07-24 14:53:30] [MAIN] SYSTEM: The student wants to learn about equations, so I have started the basic concept script: `elementary_algebra.py`.
+[2026-07-24 14:53:30] [MAIN] SYSTEM: I can help you with:
+[2026-07-24 14:53:30] [MAIN] SYSTEM: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Equation Simple Solving (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-24 14:53:32] [MAIN] STUDENT: quit
+[2026-07-24 14:53:32] [MAIN] SYSTEM: Class dismissed! See you next time.
