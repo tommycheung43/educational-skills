@@ -132,6 +132,8 @@ if __name__ == "__main__":
         checkpointer=checkpointer,
     )
 
+    setup_agent_logging(agent)
+
     message = (
         f"1. Please introduce the concept of Statistics (Mean, Median, Mode, Range) following the statistics-docs skill.\n"
         f"2. Mention briefly that there are advanced tools like Variance, Standard Deviation, and IQR to measure how spread out numbers are.\n"

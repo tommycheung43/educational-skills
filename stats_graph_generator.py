@@ -3,6 +3,8 @@ import statistics as stats
 import numpy as np
 import multiprocessing
 
+import logger_utils
+from logger_utils import setup_agent_logging, write_log
 
 def generate_graph(data: list, title: str = "Dataset Visualization") -> str:
     """
