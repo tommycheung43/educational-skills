@@ -6,6 +6,8 @@ import webbrowser
 import random
 import math
 
+import logger_utils
+from logger_utils import setup_agent_logging, write_log
 
 def play_video(url: str) -> str:
     """Opens the student's default web browser to play a tutorial video.
@@ -36,9 +38,9 @@ def fraction():
 
     return num1, den1, num2, den2, operation
 
-def get_input(message: str) -> str:
-    """Handles getting textual or numerical input from the student via the terminal."""
-    return input(message)
+# def get_input(message: str) -> str:
+#     """Handles getting textual or numerical input from the student via the terminal."""
+#     return input(message)
 
 def check_answer(num1: int, den1: int, num2: int, den2: int, operation: str, student_num: int, student_den: int) -> bool:
     """Checks if the student's input fraction matches the mathematically correct answer."""
@@ -63,7 +65,7 @@ backend = FilesystemBackend(root_dir=root_dir, virtual_mode=True)
 agent = create_deep_agent(
     model="ollama:gemma4:cloud",  
     backend=backend,
-    tools=[play_video],
+    tools=[play_video,write_log],
     skills=[str(Path(root_dir) / "skills")],
     interrupt_on={
         "write_file": True,
@@ -94,7 +96,7 @@ print("\n=== Math Tutor Output ===")
 print(result["messages"][-1].content)
 
 while True:
-    student_q = get_input("\nAsk a question, or type 'ready' to start the quiz: ")
+    student_q = input("\nAsk a question, or type 'ready' to start the quiz: ")
 
     if student_q.lower().strip() in ["yes","no question", "ready", "start", "none","nope","no questions","i'm ready","quiz","let's start"]:
         print("\nGreat! Let's move on to the quiz phase.")
@@ -129,8 +131,8 @@ print("--------------------------------------------------")
 while True:
     
     try:
-        ans_num_str = get_input("\nPlease answer the Numerator: ")
-        ans_den_str = get_input("Please answer the Denominator: ")
+        ans_num_str = input("\nPlease answer the Numerator: ")
+        ans_den_str = input("Please answer the Denominator: ")
         ans_num = int(ans_num_str)
         ans_den = int(ans_den_str)
     except ValueError:
@@ -168,7 +170,7 @@ while True:
         print("1. Keep practicing another question")
         print("2. Move to another topic ")
         print("==================================================")
-        user_choice = get_input("Please enter option (1 or 2): ")
+        user_choice = input("Please enter option (1 or 2): ")
 
         if user_choice.strip() == "2":
             print("\nReturning to AI Math Tutor main menu...")
