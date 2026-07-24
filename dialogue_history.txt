@@ -110,3 +110,80 @@ Are you ready for the quiz?
 [2026-07-24 09:57:32] [PYTHAGOREAN] SYSTEM: 2. Move to another topic
 [2026-07-24 09:57:45] [PYTHAGOREAN] STUDENT: 2
 [2026-07-24 09:57:45] [PYTHAGOREAN] SYSTEM: Returning to AI Math Tutor main menu...
+[2026-07-24 10:01:52] [STATISTICS_TUTOR] SYSTEM: Starting the Statistics Tutor...
+[2026-07-24 10:01:57] [STATISTICS_TUTOR] SYSTEM: Statistics helps us analyze data using these core concepts:
+* **Mean**: The average; add all numbers and divide by the total count.
+* **Median**: The middle number when data is arranged in order.
+* **Mode**: The number that appears most frequently.
+* **Range**: The difference between the highest and lowest values.
+
+For more advanced analysis, tools like **Variance**, **Standard Deviation**, and **IQR** are used to measure how spread out the numbers are from the center.
+
+Do you have any questions, need an example, or are you ready to start?
+[2026-07-24 10:02:00] [STATISTICS_TUTOR] STUDENT: example
+[2026-07-24 10:02:03] [STATISTICS_TUTOR] SYSTEM: Imagine you tracked your MTR wait times over 5 days: 2, 4, 4, 6, and 9 minutes.
+
+* **Mode**: 4 minutes (it appears most often).
+* **Median**: 4 minutes (the middle value when ordered).
+* **Mean**: (2 + 4 + 4 + 6 + 9) ÷ 5 = 5 minutes.
+* **Range**: 9 - 2 = 7 minutes.
+
+Are you ready for the quiz, or would you like to review any other math topics first?
+[2026-07-24 10:02:16] [STATISTICS_TUTOR] STUDENT: what is the formula of variance
+[2026-07-24 10:02:18] [STATISTICS_TUTOR] SYSTEM: Variance measures how far a set of numbers is spread out from their average (mean). It is calculated as the average of the squared differences from the Mean.
+
+**Formula:**
+Variance = Sum of (Each Number - Mean)² / (Total Count)
+
+Do you have any other questions, or are you ready for the quiz?
+[2026-07-24 10:02:42] [STATISTICS_TUTOR] STUDENT: how about standard deviation
+[2026-07-24 10:02:44] [STATISTICS_TUTOR] SYSTEM: Standard Deviation shows how much variation exists from the average. Because Variance uses squared differences, the Standard Deviation brings the measurement back to the original data units.
+
+**Formula:**
+Standard Deviation = Square Root of Variance
+
+Do you have any other questions, or are you ready for the quiz?
+[2026-07-24 10:03:13] [STATISTICS_TUTOR] STUDENT: IQR?
+[2026-07-24 10:03:18] [STATISTICS_TUTOR] SYSTEM: The Interquartile Range (IQR) measures the spread of the middle 50 percent of the dataset. It is the distance between the 75th percentile (Q3) and the 25th percentile (Q1).
+
+**Formula:**
+IQR = Q3 - Q1
+*(Where Q1 is the median of the lower half and Q3 is the median of the upper half)*
+
+Do you have any other questions, or are you ready for the quiz?
+[2026-07-24 10:03:29] [STATISTICS_TUTOR] STUDENT: video
+[2026-07-24 10:03:39] [STATISTICS_TUTOR] SYSTEM: I have opened excellent YouTube video tutorials by Math Antics in your browser to help you learn more about Mean, Median, Mode, Range, Variance, and Standard Deviation!
+
+Do you have any other questions, or are you ready for the quiz?
+[2026-07-24 10:03:49] [STATISTICS_TUTOR] STUDENT: yes
+[2026-07-24 10:03:49] [STATISTICS_TUTOR] SYSTEM: Great! Let's move on to the quiz phase.
+[2026-07-24 10:03:53] [STATISTICS_TUTOR] SYSTEM: Please answer this question:
+[2026-07-24 10:03:53] [STATISTICS_TUTOR] SYSTEM: A group of students recorded the number of Dim Sum pieces they ate during a weekend brunch in Mong Kok: [49, 49, 49, 34, 38, 49, 50, 18, 25, 49, 48, 22]. Please calculate the standard deviation for this data set.
+[2026-07-24 10:03:53] [STATISTICS_TUTOR] SYSTEM: (The data set is: [49, 49, 49, 34, 38, 49, 50, 18, 25, 49, 48, 22])
+[2026-07-24 10:03:53] [STATISTICS_TUTOR] SYSTEM: (If the decimal is long, you may round it to 2 decimal places!)
+[2026-07-24 10:03:53] [STATISTICS_TUTOR] SYSTEM: (If you are stuck, you can type 'explain' or 'example' or 'video'!)
+[2026-07-24 10:04:31] [STATISTICS_TUTOR] STUDENT: 11.70
+[2026-07-24 10:04:33] [STATISTICS_TUTOR] SYSTEM: Wah! Amazing work! 🌟 You nailed it! You've correctly calculated the standard deviation for the Dim Sum pieces. Absolutely spot on! Keep up that incredible energy! 加油! 🥟🔥
+[2026-07-24 10:04:33] [STATISTICS_TUTOR] SYSTEM: Congratulations! You solved it!
+[2026-07-24 10:04:33] [STATISTICS_TUTOR] SYSTEM: Would you like to see a visual graph for this dataset to understand it better?
+[2026-07-24 10:04:43] [STATISTICS_TUTOR] STUDENT: yes
+[2026-07-24 10:04:49] [STATISTICS_TUTOR] SYSTEM: [System: Standard Deviation Bell Curve window opened. Close the window to continue...]
+[2026-07-24 10:05:17] [STATISTICS_TUTOR] SYSTEM: I have generated the graph for you! Please close the graph window to continue.
+[2026-07-24 10:05:17] [STATISTICS_TUTOR] SYSTEM: What would you like to do next?
+[2026-07-24 10:05:17] [STATISTICS_TUTOR] SYSTEM: 1. Keep practicing another question
+[2026-07-24 10:05:17] [STATISTICS_TUTOR] SYSTEM: 2. Move to another topic
+[2026-07-24 10:05:19] [STATISTICS_TUTOR] STUDENT: 1
+[2026-07-24 10:05:19] [STATISTICS_TUTOR] SYSTEM: Fantastic! It automatically generates the next challenge for you.:
+[2026-07-24 10:05:23] [STATISTICS_TUTOR] SYSTEM: A hiker recorded the daily temperature in degrees Celsius over 10 days while trekking through the Peak Country Park: [33, 29, 23, 29, 29, 29, 31, 27, 29, 37]. Please calculate the standard deviation for this data set.
+[2026-07-24 10:05:23] [STATISTICS_TUTOR] SYSTEM: (The data set is: [33, 29, 23, 29, 29, 29, 31, 27, 29, 37])
+[2026-07-24 10:06:05] [STATISTICS_TUTOR] STUDENT: 3.47
+[2026-07-24 10:06:12] [STATISTICS_TUTOR] SYSTEM: Fantastic! 🌟 You got it perfectly right! Your calculation for the temperature at Peak Country Park is spot on! Keep it up, you're absolutely crushing it! 加油! 🏔️✨
+[2026-07-24 10:06:12] [STATISTICS_TUTOR] SYSTEM: Congratulations! You solved it!
+[2026-07-24 10:06:12] [STATISTICS_TUTOR] SYSTEM: Would you like to see a visual graph for this dataset to understand it better?
+[2026-07-24 10:06:15] [STATISTICS_TUTOR] STUDENT: no
+[2026-07-24 10:06:15] [STATISTICS_TUTOR] SYSTEM: No problem, let's move on!
+[2026-07-24 10:06:15] [STATISTICS_TUTOR] SYSTEM: What would you like to do next?
+[2026-07-24 10:06:15] [STATISTICS_TUTOR] SYSTEM: 1. Keep practicing another question
+[2026-07-24 10:06:15] [STATISTICS_TUTOR] SYSTEM: 2. Move to another topic
+[2026-07-24 10:06:20] [STATISTICS_TUTOR] STUDENT: 2
+[2026-07-24 10:06:20] [STATISTICS_TUTOR] SYSTEM: Returning to AI Math Tutor main menu...
