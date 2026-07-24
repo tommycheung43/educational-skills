@@ -4,10 +4,14 @@ import builtins
 from datetime import datetime
 
 filename = "dialogue_history.txt"
+last_tutor_message = ""
+
 
 def get_skill_name() -> str:
     """Retrieves the name of the currently executed Skill (default is PYTHAGOREAN)."""
     return os.environ.get("CURRENT_SKILL_NAME", "Undefined")
+
+original_print = builtins.print
 
 def write_log(role: str, text: str):
     """
@@ -29,7 +33,7 @@ def write_log(role: str, text: str):
             f.write(formatted_log)
             return f"Successfully recorded log: {formatted_log.strip()}"
     except Exception as e:
-        print(f"[Logger Error] Failed to write log: {e}")
+        original_print(f"[Logger Error] Failed to write log: {e}")
 
 original_input = builtins.input
 
@@ -40,16 +44,39 @@ def logged_input(prompt: str = "") -> str:
 
 builtins.input = logged_input
 
+def logged_print(*args, **kwargs):
+    global last_tutor_message
+
+    original_print(*args, **kwargs)
+
+    text = " ".join(str(a) for a in args).strip()
+    if not text:
+        return
+
+    if text == last_tutor_message:
+        last_tutor_message = "" 
+        return
+
+    if text.startswith("===") or text.startswith("---") or text.startswith("Starting the Pythagorean"):
+        return
+
+    write_log("SYSTEM", text)
+
+builtins.print = logged_print
+
 def setup_agent_logging(agent):
     """Package the agent so that each agent.invoke call automatically records the AI's response."""
     original_invoke = agent.invoke
 
     def logged_invoke(input_data, config=None):
+        global last_tutor_message
         response = original_invoke(input_data, config=config)
         if "messages" in response and response["messages"]:
             last_message = response["messages"][-1].content
+            last_tutor_message = last_message.strip()
             write_log("TUTOR", last_message)
         return response
 
     agent.invoke = logged_invoke
     return agent
+
