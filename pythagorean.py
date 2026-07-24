@@ -68,13 +68,13 @@ def pythagorean_question_text(agent, triangle_dict: dict):
     return result["messages"][-1].content
 
 
-def get_input(message: str) -> str:
-    """
-    Handles getting textual or numerical input from the student via the terminal.
-    Log the input
-    """
-    student_input = input(message)
-    return student_input
+# def get_input(message: str) -> str:
+#     """
+#     Handles getting textual or numerical input from the student via the terminal.
+#     Log the input
+#     """
+#     student_input = input(message)
+#     return student_input
 
 def pythagorean_check_answer(a:float, b:float, student_result: float):
     """
@@ -241,7 +241,7 @@ if __name__ == "__main__":
             print("1. Keep practicing another question")
             print("2. Move to another topic ")
             print("==================================================")
-            user_choice = get_input("Please enter option (1 or 2): ")
+            user_choice = input("Please enter option (1 or 2): ")
 
             if user_choice.strip() == "2":
 
