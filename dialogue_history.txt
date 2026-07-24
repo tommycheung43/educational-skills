@@ -375,3 +375,104 @@ Are you ready for the quiz, or do you have any other questions?
   - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
 [2026-07-24 14:16:57] [MAIN] STUDENT: quit
 [2026-07-24 14:16:57] [MAIN] SYSTEM: Class dismissed! See you next time.
+[2026-07-24 14:24:23] [MAIN] SYSTEM: Welcome to the Hong Kong AI Math Tutor!
+[2026-07-24 14:24:23] [MAIN] SYSTEM: I can help you with:
+[2026-07-24 14:24:23] [MAIN] SYSTEM: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Simple Equation (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-24 14:24:33] [MAIN] STUDENT: negative
+[2026-07-24 14:24:38] [NEGATIVE_NUMBER_ARITHMETIC] SYSTEM: Starting the Negative Number Arithmetic Tutor...
+[2026-07-24 14:24:46] [NEGATIVE_NUMBER_ARITHMETIC] SYSTEM: Negative numbers represent values less than zero. You can visualize them as underground floors (B1, B2) or as debt (money you owe) versus cash (money you have).
+
+**Arithmetic Rules:**
+- **Add/Subtract:** Think of adding debt: $-5 + (-3) = -8$.
+- **Sign Collision:** $+(-3)$ becomes $-3$, while $-(-3)$ becomes $+3$.
+- **Multiply/Divide:** 
+  - Same signs $\rightarrow$ Positive (e.g., $-2 \times -4 = 8$)
+  - Different signs $\rightarrow$ Negative (e.g., $2 \times -4 = -8$)
+
+Do you have any questions, need an example, or are you ready to start?
+[2026-07-24 14:24:59] [NEGATIVE_NUMBER_ARITHMETIC] STUDENT: example
+[2026-07-24 14:25:04] [NEGATIVE_NUMBER_ARITHMETIC] SYSTEM: Imagine you use your Octopus card for transport. You have $20 balance, but then you make three separate payments of $8 each for a trip.
+
+1.  **Initial balance:** $+20$
+2.  **First payment:** $20 - 8 = 12$
+3.  **Second payment:** $12 - 8 = 4$
+4.  **Third payment:** $4 - 8 = -4$
+
+Your balance is now $-4$, meaning you owe the system $4.
+
+Alternatively, if you had a debt of $\$10$ ($-10$) and borrowed another $\$15$ ($-15$), your total debt would be:
+$-10 + (-15) = -25$.
+
+Do you have any other questions, or are you ready for the quiz?
+[2026-07-24 14:25:08] [NEGATIVE_NUMBER_ARITHMETIC] STUDENT: video
+[2026-07-24 14:25:12] [NEGATIVE_NUMBER_ARITHMETIC] SYSTEM: I have opened an excellent YouTube video tutorial by Math Antics in your browser to help you learn more!
+
+Are you ready for the quiz, or do you have any other questions?
+[2026-07-24 14:25:27] [NEGATIVE_NUMBER_ARITHMETIC] STUDENT: yes
+[2026-07-24 14:25:27] [NEGATIVE_NUMBER_ARITHMETIC] SYSTEM: Great! Let's move on to the quiz phase.
+[2026-07-24 14:25:27] [NEGATIVE_NUMBER_ARITHMETIC] SYSTEM: Please answer this question:
+[2026-07-24 14:25:27] [NEGATIVE_NUMBER_ARITHMETIC] SYSTEM: (11+-11)
+[2026-07-24 14:25:27] [NEGATIVE_NUMBER_ARITHMETIC] SYSTEM: (If the decimal is long, you may round it to 2 decimal places!)
+[2026-07-24 14:25:27] [NEGATIVE_NUMBER_ARITHMETIC] SYSTEM: (If you are stuck, you can type 'explain' or 'example' or 'video'!)
+[2026-07-24 14:25:33] [NEGATIVE_NUMBER_ARITHMETIC] STUDENT: 0
+[2026-07-24 14:25:35] [NEGATIVE_NUMBER_ARITHMETIC] SYSTEM: Wow! You nailed it! 🌟 Correct! 🥳 You've totally mastered this one! Keep up that amazing energy! 💪✨
+[2026-07-24 14:25:35] [NEGATIVE_NUMBER_ARITHMETIC] SYSTEM: Congratulations! You solved it!
+[2026-07-24 14:25:35] [NEGATIVE_NUMBER_ARITHMETIC] SYSTEM: What would you like to do next?
+[2026-07-24 14:25:35] [NEGATIVE_NUMBER_ARITHMETIC] SYSTEM: 1. Keep practicing another question
+[2026-07-24 14:25:35] [NEGATIVE_NUMBER_ARITHMETIC] SYSTEM: 2. Move to another topic
+[2026-07-24 14:25:37] [NEGATIVE_NUMBER_ARITHMETIC] STUDENT: 1
+[2026-07-24 14:25:37] [NEGATIVE_NUMBER_ARITHMETIC] SYSTEM: Fantastic! It automatically generates the next challenge for you.:
+[2026-07-24 14:25:37] [NEGATIVE_NUMBER_ARITHMETIC] SYSTEM: (-9*8)
+[2026-07-24 14:25:44] [NEGATIVE_NUMBER_ARITHMETIC] STUDENT: -72
+[2026-07-24 14:25:45] [NEGATIVE_NUMBER_ARITHMETIC] SYSTEM: Omg, you're on fire! 🔥 Correct! 🥳 You absolutely smashed this problem! Keep it going! 🌟💪
+[2026-07-24 14:25:45] [NEGATIVE_NUMBER_ARITHMETIC] SYSTEM: Congratulations! You solved it!
+[2026-07-24 14:25:45] [NEGATIVE_NUMBER_ARITHMETIC] SYSTEM: What would you like to do next?
+[2026-07-24 14:25:45] [NEGATIVE_NUMBER_ARITHMETIC] SYSTEM: 1. Keep practicing another question
+[2026-07-24 14:25:45] [NEGATIVE_NUMBER_ARITHMETIC] SYSTEM: 2. Move to another topic
+[2026-07-24 14:25:48] [NEGATIVE_NUMBER_ARITHMETIC] STUDENT: 2
+[2026-07-24 14:25:48] [NEGATIVE_NUMBER_ARITHMETIC] SYSTEM: Returning to AI Math Tutor main menu...
+[2026-07-24 14:25:50] [MAIN] SYSTEM: The correct file for 'negative' is `negative_number_arithmetic.py`. I have started the script for you.
+[2026-07-24 14:25:50] [MAIN] SYSTEM: I can help you with:
+[2026-07-24 14:25:50] [MAIN] SYSTEM: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Simple Equation (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-24 14:25:54] [MAIN] STUDENT: quit
+[2026-07-24 14:25:54] [MAIN] SYSTEM: Class dismissed! See you next time.
