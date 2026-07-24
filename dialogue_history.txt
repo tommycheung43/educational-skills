@@ -1570,3 +1570,63 @@ I have opened an excellent YouTube video tutorial by Math Antics in your browser
   - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
 [2026-07-24 16:34:40] [MAIN] STUDENT: quit
 [2026-07-24 16:34:40] [MAIN] AGENT: Class dismissed! See you next time.
+[2026-07-24 16:37:22] [MAIN] AGENT: Welcome to the Hong Kong AI Math Tutor!
+[2026-07-24 16:37:22] [MAIN] AGENT: I can help you with:
+[2026-07-24 16:37:22] [MAIN] AGENT: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Equation Simple Solving (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-24 16:37:48] [MAIN] STUDENT: fracion
+[2026-07-24 16:37:54] [FRACTION] STUDENT: 10
+[2026-07-24 16:37:55] [FRACTION] STUDENT: 30
+[2026-07-24 16:38:04] [FRACTION] AGENT: **Concept**: A fraction represents a part of a whole. The **numerator** (top) is the number of parts chosen; the **denominator** (bottom) is the total number of equal parts.
+
+**Examples**: Eating 1 slice of a 4-slice Hong Kong egg tart is `1/4`. Splitting a pineapple bun in half is `1/2`.
+
+**Calculation**: For 10 and 30, the fraction is `10/30`, which simplifies to `1/3`.
+
+**Documentation**: Refer to the [Fraction Wikipedia page](https://en.wikipedia.org/wiki/Fraction).
+
+I have popped up the cake.png image for you to see!
+[2026-07-24 16:38:07] [MAIN] AGENT: The student wants to learn about fractions. Based on the provided list, the correct file is `fraction.py`. I have successfully started the script.
+[2026-07-24 16:38:07] [MAIN] AGENT: I can help you with:
+[2026-07-24 16:38:07] [MAIN] AGENT: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Equation Simple Solving (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-24 16:38:10] [MAIN] STUDENT: quit
+[2026-07-24 16:38:10] [MAIN] AGENT: Class dismissed! See you next time.

@@ -6,6 +6,9 @@ import math
 import matplotlib.pyplot as plt
 from PIL import Image
 
+import logger_utils
+from logger_utils import setup_agent_logging, write_log
+
 def fraction(numerator: float, denominator: float) -> str:
     """Calculates the fraction when a student inputs a numerator and a denominator.
     
@@ -57,7 +60,7 @@ backend = FilesystemBackend(root_dir=root_dir, virtual_mode=True)
 agent = create_deep_agent(
     model="ollama:gemma4:cloud",
     backend=backend,
-    tools=[fraction,view_image],
+    tools=[fraction,view_image,write_log],
     skills=[str(Path(root_dir) / "skills")],
     interrupt_on={
         "write_file": True,
