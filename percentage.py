@@ -3,6 +3,9 @@ from deepagents import create_deep_agent
 from deepagents.backends.filesystem import FilesystemBackend
 from langgraph.checkpoint.memory import MemorySaver
 
+import logger_utils
+from logger_utils import setup_agent_logging, write_log
+
 def percentage(part: float, total: float) -> str:
     """Calculates the percentage when a student inputs a part and a total whole value.
     
@@ -23,7 +26,7 @@ backend = FilesystemBackend(root_dir=root_dir, virtual_mode=True)
 agent = create_deep_agent(
     model="ollama:gemma4:cloud",
     backend=backend,
-    tools=[percentage],
+    tools=[percentage,write_log],
     skills=[str(Path(root_dir) / "skills")],
     interrupt_on={
         "write_file": True,
