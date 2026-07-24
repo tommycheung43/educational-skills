@@ -476,3 +476,89 @@ Are you ready for the quiz, or do you have any other questions?
   - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
 [2026-07-24 14:25:54] [MAIN] STUDENT: quit
 [2026-07-24 14:25:54] [MAIN] SYSTEM: Class dismissed! See you next time.
+[2026-07-24 14:32:38] [MAIN] SYSTEM: Welcome to the Hong Kong AI Math Tutor!
+[2026-07-24 14:32:38] [MAIN] SYSTEM: I can help you with:
+[2026-07-24 14:32:38] [MAIN] SYSTEM: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Simple Equation (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-24 14:32:48] [MAIN] STUDENT: equalion add
+[2026-07-24 14:32:52] [EQUATION_ARITHMETIC_OPERATIONS] SYSTEM: Starting the Arithmetic Operations Equation Tutor...
+[2026-07-24 14:32:58] [EQUATION_ARITHMETIC_OPERATIONS] SYSTEM: Combining like terms means adding or subtracting terms that are the same type. Think of it like the "Lunch Box Rule": if you have apples and candies in two different boxes, you group all the apples together and all the candies together.
+
+To solve equations with multiple terms, first remove any parentheses and group all variable terms (like $2x$ and $3x$) and all constant numbers (like $1$ and $2$) separately. Once simplified, you can isolate the variable to find the answer.
+
+Do you have any questions, would you like to see an example, or are you ready to start?
+[2026-07-24 14:33:02] [EQUATION_ARITHMETIC_OPERATIONS] STUDENT: example
+[2026-07-24 14:33:05] [EQUATION_ARITHMETIC_OPERATIONS] SYSTEM: Imagine you ordered 2 bamboo baskets of Siu Mai ($x$ pieces each) and 3 loose Siu Mai. Later, your friend ordered 3 more baskets and 2 loose Siu Mai. In total, you have 20 Siu Mai.
+
+We write this as: $(2x + 3) + (3x + 2) = 20$
+
+1. **Group baskets (variables):** $2x + 3x = 5x$
+2. **Group loose ones (constants):** $3 + 2 = 5$
+3. **Simplified equation:** $5x + 5 = 20$
+4. **Solve:** Subtract 5 from both sides ($5x = 15$), then divide by 5 ($x = 3$).
+
+Each basket has 3 Siu Mai!
+
+Are you ready for the quiz?
+[2026-07-24 14:33:26] [EQUATION_ARITHMETIC_OPERATIONS] STUDENT: video
+[2026-07-24 14:33:30] [EQUATION_ARITHMETIC_OPERATIONS] SYSTEM: I have opened an excellent YouTube video tutorial by Math Antics in your browser to help you learn more!
+
+Are you ready for the quiz?
+[2026-07-24 14:33:49] [EQUATION_ARITHMETIC_OPERATIONS] STUDENT: yes
+[2026-07-24 14:33:49] [EQUATION_ARITHMETIC_OPERATIONS] SYSTEM: Great! Let's move on to the quiz phase.
+[2026-07-24 14:33:49] [EQUATION_ARITHMETIC_OPERATIONS] SYSTEM: Please answer this question:
+[2026-07-24 14:33:49] [EQUATION_ARITHMETIC_OPERATIONS] SYSTEM: 60 = (15k - 6) + (2k - 19)
+[2026-07-24 14:33:49] [EQUATION_ARITHMETIC_OPERATIONS] SYSTEM: (If the decimal is long, you may round it to 2 decimal places!)
+[2026-07-24 14:33:49] [EQUATION_ARITHMETIC_OPERATIONS] SYSTEM: (If you are stuck, you can type 'explain' or 'example' or 'video'!)
+[2026-07-24 14:35:06] [EQUATION_ARITHMETIC_OPERATIONS] STUDENT: 5
+[2026-07-24 14:35:09] [EQUATION_ARITHMETIC_OPERATIONS] SYSTEM: 嘩！好犀利！你完全正確！🎉 恭喜晒你，題目 60 = (15k - 6) + (2k - 19) 你計啱晒，k = 5.0 係正確答案！Keep it up! 💪✨
+[2026-07-24 14:35:09] [EQUATION_ARITHMETIC_OPERATIONS] SYSTEM: Congratulations! You solved it!
+[2026-07-24 14:35:09] [EQUATION_ARITHMETIC_OPERATIONS] SYSTEM: What would you like to do next?
+[2026-07-24 14:35:09] [EQUATION_ARITHMETIC_OPERATIONS] SYSTEM: 1. Keep practicing another question
+[2026-07-24 14:35:09] [EQUATION_ARITHMETIC_OPERATIONS] SYSTEM: 2. Move to another topic
+[2026-07-24 14:35:11] [EQUATION_ARITHMETIC_OPERATIONS] STUDENT: 2
+[2026-07-24 14:35:11] [EQUATION_ARITHMETIC_OPERATIONS] SYSTEM: Returning to AI Math Tutor main menu...
+[2026-07-24 14:35:13] [MAIN] SYSTEM: The student wants to learn about equation addition, so I have started the corresponding script: `equation_arithmetic_operations.py`.
+[2026-07-24 14:35:13] [MAIN] SYSTEM: I can help you with:
+[2026-07-24 14:35:13] [MAIN] SYSTEM: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Simple Equation (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-24 14:35:16] [MAIN] STUDENT: quit
+[2026-07-24 14:35:16] [MAIN] SYSTEM: Class dismissed! See you next time.
