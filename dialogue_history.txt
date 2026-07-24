@@ -1501,3 +1501,72 @@ Are you ready for the quiz, or do you have any other questions?
   - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
 [2026-07-24 16:25:35] [MAIN] STUDENT: quit
 [2026-07-24 16:25:35] [MAIN] AGENT: Class dismissed! See you next time.
+[2026-07-24 16:32:58] [MAIN] AGENT: Welcome to the Hong Kong AI Math Tutor!
+[2026-07-24 16:32:58] [MAIN] AGENT: I can help you with:
+[2026-07-24 16:32:58] [MAIN] AGENT: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Equation Simple Solving (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-24 16:33:02] [MAIN] STUDENT: fraction add
+[2026-07-24 16:33:07] [FRACTION_ADD_SUB] AGENT: Agent is thinking and preparing to open the video...
+[2026-07-24 16:33:18] [FRACTION_ADD_SUB] AGENT: **Core Concept**
+For fractions with the same denominator, only add or subtract the numerators (top numbers). Keep the denominator (bottom number) exactly the same.
+Example: 5/16 + 2/16 = 7/16.
+
+**Hong Kong Example**
+Imagine sharing a bamboo basket of Siu Mai at a dim sum restaurant; if you eat 1/4 and your friend eats 2/4, you have collectively eaten 3/4 of the basket.
+
+I have opened an excellent YouTube video tutorial by Math Antics in your browser to help you learn more!
+[2026-07-24 16:33:18] [FRACTION_ADD_SUB] AGENT: Please answer this question：
+[2026-07-24 16:33:18] [FRACTION_ADD_SUB] AGENT: Question: 3/7 + 5/7 = ?
+[2026-07-24 16:34:05] [FRACTION_ADD_SUB] STUDENT: 8
+[2026-07-24 16:34:06] [FRACTION_ADD_SUB] STUDENT: 7
+[2026-07-24 16:34:08] [FRACTION_ADD_SUB] AGENT: Wow! You nailed it! 🌟 8/7 is absolutely correct! Keep up that amazing energy! 加油! 💪🔥
+[2026-07-24 16:34:08] [FRACTION_ADD_SUB] AGENT: Congratulations! You solved it!
+[2026-07-24 16:34:08] [FRACTION_ADD_SUB] AGENT: What would you like to do next?
+[2026-07-24 16:34:08] [FRACTION_ADD_SUB] AGENT: 1. Keep practicing another question
+[2026-07-24 16:34:08] [FRACTION_ADD_SUB] AGENT: 2. Move to another topic
+[2026-07-24 16:34:11] [FRACTION_ADD_SUB] STUDENT: 2
+[2026-07-24 16:34:11] [FRACTION_ADD_SUB] AGENT: Returning to AI Math Tutor main menu...
+[2026-07-24 16:34:13] [MAIN] AGENT: The script `fraction_add_sub.py` has been started for the student to learn about adding and subtracting fractions.
+[2026-07-24 16:34:13] [MAIN] AGENT: I can help you with:
+[2026-07-24 16:34:13] [MAIN] AGENT: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Equation Simple Solving (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-24 16:34:40] [MAIN] STUDENT: quit
+[2026-07-24 16:34:40] [MAIN] AGENT: Class dismissed! See you next time.
