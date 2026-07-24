@@ -885,3 +885,87 @@ Would you like to review basic fractions first, or are you ready for the quiz?
   - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
 [2026-07-24 15:02:19] [MAIN] STUDENT: quit
 [2026-07-24 15:02:19] [MAIN] SYSTEM: Class dismissed! See you next time.
+[2026-07-24 15:06:59] [MAIN] SYSTEM: Welcome to the Hong Kong AI Math Tutor!
+[2026-07-24 15:06:59] [MAIN] SYSTEM: I can help you with:
+[2026-07-24 15:06:59] [MAIN] SYSTEM: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Equation Simple Solving (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-24 15:09:30] [MAIN] STUDENT: triangle
+[2026-07-24 15:09:34] [AREA_PERIMETER_TRIANGLE] SYSTEM: Starting the Triangle Area & Perimeter Tutor...
+[2026-07-24 15:09:37] [AREA_PERIMETER_TRIANGLE] SYSTEM: **Area of a Triangle:** Calculated as half the base multiplied by the perpendicular height.
+Formula: $\text{Area} = 0.5 \times \text{Base} \times \text{Height}$
+
+**Perimeter of a Triangle:** The total distance around the three outer edges.
+Formula: $\text{Perimeter} = \text{Sum of all three sides}$
+
+Do you have any questions, or would you like an example before starting the quiz?
+[2026-07-24 15:09:41] [AREA_PERIMETER_TRIANGLE] STUDENT: example
+[2026-07-24 15:09:43] [AREA_PERIMETER_TRIANGLE] SYSTEM: Here are two examples:
+
+**Area (Warning Sign):** If a triangular sign has a base of 60 cm and a perpendicular height of 50 cm:
+$\text{Area} = 0.5 \times 60 \times 50 = 1,500 \text{ cm}^2$
+
+**Perimeter (Billiard Rack):** If a triangular rack has a base of 30 cm and two slant sides of 30 cm each:
+$\text{Perimeter} = 30 + 30 + 30 = 90 \text{ cm}$
+
+Are you ready for the quiz, or do you have any other questions?
+[2026-07-24 15:09:50] [AREA_PERIMETER_TRIANGLE] STUDENT: video
+[2026-07-24 15:09:54] [AREA_PERIMETER_TRIANGLE] SYSTEM: I have opened an excellent YouTube video tutorial by Math Antics in your browser to help you learn more!
+
+Are you ready for the quiz, or do you have any other questions?
+[2026-07-24 15:10:04] [AREA_PERIMETER_TRIANGLE] STUDENT: yes
+[2026-07-24 15:10:04] [AREA_PERIMETER_TRIANGLE] SYSTEM: Great! Let's move on to the quiz phase.
+[2026-07-24 15:10:04] [AREA_PERIMETER_TRIANGLE] SYSTEM: Please answer this question:
+[2026-07-24 15:10:04] [AREA_PERIMETER_TRIANGLE] SYSTEM: A Non-Right-Angled Triangle has a base of 7cm, a height of 14cm, and a hypotenuse of 14cm.
+[2026-07-24 15:10:04] [AREA_PERIMETER_TRIANGLE] SYSTEM: What is the Area of this shape?
+[2026-07-24 15:10:33] [AREA_PERIMETER_TRIANGLE] STUDENT: 49
+[2026-07-24 15:10:34] [AREA_PERIMETER_TRIANGLE] SYSTEM: Awesome! You nailed it! 🌟 100% correct! You've totally mastered this—keep that energy going! 💪🔥
+[2026-07-24 15:10:34] [AREA_PERIMETER_TRIANGLE] SYSTEM: Congratulations! You solved it!
+[2026-07-24 15:10:34] [AREA_PERIMETER_TRIANGLE] SYSTEM: What would you like to do next?
+[2026-07-24 15:10:34] [AREA_PERIMETER_TRIANGLE] SYSTEM: 1. Keep practicing another question
+[2026-07-24 15:10:34] [AREA_PERIMETER_TRIANGLE] SYSTEM: 2. Move to another topic
+[2026-07-24 15:10:37] [AREA_PERIMETER_TRIANGLE] STUDENT: 2
+[2026-07-24 15:10:37] [AREA_PERIMETER_TRIANGLE] SYSTEM: Returning to AI Math Tutor main menu...
+[2026-07-24 15:10:39] [MAIN] SYSTEM: The script `area_perimeter_triangle.py` has been successfully started to help the student learn about triangles.
+[2026-07-24 15:10:39] [MAIN] SYSTEM: I can help you with:
+[2026-07-24 15:10:39] [MAIN] SYSTEM: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Equation Simple Solving (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-24 15:10:42] [MAIN] STUDENT: quit
+[2026-07-24 15:10:42] [MAIN] SYSTEM: Class dismissed! See you next time.

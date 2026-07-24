@@ -60,7 +60,7 @@ def logged_print(*args, **kwargs):
     if text.startswith("===") or text.startswith("---") or text.startswith("Starting the Pythagorean"):
         return
 
-    write_log("SYSTEM", text)
+    write_log("AGENT", text)
 
 builtins.print = logged_print
 
@@ -74,7 +74,7 @@ def setup_agent_logging(agent):
         if "messages" in response and response["messages"]:
             last_message = response["messages"][-1].content
             last_tutor_message = last_message.strip()
-            write_log("TUTOR", last_message)
+            write_log("AGENT", last_message)
         return response
 
     agent.invoke = logged_invoke
