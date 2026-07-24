@@ -782,3 +782,106 @@ Are you ready for the quiz now, or do you have any other questions?
   - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
 [2026-07-24 14:53:32] [MAIN] STUDENT: quit
 [2026-07-24 14:53:32] [MAIN] SYSTEM: Class dismissed! See you next time.
+[2026-07-24 14:56:22] [MAIN] SYSTEM: Welcome to the Hong Kong AI Math Tutor!
+[2026-07-24 14:56:22] [MAIN] SYSTEM: I can help you with:
+[2026-07-24 14:56:22] [MAIN] SYSTEM: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Equation Simple Solving (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-24 14:56:25] [MAIN] STUDENT: fraction
+[2026-07-24 14:56:50] [MAIN] SYSTEM: The script `fraction.py` has been successfully started to help the student learn about fractions.
+[2026-07-24 14:56:50] [MAIN] SYSTEM: I can help you with:
+[2026-07-24 14:56:50] [MAIN] SYSTEM: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Equation Simple Solving (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-24 14:57:37] [MAIN] STUDENT: decimal basic
+[2026-07-24 14:57:41] [FRACTION_TO_DECIMAL] SYSTEM: Starting the Fraction to Decimal Tutor...
+[2026-07-24 14:58:25] [FRACTION_TO_DECIMAL] SYSTEM: A decimal number is a way to show parts of a whole using a **decimal point**. Numbers to the left are whole numbers, and numbers to the right are fractional parts (tenths, hundredths, etc.). For example, $0.5$ is 5 tenths ($\frac{5}{10}$).
+
+**The Magic Rule:** A fraction is a hidden division problem. To convert a fraction to a decimal, simply divide the top number (Numerator) by the bottom number (Denominator).
+*Examples: $\frac{1}{2} = 0.5$, $\frac{1}{4} = 0.25$, $\frac{1}{10} = 0.1$.*
+
+Do you have any questions, need an example, or are you ready to start?
+[2026-07-24 14:58:32] [FRACTION_TO_DECIMAL] STUDENT: example
+[2026-07-24 14:58:35] [FRACTION_TO_DECIMAL] SYSTEM: Imagine we have 3 egg tarts to share among 4 friends. To find out how much each person gets, we divide the numerator by the denominator: $3 \div 4 = 0.75$ of an egg tart!
+
+Alternatively, think of Hong Kong Dollars: 50 cents is $\frac{50}{100}$ of a dollar, and $50 \div 100 = 0.50$ dollars.
+
+Would you like to review basic fractions first, or are you ready for the quiz?
+[2026-07-24 15:01:40] [FRACTION_TO_DECIMAL] STUDENT: video
+[2026-07-24 15:01:44] [FRACTION_TO_DECIMAL] SYSTEM: I have opened an excellent YouTube video tutorial by Math Antics in your browser to help you learn more!
+
+Would you like to review basic fractions first, or are you ready for the quiz?
+[2026-07-24 15:02:00] [FRACTION_TO_DECIMAL] STUDENT: yes
+[2026-07-24 15:02:00] [FRACTION_TO_DECIMAL] SYSTEM: Great! Let's move on to the quiz phase.
+[2026-07-24 15:02:00] [FRACTION_TO_DECIMAL] SYSTEM: Please answer this question:
+[2026-07-24 15:02:00] [FRACTION_TO_DECIMAL] SYSTEM: Convert this fraction into a decimal: 2/6
+[2026-07-24 15:02:00] [FRACTION_TO_DECIMAL] SYSTEM: (If the decimal is a repeating or long decimal, you may round it to 2 decimal places!)
+[2026-07-24 15:02:11] [FRACTION_TO_DECIMAL] STUDENT: 0.33
+[2026-07-24 15:02:13] [FRACTION_TO_DECIMAL] SYSTEM: Correct! 🌟 You nailed it! Your answer 0.33 is spot on! Keep up that amazing energy! 加油! 🚀
+[2026-07-24 15:02:13] [FRACTION_TO_DECIMAL] SYSTEM: Congratulations! You solved it!
+[2026-07-24 15:02:13] [FRACTION_TO_DECIMAL] SYSTEM: What would you like to do next?
+[2026-07-24 15:02:13] [FRACTION_TO_DECIMAL] SYSTEM: 1. Keep practicing another question
+[2026-07-24 15:02:13] [FRACTION_TO_DECIMAL] SYSTEM: 2. Move to another topic
+[2026-07-24 15:02:14] [FRACTION_TO_DECIMAL] STUDENT: 2
+[2026-07-24 15:02:14] [FRACTION_TO_DECIMAL] SYSTEM: Returning to AI Math Tutor main menu...
+[2026-07-24 15:02:17] [MAIN] SYSTEM: The script `fraction_to_decimal.py` has been successfully started to help the student learn the basic concepts of decimals.
+[2026-07-24 15:02:17] [MAIN] SYSTEM: I can help you with:
+[2026-07-24 15:02:17] [MAIN] SYSTEM: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Equation Simple Solving (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-24 15:02:19] [MAIN] STUDENT: quit
+[2026-07-24 15:02:19] [MAIN] SYSTEM: Class dismissed! See you next time.
