@@ -9,7 +9,7 @@ last_tutor_message = ""
 
 def get_skill_name() -> str:
     """Retrieves the name of the currently executed Skill (default is PYTHAGOREAN)."""
-    return os.environ.get("CURRENT_SKILL_NAME", "Undefined")
+    return os.environ.get("CURRENT_SKILL_NAME", "MAIN")
 
 original_print = builtins.print
 
