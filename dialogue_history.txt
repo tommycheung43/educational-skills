@@ -1630,3 +1630,69 @@ I have popped up the cake.png image for you to see!
   - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
 [2026-07-24 16:38:10] [MAIN] STUDENT: quit
 [2026-07-24 16:38:10] [MAIN] AGENT: Class dismissed! See you next time.
+[2026-07-24 16:41:40] [MAIN] AGENT: Welcome to the Hong Kong AI Math Tutor!
+[2026-07-24 16:41:40] [MAIN] AGENT: I can help you with:
+[2026-07-24 16:41:40] [MAIN] AGENT: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Equation Simple Solving (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-24 16:41:43] [MAIN] STUDENT: ratio
+[2026-07-24 16:42:58] [RATIO] STUDENT: 10
+[2026-07-24 16:42:59] [RATIO] STUDENT: 30
+[2026-07-24 16:43:05] [RATIO] AGENT: **Core Concepts**
+*   **Ratio:** A comparison of two or more quantities, written as `A:B` (e.g., 1:3).
+*   **Proportion:** A statement that two ratios are equal (e.g., 1:3 = 2:6).
+
+**Hong Kong Example**
+The classic ratio of Evaporated Milk to Black Tea for authentic HK Milk Tea is `1:3`.
+
+**Visual Helper**
+I have successfully generated and saved the visual helper as `ratio_visual.jpg` in your workspace.
+
+**Calculation**
+For the numbers 10 and 30:
+1.  Divide both numbers by their greatest common divisor (10).
+2.  $10 \div 10 = 1$ and $30 \div 10 = 3$.
+The simplified ratio is **1:3**.
+[2026-07-24 16:43:08] [MAIN] AGENT: The script `ratio.py` has been successfully started for the student to learn about Ratios & Proportions.
+[2026-07-24 16:43:08] [MAIN] AGENT: I can help you with:
+[2026-07-24 16:43:08] [MAIN] AGENT: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Equation Simple Solving (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-24 16:44:47] [MAIN] STUDENT: quit
+[2026-07-24 16:44:47] [MAIN] AGENT: Class dismissed! See you next time.

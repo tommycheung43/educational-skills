@@ -7,6 +7,9 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
+import logger_utils
+from logger_utils import setup_agent_logging, write_log
+
 def ratio(numberA: float, numberB: float) -> str:
     """Calculates the ratio when a student inputs two values (numberA:numberB).
     
@@ -68,7 +71,7 @@ backend = FilesystemBackend(root_dir=root_dir, virtual_mode=True)
 agent = create_deep_agent(
     model="ollama:gemma4:cloud",
     backend=backend,
-    tools=[ratio, generate_ratio_chart],
+    tools=[ratio, generate_ratio_chart,write_log],
     skills=[str(Path(root_dir) / "skills")],
     interrupt_on={
         "write_file": True,
