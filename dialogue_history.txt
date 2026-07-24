@@ -293,3 +293,85 @@ You must try again now!
   - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
 [2026-07-24 11:37:39] [MAIN] STUDENT: quit
 [2026-07-24 11:37:39] [MAIN] SYSTEM: Class dismissed! See you next time.
+[2026-07-24 14:14:39] [MAIN] SYSTEM: Welcome to the Hong Kong AI Math Tutor!
+[2026-07-24 14:14:39] [MAIN] SYSTEM: I can help you with:
+[2026-07-24 14:14:39] [MAIN] SYSTEM: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Simple Equation (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-24 14:15:15] [MAIN] STUDENT: decimal add
+[2026-07-24 14:15:18] [DECIMAL_ADD_SUB] SYSTEM: Starting the Decimal Addition and Subtraction Tutor...
+[2026-07-24 14:15:23] [DECIMAL_ADD_SUB] SYSTEM: Decimal addition and subtraction are simple if you follow three rules:
+
+1. **Line up the decimal points** vertically.
+2. **Fill gaps with "Hero Zeros"** (placeholders) so both numbers have the same length.
+3. **Drop the decimal point** straight down into your final answer.
+
+Would you like an example, do you have any questions, or are you ready to start the quiz?
+[2026-07-24 14:15:30] [DECIMAL_ADD_SUB] STUDENT: example
+[2026-07-24 14:15:32] [DECIMAL_ADD_SUB] SYSTEM: Imagine buying a delicious Egg Waffle for $22.5 and a cold Milk Tea for $18.8. To find the total cost, we line up the decimals and use zero placeholders:
+
+$22.50
++ 18.80
+-------
+$41.30
+
+Are you ready for the quiz, or do you have any other questions?
+[2026-07-24 14:16:08] [DECIMAL_ADD_SUB] STUDENT: video
+[2026-07-24 14:16:23] [DECIMAL_ADD_SUB] SYSTEM: I have opened an excellent YouTube video tutorial by Math Antics in your browser to help you learn more!
+
+Are you ready for the quiz, or do you have any other questions?
+[2026-07-24 14:16:26] [DECIMAL_ADD_SUB] STUDENT: yes
+[2026-07-24 14:16:26] [DECIMAL_ADD_SUB] SYSTEM: Great! Let's move on to the quiz phase.
+[2026-07-24 14:16:26] [DECIMAL_ADD_SUB] SYSTEM: Please answer this question:
+[2026-07-24 14:16:26] [DECIMAL_ADD_SUB] SYSTEM: 23.1 + 16.97 = ?
+[2026-07-24 14:16:39] [DECIMAL_ADD_SUB] STUDENT: 40.07
+[2026-07-24 14:16:42] [DECIMAL_ADD_SUB] SYSTEM: Amazing! You nailed it! 🌟 40.07 is absolutely correct! Keep up that fantastic energy! 加油! 💪🔥
+[2026-07-24 14:16:42] [DECIMAL_ADD_SUB] SYSTEM: Congratulations! You solved it!
+[2026-07-24 14:16:42] [DECIMAL_ADD_SUB] SYSTEM: What would you like to do next?
+[2026-07-24 14:16:42] [DECIMAL_ADD_SUB] SYSTEM: 1. Keep practicing another question
+[2026-07-24 14:16:42] [DECIMAL_ADD_SUB] SYSTEM: 2. Move to another topic
+[2026-07-24 14:16:52] [DECIMAL_ADD_SUB] STUDENT: 2
+[2026-07-24 14:16:52] [DECIMAL_ADD_SUB] SYSTEM: Returning to AI Math Tutor main menu...
+[2026-07-24 14:16:55] [MAIN] SYSTEM: The script `decimal_add_sub.py` has been successfully started to help the student learn about decimal addition.
+[2026-07-24 14:16:55] [MAIN] SYSTEM: I can help you with:
+[2026-07-24 14:16:55] [MAIN] SYSTEM: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Simple Equation (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-24 14:16:57] [MAIN] STUDENT: quit
+[2026-07-24 14:16:57] [MAIN] SYSTEM: Class dismissed! See you next time.
