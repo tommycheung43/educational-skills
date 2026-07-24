@@ -60,7 +60,7 @@ menu_mapping = """
   - Decimals Adding & Subtracting (decimal_add_sub.py)
   - Decimals Multiplication & Division (decimal_mult_div.py)
   - Equation Basic Concept (elementary_algebra.py)
-  - Simple Equation (simple_equation.py)
+  - Equation Simple Solving (simple_equation.py)
   - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
   - Negative Numbers (negative_number_arithmetic.py)
   - Speed (speed.py)

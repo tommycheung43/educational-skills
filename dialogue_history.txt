@@ -562,3 +562,123 @@ Are you ready for the quiz?
   - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
 [2026-07-24 14:35:16] [MAIN] STUDENT: quit
 [2026-07-24 14:35:16] [MAIN] SYSTEM: Class dismissed! See you next time.
+[2026-07-24 14:42:23] [MAIN] SYSTEM: Welcome to the Hong Kong AI Math Tutor!
+[2026-07-24 14:42:23] [MAIN] SYSTEM: I can help you with:
+[2026-07-24 14:42:23] [MAIN] SYSTEM: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Simple Equation (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-24 14:42:27] [MAIN] STUDENT: equation
+[2026-07-24 14:42:30] [ELEMENTARY_ALGEBRA] SYSTEM: Starting the Elementary Algebra Tutor...
+[2026-07-24 14:42:35] [ELEMENTARY_ALGEBRA] SYSTEM: Welcome to Elementary Algebra! 
+
+Think of equations like a balancing scale: both sides must stay equal. In algebra, we use letters like $x$ or $y$ as **"Mystery Boxes"** that hide secret numbers. Our goal is to find what's inside!
+
+To solve these, we use **Inverse Operations** (doing the opposite magic):
+* Addition $\leftrightarrow$ Subtraction
+* Multiplication $\leftrightarrow$ Division
+
+By applying the opposite operation to both sides, we can uncover the mystery number.
+
+Do you have any questions, need an example, or are you ready to start?
+[2026-07-24 14:42:42] [MAIN] SYSTEM: Welcome to the Hong Kong AI Math Tutor!
+[2026-07-24 14:42:42] [MAIN] SYSTEM: I can help you with:
+[2026-07-24 14:42:42] [MAIN] SYSTEM: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Simple Equation (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-24 14:42:51] [MAIN] STUDENT: simple
+[2026-07-24 14:42:55] [SIMPLE_EQUATION] SYSTEM: Starting the Simple Equation Tutor...
+[2026-07-24 14:42:58] [SIMPLE_EQUATION] SYSTEM: Solving a two-step equation is like **peeling an onion**: you must remove the outer layers before reaching the center (the variable).
+
+1. **Peel the Outer Layer (Constant):** First, undo the addition or subtraction.
+2. **Peel the Inner Layer (Coefficient):** Then, undo the multiplication or division to isolate the variable.
+
+By using inverse operations in this reverse order, you can solve for the "mystery box" efficiently.
+
+Do you have any questions, need an example, or are you ready to start?
+[2026-07-24 14:43:19] [SIMPLE_EQUATION] STUDENT: example
+[2026-07-24 14:43:22] [SIMPLE_EQUATION] SYSTEM: Imagine you bought 3 identical cups of bubble tea and a $5 plastic bag. The total is $65. Let a cup of bubble tea be $y$:
+
+$3y + 5 = 65$
+
+1. **Peel the outer layer:** Subtract the bag's cost first.
+   $65 - 5 = 60$ (Now we know 3 cups cost $60$)
+2. **Peel the inner layer:** Divide by 3 to find the price per cup.
+   $60 / 3 = 20$
+   **$y = 20$**
+
+Each cup of bubble tea is $20!
+
+Do you have any more questions, or are you ready for the quiz?
+[2026-07-24 14:43:41] [SIMPLE_EQUATION] STUDENT: yes
+[2026-07-24 14:43:41] [SIMPLE_EQUATION] SYSTEM: Great! Let's move on to the quiz phase.
+[2026-07-24 14:43:41] [SIMPLE_EQUATION] SYSTEM: Please answer this question:
+[2026-07-24 14:43:41] [SIMPLE_EQUATION] SYSTEM: 17x - 16 = 205
+[2026-07-24 14:43:41] [SIMPLE_EQUATION] SYSTEM: (If the decimal is long, you may round it to 2 decimal places!)
+[2026-07-24 14:43:41] [SIMPLE_EQUATION] SYSTEM: (If you are stuck, you can type 'explain' or 'example' or 'video'!)
+[2026-07-24 14:44:06] [SIMPLE_EQUATION] STUDENT: 13
+[2026-07-24 14:44:08] [SIMPLE_EQUATION] SYSTEM: Wow, you nailed it! 🌟 13.0 is absolutely correct! You've totally crushed this problem! Keep up that amazing energy! 💪🔥
+[2026-07-24 14:44:08] [SIMPLE_EQUATION] SYSTEM: Congratulations! You solved it!
+[2026-07-24 14:44:08] [SIMPLE_EQUATION] SYSTEM: What would you like to do next?
+[2026-07-24 14:44:08] [SIMPLE_EQUATION] SYSTEM: 1. Keep practicing another question
+[2026-07-24 14:44:08] [SIMPLE_EQUATION] SYSTEM: 2. Move to another topic
+[2026-07-24 14:44:10] [SIMPLE_EQUATION] STUDENT: 2
+[2026-07-24 14:44:10] [SIMPLE_EQUATION] SYSTEM: Returning to AI Math Tutor main menu...
+[2026-07-24 14:44:11] [MAIN] SYSTEM: The script `simple_equation.py` has been successfully started to help the student learn about simple equations.
+[2026-07-24 14:44:11] [MAIN] SYSTEM: I can help you with:
+[2026-07-24 14:44:11] [MAIN] SYSTEM: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Simple Equation (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
