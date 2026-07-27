@@ -5,17 +5,17 @@ from langgraph.checkpoint.memory import MemorySaver
 import webbrowser
 import random
 import math
-import pythagorean as stats
-import numpy as np
 import os
 
 from main import run_script
 from main import menu_mapping
 from stats_graph_generator import safe_generate_graph
-from datetime import datetime
 
 import logger_utils
 from logger_utils import setup_agent_logging, write_log
+
+from PIL import Image
+
 
 def play_video(url: str) -> str:
     """Opens the student's default web browser to play a tutorial video.
@@ -31,6 +31,25 @@ def play_video(url: str) -> str:
         return f"Success: Opened the web browser and started playing the video at {url}."
     except Exception as e:
         return f"Error: Failed to open the browser. Reason: {str(e)}"
+
+def view_image(image_name: str) -> str:
+    """Opens and displays an image file (like 'pythagorean-formula.png.png') directly on the student's screen.
+    
+    Args:
+        image_name: The filename of the image to look at and display.
+    """
+    file_path = Path('res') / image_name
+    if not file_path.exists():
+        return f"Error: The image file '{image_name}' does not exist in the project folder."
+    
+    try:
+        
+        img = Image.open(file_path)
+        img.show()
+
+        return f"Success: Successfully opened and popped up the image '{image_name}' on the screen."
+    except Exception as e:
+        return f"Error: Failed to display the image due to: {str(e)}"
 
 def pythagorean():
     """
@@ -94,7 +113,7 @@ if __name__ == "__main__":
     agent = create_deep_agent(
         model="ollama:gemma4:cloud",  
         backend=backend,
-        tools=[play_video,run_script, write_log],
+        tools=[play_video,run_script, write_log, view_image],
         skills=[str(Path(root_dir) / "skills")],
         interrupt_on={
             "write_file": True,

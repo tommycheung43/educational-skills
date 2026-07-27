@@ -57,7 +57,7 @@ def logged_print(*args, **kwargs):
         last_tutor_message = "" 
         return
 
-    if text.startswith("===") or text.startswith("---") or text.startswith("Starting the Pythagorean"):
+    if text.startswith("===") or text.startswith("---"):
         return
 
     write_log("AGENT", text)

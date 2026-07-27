@@ -1752,3 +1752,301 @@ The simplified ratio is **1:3**.
   - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
 [2026-07-24 16:48:08] [MAIN] STUDENT: quit
 [2026-07-24 16:48:08] [MAIN] AGENT: Class dismissed! See you next time.
+[2026-07-27 11:41:31] [MAIN] AGENT: Welcome to the Hong Kong AI Math Tutor!
+[2026-07-27 11:41:31] [MAIN] AGENT: I can help you with:
+[2026-07-27 11:41:31] [MAIN] AGENT: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Equation Simple Solving (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-27 11:41:35] [MAIN] STUDENT: pyth
+[2026-07-27 11:41:39] [PYTHAGOREAN] AGENT: Starting the Pythagorean Tutor...
+[2026-07-27 11:41:43] [PYTHAGOREAN] AGENT: The Pythagorean theorem applies to right-angled triangles. It states that the square of the longest side (the hypotenuse) is equal to the sum of the squares of the other two sides.
+
+**Formula:** $a^2 + b^2 = c^2$ (where $c$ is the hypotenuse).
+
+To find the longest side, calculate the square root of the sum of the squares of the other two sides: $c = \sqrt{a^2 + b^2}$.
+
+Do you have any questions, need an example, or are you ready to start?
+[2026-07-27 14:25:44] [MAIN] AGENT: Welcome to the Hong Kong AI Math Tutor!
+[2026-07-27 14:25:44] [MAIN] AGENT: I can help you with:
+[2026-07-27 14:25:44] [MAIN] AGENT: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Equation Simple Solving (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-27 14:25:50] [MAIN] STUDENT: pyth
+[2026-07-27 14:26:38] [PYTHAGOREAN] STUDENT: 10
+[2026-07-27 14:26:39] [PYTHAGOREAN] STUDENT: 30
+[2026-07-27 14:26:45] [PYTHAGOREAN] AGENT: **Core Concept**
+A fraction represents a part of a whole. The **numerator** (top) is the number of parts chosen; the **denominator** (bottom) is the total equal parts.
+
+**Examples (HK Context)**
+- Eating 1 slice of an egg tart cut into 4 equals `1/4`.
+- Splitting a pineapple bun in half gives each person `1/2`.
+
+**Documentation**
+Refer to `/skills/fraction-docs/SKILL.md` for detailed guidelines.
+
+**Calculation**
+For 10 and 30, the fraction is `10/30`, which simplifies to `1/3`.
+
+I have popped up the cake.png image for you to see!
+[2026-07-27 14:26:45] [PYTHAGOREAN] AGENT: Starting the Pythagorean Tutor...
+[2026-07-27 14:26:50] [PYTHAGOREAN] AGENT: The Pythagorean theorem applies to right-angled triangles. It states that the square of the longest side (the hypotenuse) is equal to the sum of the squares of the other two sides.
+
+**Formula:** $a^2 + b^2 = c^2$ (where $c$ is the longest side).
+
+To find the longest side, square both shorter sides, add them together, and then take the square root of the result: $c = \sqrt{a^2 + b^2}$.
+
+Do you have any questions, need an example, or are you ready to start?
+[2026-07-27 14:27:16] [MAIN] AGENT: Welcome to the Hong Kong AI Math Tutor!
+[2026-07-27 14:27:16] [MAIN] AGENT: I can help you with:
+[2026-07-27 14:27:16] [MAIN] AGENT: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Equation Simple Solving (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-27 14:27:30] [MAIN] STUDENT: pyth
+[2026-07-27 14:29:01] [MAIN] AGENT: Welcome to the Hong Kong AI Math Tutor!
+[2026-07-27 14:29:01] [MAIN] AGENT: I can help you with:
+[2026-07-27 14:29:01] [MAIN] AGENT: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Equation Simple Solving (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-27 14:29:11] [MAIN] STUDENT: pyth
+[2026-07-27 14:29:19] [PYTHAGOREAN] STUDENT: 10
+[2026-07-27 14:29:20] [PYTHAGOREAN] STUDENT: 30
+[2026-07-27 14:29:26] [PYTHAGOREAN] AGENT: **Core Concept**
+- **Fraction:** A part of a whole, written as one number over another.
+- **Numerator:** Top number (parts chosen).
+- **Denominator:** Bottom number (total equal parts).
+
+**Examples**
+- **Egg Tart:** Eating 1 slice of a 4-slice tart is `1/4`.
+- **Pineapple Bun:** Splitting a bun in half gives each person `1/2`.
+
+**Calculation**
+For 10 and 30, the fraction is `10/30`, which simplifies to `1/3`.
+
+**Documentation**
+Refer to `/skills/fraction-docs/SKILL.md`.
+
+I have popped up the cake.png image for you to see!
+[2026-07-27 14:29:26] [PYTHAGOREAN] AGENT: Starting the Pythagorean Tutor...
+[2026-07-27 14:29:32] [PYTHAGOREAN] AGENT: The Pythagorean theorem applies to right-angled triangles. It states that the square of the longest side (the hypotenuse, $c$) is equal to the sum of the squares of the other two sides ($a$ and $b$).
+
+**Formula:** $a^2 + b^2 = c^2$
+
+To find the hypotenuse:
+1. Square both shorter sides.
+2. Add the results together.
+3. Take the square root of that sum: $c = \sqrt{a^2 + b^2}$.
+
+Do you have any questions, would you like to see an example, or are you ready to start?
+[2026-07-27 14:40:29] [MAIN] AGENT: Welcome to the Hong Kong AI Math Tutor!
+[2026-07-27 14:40:29] [MAIN] AGENT: I can help you with:
+[2026-07-27 14:40:29] [MAIN] AGENT: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Equation Simple Solving (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-27 14:40:32] [MAIN] STUDENT: pyth
+[2026-07-27 14:40:36] [PYTHAGOREAN] AGENT: Starting the Pythagorean Tutor...
+[2026-07-27 14:40:49] [PYTHAGOREAN] AGENT: Starting the Pythagorean Tutor...
+[2026-07-27 14:40:57] [PYTHAGOREAN] AGENT: The Pythagorean theorem applies to right-angled triangles. It states that the square of the longest side (the hypotenuse) is equal to the sum of the squares of the other two sides.
+
+**Formula:** $a^2 + b^2 = c^2$
+(where $c$ is the longest side)
+
+To find the hypotenuse, square both shorter sides, add them together, and take the square root of the result: $c = \sqrt{a^2 + b^2}$.
+
+Do you have any questions, need an example, or are you ready to start?
+[2026-07-27 14:42:26] [MAIN] AGENT: Welcome to the Hong Kong AI Math Tutor!
+[2026-07-27 14:42:26] [MAIN] AGENT: I can help you with:
+[2026-07-27 14:42:26] [MAIN] AGENT: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Equation Simple Solving (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-27 14:42:30] [MAIN] STUDENT: pyth
+[2026-07-27 14:42:33] [PYTHAGOREAN] AGENT: Starting the Pythagorean Tutor...
+[2026-07-27 14:42:41] [PYTHAGOREAN] AGENT: The Pythagorean theorem applies to right-angled triangles. It states that the square of the longest side (the hypotenuse, $c$) is equal to the sum of the squares of the other two sides ($a$ and $b$).
+
+**Formula:** $a^2 + b^2 = c^2$
+
+To find the hypotenuse, calculate the square root of the sum: $c = \sqrt{a^2 + b^2}$.
+
+Do you have any questions, need an example, or are you ready to start?
+[2026-07-27 14:43:10] [PYTHAGOREAN] STUDENT: picture to explan
+[2026-07-27 14:43:36] [PYTHAGOREAN] AGENT: I have displayed the formula diagram for you!
+
+Are you ready for the quiz?
+[2026-07-27 14:43:44] [PYTHAGOREAN] STUDENT: example
+[2026-07-27 14:43:48] [PYTHAGOREAN] AGENT: Imagine you are walking from Mong Kok MTR. You walk 3 blocks East, and then 4 blocks North to reach a restaurant. If you could fly like a bird straight there, how far is it?
+
+*   $a = 3, b = 4$
+*   $3^2 + 4^2 = 9 + 16 = 25$
+*   The square root of $25$ is $5$.
+
+So, the straight distance is 5 blocks!
+
+Do you have any more questions, or are you ready for the quiz?
+[2026-07-27 14:45:46] [PYTHAGOREAN] STUDENT: video
+[2026-07-27 14:45:50] [PYTHAGOREAN] AGENT: I have opened an excellent YouTube video tutorial by Math Antics in your browser to help you learn more!
+
+Are you ready for the quiz?
+[2026-07-27 14:46:09] [PYTHAGOREAN] STUDENT: yes
+[2026-07-27 14:46:09] [PYTHAGOREAN] AGENT: Great! Let's move on to the quiz phase.
+[2026-07-27 14:46:17] [PYTHAGOREAN] AGENT: A hiker at Victoria Peak walks 15 meters East and then 12 meters North to reach a scenic lookout point. If they were to take a direct diagonal path back to the start, what is the length of that longest side (hypotenuse) using the Pythagorean theorem?
+[2026-07-27 14:46:17] [PYTHAGOREAN] AGENT: Please answer this question:
+[2026-07-27 14:46:17] [PYTHAGOREAN] AGENT: (If the decimal is long, you may round it to 2 decimal places!)
+[2026-07-27 14:46:17] [PYTHAGOREAN] AGENT: (If you are stuck, you can type 'explain' or 'example' or 'video'!)
+[2026-07-27 14:50:14] [PYTHAGOREAN] STUDENT: 1
+[2026-07-27 14:50:20] [PYTHAGOREAN] AGENT: That's not quite right. Remember, for a right-angled triangle, the square of the hypotenuse ($c$) is equal to the sum of the squares of the other two sides ($a$ and $b$):
+
+$a^2 + b^2 = c^2$
+
+To find the length of the diagonal path, you need to square both distances, add them together, and then find the square root of that sum.
+
+Give it another go—you must try again now!
+[2026-07-27 14:50:20] [PYTHAGOREAN] AGENT: The answer is not quite right. Don't give up, please recalculate the original problem and enter your answer again!
+[2026-07-27 14:56:00] [PYTHAGOREAN] STUDENT: explain
+[2026-07-27 14:56:04] [PYTHAGOREAN] AGENT: No problem! Here is how you can approach this problem:
+
+1.  **Identify the sides:** You have two sides of a right-angled triangle. One side ($a$) is 15 meters (East) and the other side ($b$) is 12 meters (North).
+2.  **Square the sides:** Multiply each of these distances by itself (calculate $15^2$ and $12^2$).
+3.  **Add them together:** Find the sum of those two squared numbers. This gives you the value of the hypotenuse squared ($c^2$).
+4.  **Find the square root:** To get the final distance ($c$), calculate the square root of that sum.
+
+Try following those steps and let me know what you get for the final answer!
+[2026-07-27 14:56:25] [PYTHAGOREAN] STUDENT: 19.21
+[2026-07-27 14:58:57] [PYTHAGOREAN] AGENT: Awesome! Spot on! You've absolutely nailed it! 🇭🇰✨ You solved the Victoria Peak challenge perfectly. Keep up that amazing energy!
+[2026-07-27 14:58:57] [PYTHAGOREAN] AGENT: Congratulations! You solved it!
+[2026-07-27 14:58:57] [PYTHAGOREAN] AGENT: What would you like to do next?
+[2026-07-27 14:58:57] [PYTHAGOREAN] AGENT: 1. Keep practicing another question
+[2026-07-27 14:58:57] [PYTHAGOREAN] AGENT: 2. Move to another topic
+[2026-07-27 14:59:01] [PYTHAGOREAN] STUDENT: 2
+[2026-07-27 14:59:02] [PYTHAGOREAN] AGENT: Returning to AI Math Tutor main menu...
+[2026-07-27 14:59:04] [MAIN] AGENT: The script `pythagorean.py` has been successfully started for the student.
+[2026-07-27 14:59:04] [MAIN] AGENT: I can help you with:
+[2026-07-27 14:59:04] [MAIN] AGENT: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Equation Simple Solving (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+[2026-07-27 14:59:18] [MAIN] STUDENT: quit
+[2026-07-27 14:59:18] [MAIN] AGENT: Class dismissed! See you next time.
