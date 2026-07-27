@@ -2050,3 +2050,239 @@ Try following those steps and let me know what you get for the final answer!
   - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
 [2026-07-27 14:59:18] [MAIN] STUDENT: quit
 [2026-07-27 14:59:18] [MAIN] AGENT: Class dismissed! See you next time.
+[2026-07-27 17:27:21] [MAIN] AGENT: Welcome to the Hong Kong AI Math Tutor!
+[2026-07-27 17:27:21] [MAIN] AGENT: I can help you with:
+[2026-07-27 17:27:21] [MAIN] AGENT: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Equation Simple Solving (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+  - Angles (angle.py)
+[2026-07-27 17:27:24] [MAIN] STUDENT: angle
+[2026-07-27 17:27:28] [ANGLE] AGENT: Starting the Angle Tutor...
+[2026-07-27 17:27:33] [ANGLE] AGENT: For any $n$-sided convex polygon:
+
+*   **Sum of Interior Angles:** $(n - 2) \times 180^\circ$
+*   **Sum of Exterior Angles:** Always $360^\circ$
+*   **Regular Polygon Interior Angle:** $\frac{(n - 2) \times 180^\circ}{n}$
+*   **Regular Polygon Exterior Angle:** $\frac{360^\circ}{n}$
+
+Do you have any questions, need an example, or are you ready to start?
+[2026-07-27 17:27:38] [ANGLE] STUDENT: example
+[2026-07-27 17:27:41] [ANGLE] AGENT: Imagine designing a custom octagonal (8-sided) pavilion in Hong Kong Park!
+
+*   **Total interior angle sum:** $(8 - 2) \times 180 = 6 \times 180 = 1080^\circ$
+*   **Regular pavilion interior angle:** $1080 / 8 = 135^\circ$
+*   **Regular pavilion exterior angle:** $360 / 8 = 45^\circ$
+
+Are you ready for the quiz?
+[2026-07-27 17:27:51] [ANGLE] STUDENT: video
+[2026-07-27 17:27:57] [ANGLE] AGENT: I have opened an excellent YouTube video tutorial by Math Antics in your browser to help you learn more!
+
+Are you ready for the quiz?
+[2026-07-27 17:28:08] [ANGLE] STUDENT: diagram
+[2026-07-27 17:28:20] [ANGLE] AGENT: I have displayed the formula diagram for you!
+
+Are you ready for the quiz?
+[2026-07-27 17:28:25] [ANGLE] STUDENT: yes
+[2026-07-27 17:28:25] [ANGLE] AGENT: Great! Let's move on to the quiz phase.
+[2026-07-27 17:28:42] [ANGLE] AGENT: Imagine you are designing a regular triangular sign for a street in Hong Kong. What is the measure of each exterior angle of this regular triangle in degrees?
+[2026-07-27 17:28:42] [ANGLE] AGENT: Please answer this question:
+[2026-07-27 17:28:42] [ANGLE] AGENT: (If the decimal is long, you may round it to 2 decimal places!)
+[2026-07-27 17:28:42] [ANGLE] AGENT: (If you are stuck, you can type 'explain' or 'example' or 'video'!)
+[2026-07-27 17:28:42] [ANGLE] AGENT: (Hint: You can ask for 'picture' to view the polygon shape!)
+[2026-07-27 17:29:06] [ANGLE] STUDENT: need picture
+[2026-07-27 17:29:12] [ANGLE] AGENT: I'm sorry, but I can only accept a numerical answer for this problem, or a specific request for help. If you're stuck, feel free to ask for an "explanation" or an "example," and I'll be happy to guide you! Otherwise, please enter the measure of the exterior angle in degrees.
+[2026-07-27 17:34:38] [MAIN] AGENT: Welcome to the Hong Kong AI Math Tutor!
+[2026-07-27 17:34:38] [MAIN] AGENT: I can help you with:
+[2026-07-27 17:34:38] [MAIN] AGENT: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Equation Simple Solving (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+  - Angles (angle.py)
+[2026-07-27 17:34:43] [MAIN] STUDENT: angle
+[2026-07-27 17:34:48] [ANGLE] AGENT: Starting the Angle Tutor...
+[2026-07-27 17:34:54] [ANGLE] AGENT: Polygon angles are defined by these core rules for an $n$-sided polygon:
+
+*   **Sum of Interior Angles:** $(n - 2) \times 180^\circ$
+*   **Sum of Exterior Angles:** Always $360^\circ$ (for convex polygons)
+*   **Regular Polygon Interior Angle:** $\frac{(n - 2) \times 180^\circ}{n}$
+*   **Regular Polygon Exterior Angle:** $\frac{360^\circ}{n}$
+
+Do you have any questions, need an example, or are you ready to start?
+[2026-07-27 17:34:59] [ANGLE] STUDENT: example
+[2026-07-27 17:35:02] [ANGLE] AGENT: Imagine designing a custom octagonal (8-sided) pavilion in Hong Kong Park!
+
+*   **Total interior angle sum:** $(8 - 2) \times 180 = 6 \times 180 = 1080^\circ$
+*   **Regular pavilion interior angle:** $1080 \div 8 = 135^\circ$ per corner
+
+Are you ready for the quiz?
+[2026-07-27 17:35:05] [ANGLE] STUDENT: video
+[2026-07-27 17:35:12] [ANGLE] AGENT: I have opened an excellent YouTube video tutorial by Math Antics in your browser to help you learn more!
+
+Are you ready for the quiz?
+[2026-07-27 17:35:15] [ANGLE] STUDENT: yes
+[2026-07-27 17:35:15] [ANGLE] AGENT: Great! Let's move on to the quiz phase.
+[2026-07-27 17:35:23] [ANGLE] AGENT: Imagine you are designing a regular hexagonal floor tile for a luxury hotel in Central, Hong Kong. What is the total sum of the interior angles of this hexagon in degrees?
+[2026-07-27 17:35:23] [ANGLE] AGENT: Please answer this question:
+[2026-07-27 17:35:23] [ANGLE] AGENT: (If the decimal is long, you may round it to 2 decimal places!)
+[2026-07-27 17:35:23] [ANGLE] AGENT: (If you are stuck, you can type 'explain' or 'example' or 'video'!)
+[2026-07-27 17:35:23] [ANGLE] AGENT: (Hint: You can ask for 'picture' to view the polygon shape!)
+[2026-07-27 17:35:31] [ANGLE] STUDENT: need picture
+[2026-07-27 17:35:48] [ANGLE] AGENT: I have displayed the formula diagram for you! Since you are looking for a visual to help, please refer to the image to see how to calculate the sum of interior angles. 
+
+If you're still stuck, you can type "explain" for a hint or "example" to see a similar problem solved step-by-step. Otherwise, please enter the numerical answer for the total sum of the interior angles of the hexagonal floor tile.
+[2026-07-27 17:38:51] [MAIN] AGENT: Welcome to the Hong Kong AI Math Tutor!
+[2026-07-27 17:38:51] [MAIN] AGENT: I can help you with:
+[2026-07-27 17:38:51] [MAIN] AGENT: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Equation Simple Solving (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+  - Angles (angle.py)
+[2026-07-27 17:38:53] [MAIN] STUDENT: angle
+[2026-07-27 17:38:58] [ANGLE] AGENT: Starting the Angle Tutor...
+[2026-07-27 17:40:00] [ANGLE] AGENT: For any $n$-sided polygon:
+- **Sum of Interior Angles:** $(n - 2) \times 180^\circ$
+- **Sum of Exterior Angles:** Always $360^\circ$
+
+For **regular polygons** (where all sides and angles are equal):
+- **Each Interior Angle:** $\frac{(n - 2) \times 180^\circ}{n}$
+- **Each Exterior Angle:** $\frac{360^\circ}{n}$
+
+Do you have any questions, need an example, or are you ready to start?
+[2026-07-27 17:40:14] [ANGLE] STUDENT: yes
+[2026-07-27 17:40:14] [ANGLE] AGENT: Great! Let's move on to the quiz phase.
+[2026-07-27 17:40:21] [ANGLE] AGENT: Imagine you are designing a triangular warning sign for a street in Hong Kong. If the sign is a regular triangle, what is the measure of each interior angle in degrees?
+[2026-07-27 17:40:21] [ANGLE] AGENT: Please answer this question:
+[2026-07-27 17:40:21] [ANGLE] AGENT: (If the decimal is long, you may round it to 2 decimal places!)
+[2026-07-27 17:40:21] [ANGLE] AGENT: (If you are stuck, you can type 'explain' or 'example' or 'video'!)
+[2026-07-27 17:40:21] [ANGLE] AGENT: (Hint: You can ask for 'picture' to view the polygon shape!)
+[2026-07-27 17:40:27] [ANGLE] STUDENT: need picture
+[2026-07-27 17:40:30] [ANGLE] AGENT: I have generated a picture of a regular triangle for you. Please take a look at the shape and try to determine the measure of each interior angle in degrees.
+[2026-07-27 17:42:22] [ANGLE] STUDENT: 60
+[2026-07-27 17:42:26] [ANGLE] AGENT: Correct! 🌟 That's the spirit! You've absolutely nailed it—each interior angle is indeed 60 degrees. Great job solving this Hong Kong street sign challenge! 🇭🇰👏
+[2026-07-27 17:42:26] [ANGLE] AGENT: Congratulations! You solved it!
+[2026-07-27 17:42:26] [ANGLE] AGENT: What would you like to do next?
+[2026-07-27 17:42:26] [ANGLE] AGENT: 1. Keep practicing another question
+[2026-07-27 17:42:26] [ANGLE] AGENT: 2. Move to another topic
+[2026-07-27 17:42:28] [ANGLE] STUDENT: 1
+[2026-07-27 17:42:28] [ANGLE] AGENT: Fantastic! It automatically generates the next challenge for you.:
+[2026-07-27 17:42:30] [ANGLE] AGENT: Imagine you are designing a regular pentagonal courtyard for a new building in Hong Kong. What is the total sum of the interior angles of this courtyard in degrees?
+[2026-07-27 17:43:50] [ANGLE] STUDENT: what it looks like?
+[2026-07-27 17:43:56] [ANGLE] AGENT: I've generated a picture of a regular pentagon so you can see what the courtyard looks like! Now that you have a visual, can you calculate the total sum of the interior angles for this regular pentagonal courtyard in degrees?
+[2026-07-27 17:44:07] [ANGLE] STUDENT: 540
+[2026-07-27 17:44:21] [ANGLE] AGENT: Fantastic! 🌟 You got it exactly right! The total sum is 540 degrees. Your architectural planning for the Hong Kong courtyard is spot on! Keep up that amazing energy! 🇭🇰💪
+[2026-07-27 17:44:21] [ANGLE] AGENT: Congratulations! You solved it!
+[2026-07-27 17:44:21] [ANGLE] AGENT: What would you like to do next?
+[2026-07-27 17:44:21] [ANGLE] AGENT: 1. Keep practicing another question
+[2026-07-27 17:44:21] [ANGLE] AGENT: 2. Move to another topic
+[2026-07-27 17:44:24] [ANGLE] STUDENT: 2
+[2026-07-27 17:44:24] [ANGLE] AGENT: Returning to AI Math Tutor main menu...
+[2026-07-27 17:44:27] [MAIN] AGENT: The script `angle.py` has been successfully started to help the student learn about angles.
+[2026-07-27 17:44:27] [MAIN] AGENT: I can help you with:
+[2026-07-27 17:44:27] [MAIN] AGENT: - Percentages (percentage.py)
+  - Ratios & Proportions (ratio.py)
+  - Basic Fractions (fraction.py)
+  - Adding & Subtracting Fractions (fraction_add_sub.py)
+  - Multiplying & Dividing Fractions (fraction_muli_div.py)
+  - Rectangles and Squares Area and Perimeter (area_perimeter_rectangle.py)
+  - Circles Area and Perimeter (area_perimeter_circle.py)
+  - Parallelograms Area and Perimeter (area_perimeter_parallelogram.py)
+  - Triangles Area and Perimeter (area_perimeter_triangle.py)
+  - Trapezoids Area and Perimeter (area_perimeter_trapezoid.py)
+  - Volume of different shapes (volume.py)
+  - Decimals Basic Concept (fraction_to_decimal.py)
+  - Decimals Adding & Subtracting (decimal_add_sub.py)
+  - Decimals Multiplication & Division (decimal_mult_div.py)
+  - Equation Basic Concept (elementary_algebra.py)
+  - Equation Simple Solving (simple_equation.py)
+  - Equation Addition and Subtraction (Equation Arithmetic) (equation_arithmetic_operations.py)
+  - Negative Numbers (negative_number_arithmetic.py)
+  - Speed (speed.py)
+  - Statistics (statistics_tutor.py)
+  - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+  - Angles (angle.py)
+[2026-07-27 17:44:36] [MAIN] STUDENT: angle
+[2026-07-27 17:44:40] [ANGLE] AGENT: Starting the Angle Tutor...
+[2026-07-27 17:44:43] [ANGLE] AGENT: For any $n$-sided polygon:
+
+*   **Sum of Interior Angles:** $(n - 2) \times 180^\circ$.
+*   **Sum of Exterior Angles:** Always $360^\circ$ for convex polygons.
+*   **Regular Polygon Interior Angle:** Each angle is $\frac{(n - 2) \times 180^\circ}{n}$.
+*   **Regular Polygon Exterior Angle:** Each angle is $\frac{360^\circ}{n}$.
+
+Do you have any questions, need an example, or are you ready to start?
+[2026-07-27 17:45:01] [ANGLE] STUDENT: review triangle
+[2026-07-27 17:45:33] [AREA_PERIMETER_TRIANGLE] AGENT: Starting the Triangle Area & Perimeter Tutor...
+[2026-07-27 17:45:39] [AREA_PERIMETER_TRIANGLE] AGENT: **Area of a Triangle:** The total flat surface region. 
+Formula: $\text{Area} = 0.5 \times \text{Base} \times \text{Height}$
+(Height is the vertical perpendicular distance from the base to the opposite peak).
+
+**Perimeter of a Triangle:** The total distance around the three outer edges.
+Formula: $\text{Perimeter} = \text{Sum of all three sides}$
+
+Do you have any questions, or would you like an example before we start the quiz?
+[2026-07-27 17:46:55] [AREA_PERIMETER_TRIANGLE] STUDENT: yes
+[2026-07-27 17:46:55] [AREA_PERIMETER_TRIANGLE] AGENT: Great! Let's move on to the quiz phase.
+[2026-07-27 17:46:55] [AREA_PERIMETER_TRIANGLE] AGENT: Please answer this question:
+[2026-07-27 17:46:55] [AREA_PERIMETER_TRIANGLE] AGENT: A Right-Angled Triangle has a base of 20cm, a height of 8cm, and a hypotenuse of 22cm.
+[2026-07-27 17:46:55] [AREA_PERIMETER_TRIANGLE] AGENT: What is the Perimeter of this shape?
+[2026-07-27 17:47:04] [AREA_PERIMETER_TRIANGLE] STUDENT: 50
+[2026-07-27 17:47:06] [AREA_PERIMETER_TRIANGLE] AGENT: Correct! 🥳 You nailed it! 🌟 50.0 is absolutely right! Keep up that amazing energy! 加油! 💪🔥
+[2026-07-27 17:47:06] [AREA_PERIMETER_TRIANGLE] AGENT: Congratulations! You solved it!
+[2026-07-27 17:47:06] [AREA_PERIMETER_TRIANGLE] AGENT: What would you like to do next?
+[2026-07-27 17:47:06] [AREA_PERIMETER_TRIANGLE] AGENT: 1. Keep practicing another question
+[2026-07-27 17:47:06] [AREA_PERIMETER_TRIANGLE] AGENT: 2. Move to another topic
+[2026-07-27 17:47:09] [AREA_PERIMETER_TRIANGLE] STUDENT: 2
+[2026-07-27 17:47:09] [AREA_PERIMETER_TRIANGLE] AGENT: Returning to AI Math Tutor main menu...
+[2026-07-27 17:47:12] [ANGLE] AGENT: Welcome back to the lesson on polygon angles! Are you ready to start the quiz?

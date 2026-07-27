@@ -66,6 +66,7 @@ menu_mapping = """
   - Speed (speed.py)
   - Statistics (statistics_tutor.py)
   - Pythagorean (Triangle Hypotenuse) (pythagorean.py)
+  - Angles (angle.py)
 """
 
 def main():
