@@ -9,6 +9,8 @@ from langgraph.checkpoint.memory import MemorySaver
 import logger_utils
 from logger_utils import setup_agent_logging, write_log
 
+import re
+
 def run_script(script_name: str) -> str:
     """Runs a specific student script using 'uv run'."""
     script_path = Path(script_name)
@@ -69,6 +71,8 @@ menu_mapping = """
   - Angles (angle.py)
 """
 
+display_menu = re.sub(r"\s*\([a-zA-Z0-9_]+\.py\)", "", menu_mapping)
+
 def main():
    
     print("Welcome to the Hong Kong AI Math Tutor!")
@@ -77,7 +81,7 @@ def main():
     while True:
         print("\n==================================================")
         print("I can help you with:\n")
-        print(menu_mapping.strip())
+        print(display_menu.strip())
         print("==================================================")
 
         user_input = input("\n What topic would you like to learn today? (or 'quit'): ")
