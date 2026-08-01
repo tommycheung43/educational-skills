@@ -81,11 +81,20 @@ Follow these steps to set up the project locally.
 
 4. Set up your API keys
 
+   Linux and macOS
    ```bash
    # Local: Ollama must be running on your machine
     # Cloud: Set your Ollama API key for hosted inference
     export OLLAMA_API_KEY="your-api-key"
     export TAVILY_API_KEY="your-tavily-api-key"
+   ```
+
+   Window
+   ```bash
+   # Local: Ollama must be running on your machine
+    # Cloud: Set your Ollama API key for hosted inference
+    set OLLAMA_API_KEY="your-api-key"
+    set TAVILY_API_KEY="your-tavily-api-key"
    ```
 
    The quickstart reference for this setup is here: https://docs.langchain.com/oss/python/deepagents/quickstart#ollama

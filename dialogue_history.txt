@@ -2452,3 +2452,63 @@ You correctly calculated that each exterior angle of the decagon courtyard is 36
   - Angles
 [2026-07-28 10:07:00] [MAIN] STUDENT: quit
 [2026-07-28 10:07:00] [MAIN] AGENT: Class dismissed! See you next time.
+[2026-08-01 11:14:17] [MAIN] AGENT: Welcome to the Hong Kong AI Math Tutor!
+[2026-08-01 11:14:17] [MAIN] AGENT: I can help you with:
+[2026-08-01 11:14:17] [MAIN] AGENT: - Percentages
+  - Ratios & Proportions
+  - Basic Fractions
+  - Adding & Subtracting Fractions
+  - Multiplying & Dividing Fractions
+  - Rectangles and Squares Area and Perimeter
+  - Circles Area and Perimeter
+  - Parallelograms Area and Perimeter
+  - Triangles Area and Perimeter
+  - Trapezoids Area and Perimeter
+  - Volume of different shapes
+  - Decimals Basic Concept
+  - Decimals Adding & Subtracting
+  - Decimals Multiplication & Division
+  - Equation Basic Concept
+  - Equation Simple Solving
+  - Equation Addition and Subtraction (Equation Arithmetic)
+  - Negative Numbers
+  - Speed
+  - Statistics
+  - Pythagorean (Triangle Hypotenuse)
+  - Angles
+[2026-08-01 11:14:20] [MAIN] STUDENT: angle
+[2026-08-01 11:22:16] [MAIN] AGENT: Welcome to the Hong Kong AI Math Tutor!
+[2026-08-01 11:22:16] [MAIN] AGENT: I can help you with:
+[2026-08-01 11:22:16] [MAIN] AGENT: - Percentages
+  - Ratios & Proportions
+  - Basic Fractions
+  - Adding & Subtracting Fractions
+  - Multiplying & Dividing Fractions
+  - Rectangles and Squares Area and Perimeter
+  - Circles Area and Perimeter
+  - Parallelograms Area and Perimeter
+  - Triangles Area and Perimeter
+  - Trapezoids Area and Perimeter
+  - Volume of different shapes
+  - Decimals Basic Concept
+  - Decimals Adding & Subtracting
+  - Decimals Multiplication & Division
+  - Equation Basic Concept
+  - Equation Simple Solving
+  - Equation Addition and Subtraction (Equation Arithmetic)
+  - Negative Numbers
+  - Speed
+  - Statistics
+  - Pythagorean (Triangle Hypotenuse)
+  - Angles
+[2026-08-01 11:22:54] [MAIN] STUDENT: angle
+[2026-08-01 11:23:00] [ANGLE] AGENT: Starting the Angle Tutor...
+[2026-08-01 11:23:08] [ANGLE] AGENT: A polygon is a closed plane figure with straight sides. Here are the core concepts for an $n$-sided polygon:
+
+*   **Sum of Interior Angles:** $(n - 2) \times 180^\circ$
+*   **Sum of Exterior Angles:** Always $360^\circ$ (for convex polygons)
+*   **Regular Polygons (all sides/angles equal):**
+    *   Each interior angle: $\frac{(n - 2) \times 180^\circ}{n}$
+    *   Each exterior angle: $\frac{360^\circ}{n}$
+
+Do you have any questions, need an example, or are you ready to start?
