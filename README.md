@@ -76,10 +76,14 @@ Follow these steps to set up the project locally.
     uv add deepagents
     uv sync
    ```
+   If the error "Failed to inspect Python interpreter from managed installations" comes out, run this and then run ```bash uv add deepagents, uv sync ```:
+   ```bash
+   set UV_PYTHON=python
+   ```
 
    This installs the dependencies declared in [pyproject.toml](pyproject.toml), including the Deep Agents package.
 
-4. Set up your API keys
+5. Set up your API keys
 
    Linux and macOS
    ```bash
@@ -99,7 +103,7 @@ Follow these steps to set up the project locally.
 
    The quickstart reference for this setup is here: https://docs.langchain.com/oss/python/deepagents/quickstart#ollama
 
-5. Run the tutor
+6. Run the tutor
 
    ```bash
    uv run main.py
